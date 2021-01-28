@@ -495,11 +495,11 @@ METACURRENCY_NAME SinguloCoin
 
 ## Grant metacurrency
 ## Comment this out if you don't want players to earn metacurrency
-GRANT_METACURRENCY
+##GRANT_METACURRENCY
 
 ## Respect global bans
 ## Comment this out to ignore global bans
-RESPECT_GLOBAL_BANS
+##RESPECT_GLOBAL_BANS
 
 ## Custom shuttle spam prevention. Changine these numbers allows you to change the maxsize and amount of custom shuttles.
 MAX_SHUTTLE_COUNT 6
@@ -510,13 +510,13 @@ MAX_SHUTTLE_SIZE 300
 ### fail2topic is a system for automating IP bans for abusers of the world/Topic API.
 ### Note that this subsystem respects the IPs listed in topic_rate_limit_whitelist.txt. They will not be considered for a ban.
 ## Topic rate limit in *seconds*
-TOPIC_RATE_LIMIT 5
+##TOPIC_RATE_LIMIT 5
 ## Topic max fails
-TOPIC_MAX_FAILS 5
+##TOPIC_MAX_FAILS 5
 ## Firewall rule name
-TOPIC_RULE_NAME "_DD_Fail2topic"
+##TOPIC_RULE_NAME "_DD_Fail2topic"
 ## Max world/Topic payload size
-TOPIC_MAX_SIZE 500
+##TOPIC_MAX_SIZE 500
 ## Uncomment to enable Fail2Topic, comment-out to disable
 #TOPIC_ENABLED
 
