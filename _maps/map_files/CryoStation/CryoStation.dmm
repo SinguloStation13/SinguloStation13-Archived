@@ -498,6 +498,9 @@
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
+/obj/machinery/light/small{
+	dir = 8
+	},
 /turf/open/floor/plating,
 /area/maintenance/cryoauxatmos)
 "kK" = (
@@ -878,6 +881,9 @@
 /area/quartermaster/warehouse)
 "vq" = (
 /obj/machinery/portable_atmospherics/canister/nitrogen,
+/obj/machinery/light/small{
+	dir = 1
+	},
 /turf/open/floor/plating,
 /area/maintenance/cryoauxstorage)
 "vJ" = (
@@ -1497,6 +1503,9 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
 	dir = 4
 	},
+/obj/machinery/light/small{
+	dir = 1
+	},
 /turf/open/floor/plasteel,
 /area/quartermaster/warehouse)
 "KS" = (
@@ -1793,9 +1802,6 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
 	dir = 8
 	},
-/obj/machinery/light/small{
-	dir = 4
-	},
 /obj/structure/closet/crate/science{
 	name = "Techfab Circuits Crate"
 	},
@@ -2043,6 +2049,9 @@
 /obj/structure/extinguisher_cabinet{
 	pixel_x = -32
 	},
+/obj/machinery/light/small{
+	dir = 8
+	},
 /turf/open/floor/plating,
 /area/maintenance/cryoauxstorage)
 "WC" = (
@@ -2106,9 +2115,6 @@
 "Yq" = (
 /obj/structure/closet/crate,
 /obj/effect/spawner/lootdrop/maintenance/four,
-/obj/machinery/light/small{
-	dir = 4
-	},
 /obj/item/poster/random_contraband,
 /obj/item/poster/random_contraband,
 /obj/item/poster/random_contraband,

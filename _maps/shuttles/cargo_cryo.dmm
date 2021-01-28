@@ -25,6 +25,13 @@
 	},
 /turf/open/floor/mineral/titanium,
 /area/shuttle/supply)
+"w" = (
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/shuttle/engine/heater,
+/turf/open/floor/plating/airless,
+/area/shuttle/supply)
 "x" = (
 /obj/machinery/door/airlock/shuttle/glass{
 	name = "Supply Shuttle Airlock"
@@ -48,15 +55,6 @@
 	pixel_x = -24;
 	pixel_y = -9
 	},
-/obj/machinery/light{
-	dir = 8
-	},
-/turf/open/floor/mineral/titanium,
-/area/shuttle/supply)
-"C" = (
-/obj/machinery/light{
-	dir = 4
-	},
 /turf/open/floor/mineral/titanium,
 /area/shuttle/supply)
 "D" = (
@@ -65,6 +63,10 @@
 	},
 /turf/open/floor/plating,
 /area/shuttle/supply)
+"H" = (
+/obj/machinery/light,
+/turf/open/floor/mineral/titanium,
+/area/shuttle/supply)
 "I" = (
 /turf/closed/wall/mineral/titanium,
 /area/shuttle/supply)
@@ -72,10 +74,15 @@
 /obj/structure/shuttle/engine/propulsion,
 /turf/open/floor/plating/airless,
 /area/shuttle/supply)
+"N" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/open/floor/mineral/titanium,
+/area/shuttle/supply)
 "Q" = (
-/obj/structure/window/shuttle,
-/obj/structure/grille,
-/turf/open/floor/plating,
+/obj/effect/spawner/structure/window/shuttle,
+/turf/open/floor/plating/airless,
 /area/shuttle/supply)
 "W" = (
 /obj/machinery/conveyor{
@@ -113,7 +120,7 @@ D
 W
 I
 I
-a
+I
 a
 "}
 (2,1,1) = {"
@@ -126,9 +133,9 @@ z
 h
 X
 h
-j
-I
-a
+h
+w
+M
 "}
 (3,1,1) = {"
 Q
@@ -149,14 +156,14 @@ Q
 h
 h
 h
+H
+I
+N
 h
 h
 h
-h
-h
-h
-Y
-M
+I
+a
 "}
 (5,1,1) = {"
 Q
@@ -178,13 +185,13 @@ I
 h
 h
 h
-C
 h
 h
 h
-j
-I
-a
+h
+h
+w
+M
 "}
 (7,1,1) = {"
 a
@@ -197,6 +204,6 @@ I
 I
 I
 I
-a
+I
 a
 "}
