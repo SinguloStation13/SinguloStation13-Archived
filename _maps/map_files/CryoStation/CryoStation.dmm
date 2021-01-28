@@ -657,6 +657,7 @@
 	dir = 8;
 	id = "Supply_In_Conveyor"
 	},
+/obj/structure/plasticflaps,
 /turf/open/floor/plating,
 /area/quartermaster/office)
 "pn" = (
@@ -2021,6 +2022,7 @@
 	dir = 4;
 	id = "Supply_Out_Conveyor"
 	},
+/obj/structure/plasticflaps,
 /turf/open/floor/plating,
 /area/quartermaster/office)
 "VO" = (
