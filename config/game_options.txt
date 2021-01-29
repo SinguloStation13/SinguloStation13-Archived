@@ -92,22 +92,22 @@ ALERT_DELTA Destruction of the station is imminent. All crew are instructed to o
 ## Default probablity is 1, increase to make that mode more likely to be picked.
 ## Set to 0 to disable that mode.
 
-PROBABILITY TRAITOR 5
-PROBABILITY TRAITORBRO 2
-PROBABILITY TRAITORCHAN 3
-PROBABILITY INTERNAL_AFFAIRS 3
-PROBABILITY NUCLEAR 2
-PROBABILITY REVOLUTION 2
-PROBABILITY CULT 2
-PROBABILITY CHANGELING 2
-PROBABILITY WIZARD 4
-PROBABILITY MONKEY 1
+PROBABILITY TRAITOR 0
+PROBABILITY TRAITORBRO 0
+PROBABILITY TRAITORCHAN 0
+PROBABILITY INTERNAL_AFFAIRS 0
+PROBABILITY NUCLEAR 0
+PROBABILITY REVOLUTION 0
+PROBABILITY CULT 0
+PROBABILITY CHANGELING 0
+PROBABILITY WIZARD 0
+PROBABILITY MONKEY 0
 PROBABILITY METEOR 0
 PROBABILITY EXTENDED 1
-PROBABILITY SECRET_EXTENDED 1
+PROBABILITY SECRET_EXTENDED 0
 PROBABILITY DEVIL 0
 PROBABILITY DEVIL_AGENTS 0
-PROBABILITY CLOWNOPS 2
+PROBABILITY CLOWNOPS 0
 
 ## You probably want to keep sandbox off by default for secret and random.
 PROBABILITY SANDBOX 0
@@ -242,7 +242,7 @@ PROTECT_ROLES_FROM_ANTAGONIST
 #ENFORCE_HUMAN_AUTHORITY
 
 ## If late-joining players have a chance to become a traitor/changeling
-ALLOW_LATEJOIN_ANTAGONISTS
+#ALLOW_LATEJOIN_ANTAGONISTS
 
 ## Comment this out to disable the antagonist reputation system. This system rewards players who participate in the game instead of greytiding by giving them slightly higher odds to
 ## roll antagonist in subsequent rounds until they get it.
@@ -555,7 +555,7 @@ ARRIVALS_SHUTTLE_DOCK_WINDOW 55
 
 ## How many wirechewing rodents you want to spawn on exposed maintenane wires at the start of the round. You may wish to set this to 0 if you're testing powernets.
 
-MICE_ROUNDSTART 10
+MICE_ROUNDSTART 2
 
 ## If the percentage of players alive (doesn't count conversions) drops below this threshold the emergency shuttle will be forcefully called (provided it can be)
 #EMERGENCY_SHUTTLE_AUTOCALL_THRESHOLD 0.2
@@ -592,7 +592,7 @@ MAXFINE 2000
 ECONOMY
 
 ## Put the name of your custom currency here
-METACURRENCY_NAME Metacoin
+METACURRENCY_NAME Singulocoins
 
 ## Crew objectives
 ALLOW_CREW_OBJECTIVES
