@@ -3195,6 +3195,8 @@
 #include "interface\menu.dm"
 #include "interface\stylesheet.dm"
 #include "interface\skin.dmf"
+#include "singulostation\code\datums\shuttles.dm"
+#include "singulostation\code\game\area\Space_Station_13_areas.dm"
 #include "waspstation\code\__DEFINES\DCM.dm"
 #include "waspstation\code\__DEFINES\DNA.dm"
 #include "waspstation\code\__DEFINES\keybinding.dm"
