@@ -1,4 +1,4 @@
-/area/asteroid/mining
+/area/asteroid/mining //Asteroid without any power jankies
 	icon = 'singulostation/icons/turf/areas.dmi'
 	icon_state = "asteroidmining"
 	requires_power = TRUE
