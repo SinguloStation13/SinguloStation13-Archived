@@ -54,6 +54,10 @@ map packedstation
 	votable
 endmap
 
+map cryostation
+	voteable
+endmap
+
 map runtimestation
 endmap
 
