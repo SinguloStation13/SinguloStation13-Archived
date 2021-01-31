@@ -585,6 +585,7 @@
 	suffix = "packed"
 	name = "mining shuttle (Packedstation)"
 //Wasp End
+
 /datum/map_template/shuttle/aux_base/default
 	suffix = "default"
 	name = "auxilliary base (Default)"

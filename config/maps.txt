@@ -18,6 +18,10 @@ map constructionstation
 	votable
 endmap
 
+map cryostation
+	voteable
+endmap
+
 map runtimestation
 endmap
 
