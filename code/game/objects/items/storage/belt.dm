@@ -65,7 +65,7 @@
 		/obj/item/pipe_dispenser,
 		/obj/item/inducer,
 		/obj/item/plunger,
-		/obj/item/clothing/glasses/welding, //wasp edit: ok mald sure I'll add the welding stuff to the. ok. 
+		/obj/item/clothing/glasses/welding, //wasp edit: ok mald sure I'll add the welding stuff to the. ok.
 		/obj/item/clothing/mask/gas/welding,
 		/obj/item/clothing/head/welding //wasp end
 		))
@@ -83,7 +83,7 @@
 	new /obj/item/multitool(src)
 	new /obj/item/stack/cable_coil(src,MAXCOIL,pick("red","yellow","orange"))
 	new /obj/item/extinguisher/mini(src)
-	new /obj/item/analyzer(src)
+	new /obj/item/analyzer/ranged(src)
 	//much roomier now that we've managed to remove two tools
 
 /obj/item/storage/belt/utility/full/PopulateContents()
