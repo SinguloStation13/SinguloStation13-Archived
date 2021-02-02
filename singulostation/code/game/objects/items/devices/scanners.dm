@@ -10,7 +10,7 @@
 	if(target.tool_act(user, src, tool_behaviour))
 		return
 
-	//basically the normal analyzer code
+	//basically the normal analyzer code now
 	var/datum/gas_mixture/environment = location.return_air()
 
 	var/pressure = environment.return_pressure()
