@@ -1,3 +1,4 @@
+//fuc i hate whitesands
 /obj/item/analyzer/ranged
 	desc = "A hand-held scanner which uses advanced spectroscopy and infrared readings to analyze gases as a distance. Alt-Click to use the built in barometer function."
 	name = "long-range analyzer"
@@ -10,7 +11,7 @@
 	if(target.tool_act(user, src, tool_behaviour))
 		return
 
-	//basically the normal analyzer code now
+	//basically the normal analyzer code
 	var/datum/gas_mixture/environment = location.return_air()
 
 	var/pressure = environment.return_pressure()
