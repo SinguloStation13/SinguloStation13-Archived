@@ -248,16 +248,16 @@
 	icon_plating = "plating_rust";
 	icon_state = "plating_rust"
 	},
-/area/asteroid/mining/cavegen)
+/area/asteroid/mining)
 "dc" = (
 /turf/open/floor/plating/airless{
 	icon_plating = "plating_rust";
 	icon_state = "plating_rust"
 	},
-/area/asteroid/mining/cavegen)
+/area/asteroid/mining)
 "de" = (
 /turf/closed/wall/rust,
-/area/asteroid/mining/cavegen)
+/area/asteroid/mining)
 "df" = (
 /obj/structure/closet/crate/secure/science,
 /obj/item/slime_extract/grey,
@@ -268,7 +268,7 @@
 	icon_plating = "plating_rust";
 	icon_state = "plating_rust"
 	},
-/area/asteroid/mining/cavegen)
+/area/asteroid/mining)
 "dJ" = (
 /obj/machinery/power/apc/auto_name/north,
 /obj/structure/cable{
@@ -1873,7 +1873,7 @@
 	icon_plating = "plating_rust";
 	icon_state = "plating_rust"
 	},
-/area/asteroid/mining/cavegen)
+/area/asteroid/mining)
 "Ng" = (
 /turf/closed/wall,
 /area/science/research)
@@ -54855,10 +54855,10 @@ ZX
 ZX
 ZX
 ZX
-ZX
-ZX
-ZX
-ZX
+Yd
+Yd
+Yd
+Yd
 ZX
 ZX
 ZX
@@ -55114,9 +55114,9 @@ ZX
 ZX
 de
 de
-ZX
-ZX
-ZX
+Yd
+Yd
+Yd
 ZX
 ZX
 ZX
@@ -55372,9 +55372,9 @@ cT
 dc
 dc
 Nf
-ZX
-ZX
-ZX
+Yd
+Yd
+Yd
 ZX
 ZX
 ZX
@@ -55630,9 +55630,9 @@ dc
 dc
 dc
 de
-ZX
-ZX
-ZX
+Yd
+Yd
+Yd
 ZX
 ZX
 ZX
@@ -55881,15 +55881,15 @@ ZX
 ZX
 ZX
 ZX
-ZX
-ZX
+Yd
+Yd
 Nf
 dc
 df
 Nf
-ZX
-ZX
-ZX
+Yd
+Yd
+Yd
 ZX
 ZX
 ZX
@@ -56138,15 +56138,15 @@ ZX
 ZX
 ZX
 ZX
-ZX
-ZX
-ZX
-ZX
+Yd
+Yd
+Yd
+Yd
 dc
 dc
 de
-ZX
-ZX
+Yd
+Yd
 ZX
 ZX
 ZX
@@ -56396,14 +56396,14 @@ ZX
 ZX
 ZX
 ZX
-ZX
-ZX
-ZX
+Yd
+Yd
+Yd
 de
 de
-ZX
-ZX
-ZX
+Yd
+Yd
+Yd
 ZX
 ZX
 ZX
@@ -56654,12 +56654,12 @@ ZX
 ZX
 ZX
 ZX
-ZX
-ZX
-ZX
-ZX
-ZX
-ZX
+Yd
+Yd
+Yd
+Yd
+Yd
+Yd
 ZX
 ZX
 ZX
