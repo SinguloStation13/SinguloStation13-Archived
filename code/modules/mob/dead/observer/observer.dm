@@ -62,8 +62,12 @@ GLOBAL_VAR_INIT(observer_default_invisibility, INVISIBILITY_OBSERVER)
 	var/datum/orbit_menu/orbit_menu
 	var/datum/spawners_menu/spawners_menu
 
+
 /mob/dead/observer/Initialize()
 	set_invisibility(GLOB.observer_default_invisibility)
+
+	. = ..()
+
 
 	add_verb(src, list(
 		/mob/dead/observer/proc/dead_tele,
@@ -148,6 +152,7 @@ GLOBAL_VAR_INIT(observer_default_invisibility, INVISIBILITY_OBSERVER)
 	grant_all_languages()
 	show_data_huds()
 	data_huds_on = 1
+	COOLDOWN_START(src, respawn_cooldown_timer, respawn_cooldown_count)
 
 
 /mob/dead/observer/get_photo_description(obj/item/camera/camera)
@@ -159,6 +164,55 @@ GLOBAL_VAR_INIT(observer_default_invisibility, INVISIBILITY_OBSERVER)
 	color = "#960000"
 	animate(src, color = old_color, time = 10, flags = ANIMATION_PARALLEL)
 	addtimer(CALLBACK(src, /atom/proc/update_atom_colour), 10)
+
+
+/*  This tidbit of code allows you to respawn as a ghost!
+	It's probably pretty volatile, so...
+	Careful!
+*/
+
+/mob/
+	COOLDOWN_DECLARE(respawn_cooldown_timer) //respawn stuff, don't mind me!
+	var/respawn_cooldown_count = 90 MINUTES
+
+/mob/dead/observer/verb/abandon_mob()
+	set name = "Respawn"
+	set category = "OOC"
+
+	var/respawn_timeleft_A
+	var/respawn_timeleft_B
+
+	if(COOLDOWN_TIMELEFT(src, respawn_cooldown_timer) >= 60 SECONDS)
+		respawn_timeleft_A = (COOLDOWN_TIMELEFT(src, respawn_cooldown_timer) / 10)
+		respawn_timeleft_B = (respawn_timeleft_A / 60)
+
+	if(!COOLDOWN_FINISHED(src, respawn_cooldown_timer))
+		to_chat(usr, "<span class='warning'>You can respawn in [respawn_timeleft_B] [COOLDOWN_TIMELEFT(src, respawn_cooldown_timer) >= 60 SECONDS ? "minutes" : "seconds"]!")
+		return
+
+	else
+		log_game("[key_name(usr)] used abandon mob.")
+
+		to_chat(usr, "<span class='boldnotice'>Please roleplay correctly!</span>")
+
+		if(!client)
+			log_game("[key_name(usr)] AM failed due to disconnect.")
+			return
+		client.screen.Cut()
+		client.screen += client.void
+		if(!client)
+			log_game("[key_name(usr)] AM failed due to disconnect.")
+			return
+
+		var/mob/dead/new_player/M = new /mob/dead/new_player()
+		if(!client)
+			log_game("[key_name(usr)] AM failed due to disconnect.")
+			qdel(M)
+			return
+
+		M.key = key
+		//	M.Login()	//wat
+		return
 
 /mob/dead/observer/Destroy()
 	// Update our old body's medhud since we're abandoning it
