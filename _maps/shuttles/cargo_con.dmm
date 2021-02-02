@@ -215,15 +215,11 @@
 /turf/open/floor/mineral/titanium,
 /area/shuttle/supply)
 "t" = (
-/obj/machinery/conveyor{
-	dir = 8;
-	id = "QMLoad"
-	},
-/obj/machinery/door/poddoor{
-	id = "QMLoaddoor";
-	name = "supply dock loading door"
-	},
 /obj/structure/fans/tiny,
+/obj/machinery/door/poddoor{
+	id = "Supply_Out_Poddoor";
+	name = "Supply Dock Loading Door"
+	},
 /turf/open/floor/plating,
 /area/shuttle/supply)
 "u" = (
@@ -394,15 +390,11 @@
 /turf/open/floor/plating,
 /area/shuttle/supply)
 "P" = (
-/obj/machinery/conveyor{
-	dir = 4;
-	id = "QMLoad2"
-	},
-/obj/machinery/door/poddoor{
-	id = "QMLoaddoor2";
-	name = "supply dock loading door"
-	},
 /obj/structure/fans/tiny,
+/obj/machinery/door/poddoor{
+	id = "Supply_In_Poddoor";
+	name = "Supply Dock Loading Door"
+	},
 /turf/open/floor/plating,
 /area/shuttle/supply)
 "Q" = (
