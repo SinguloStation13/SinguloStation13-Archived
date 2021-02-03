@@ -54,3 +54,15 @@
 			var/gas_concentration = environment.get_moles(id)/total_moles
 			to_chat(user, "<span class='alert'>[GLOB.meta_gas_info[id][META_GAS_NAME]]: [round(gas_concentration*100, 0.01)] % ([round(environment.get_moles(id), 0.01)] mol)</span>")
 		to_chat(user, "<span class='info'>Temperature: [round(environment.return_temperature()-T0C, 0.01)] &deg;C ([round(environment.return_temperature(), 0.01)] K)</span>")
+
+/proc/los_check(mob/user, atom/target)
+    //Checks for obstacles from A to B
+    var/obj/dummy = new(A.loc)
+    dummy.pass_flags |= PASSTABLE
+    for(var/turf/turf in getline(user,target))
+        for(var/atom/movable/AM in turf)
+            if(!AM.CanPass(dummy,turf,1))
+                qdel(dummy)
+                return 0
+    qdel(dummy)
+    return 1
