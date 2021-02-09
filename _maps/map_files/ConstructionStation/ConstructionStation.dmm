@@ -303,6 +303,10 @@
 /obj/structure/window/reinforced/spawner/east,
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
+"lM" = (
+/obj/machinery/light,
+/turf/open/floor/plasteel,
+/area/science/research)
 "om" = (
 /turf/open/floor/plating/asteroid/airless,
 /area/asteroid/mining)
@@ -599,6 +603,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
+/obj/effect/landmark/latejoin,
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
 "sh" = (
@@ -623,6 +628,9 @@
 "sm" = (
 /obj/machinery/suit_storage_unit,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3,
+/obj/machinery/light/small{
+	dir = 1
+	},
 /turf/open/floor/plating,
 /area/engine/storage_shared)
 "sr" = (
@@ -1386,9 +1394,6 @@
 "Ha" = (
 /obj/machinery/airalarm{
 	pixel_y = 23
-	},
-/obj/machinery/light/small{
-	dir = 1
 	},
 /obj/machinery/power/port_gen/pacman{
 	anchored = 1
@@ -17835,7 +17840,7 @@ Sw
 UB
 QS
 WE
-QS
+Sw
 QS
 YW
 ZW
@@ -18860,7 +18865,7 @@ Ng
 OT
 QS
 UB
-QS
+lM
 Ng
 ce
 WT
