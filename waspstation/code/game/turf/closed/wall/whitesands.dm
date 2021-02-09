@@ -74,6 +74,7 @@
 
 /turf/closed/mineral/random/whitesands/high_chance
 	icon = 'waspstation/icons/turf/walls/whitesands/ws_walls.dmi'
+	icon_state = "rock_highchance"
 	smooth_icon = 'waspstation/icons/turf/walls/whitesands/ws_walls.dmi'
 	environment_type = WHITESANDS_WALL_ENV
 	turf_type = /turf/open/floor/plating/asteroid/whitesands

@@ -5,30 +5,6 @@
 "b" = (
 /turf/closed/mineral/random/snow/high_chance,
 /area/icemoon/underground/unexplored)
-"d" = (
-/obj/structure/ladder,
-/turf/open/floor/plating/asteroid/snow/icemoon,
-/area/icemoon/underground/explored)
-"e" = (
-/obj/structure/grille,
-/turf/open/floor/plating/asteroid/snow/icemoon,
-/area/icemoon/underground/explored)
-"h" = (
-/turf/closed/wall,
-/area/icemoon/underground/explored)
-"N" = (
-/obj/structure/grille/broken,
-/turf/open/floor/plating/asteroid/snow/icemoon,
-/area/icemoon/underground/explored)
-"O" = (
-/turf/open/floor/plating/asteroid/snow/icemoon,
-/area/icemoon/underground/explored)
-"T" = (
-/obj/item/flashlight/lantern{
-	on = 1
-	},
-/turf/open/floor/plating/asteroid/snow/icemoon,
-/area/icemoon/underground/explored)
 
 (1,1,1) = {"
 a
@@ -7248,7 +7224,7 @@ a
 a
 a
 a
-a
+b
 a
 a
 a
@@ -7537,7 +7513,7 @@ a
 a
 a
 a
-a
+b
 a
 a
 a
@@ -16441,11 +16417,11 @@ a
 a
 a
 a
-h
-e
-O
-e
-h
+a
+a
+a
+a
+a
 a
 a
 a
@@ -16698,11 +16674,11 @@ a
 a
 a
 a
-e
-O
-O
-O
-e
+a
+a
+a
+a
+a
 a
 a
 a
@@ -16955,11 +16931,11 @@ a
 a
 a
 a
-O
-O
-d
-O
-O
+a
+a
+a
+a
+a
 a
 a
 a
@@ -17212,11 +17188,11 @@ a
 a
 a
 a
-e
-T
-O
-O
-e
+a
+a
+a
+a
+a
 a
 a
 a
@@ -17469,11 +17445,11 @@ a
 a
 a
 a
-h
-N
-O
-e
-h
+a
+a
+a
+a
+a
 a
 a
 a
@@ -26115,7 +26091,7 @@ a
 a
 a
 a
-a
+b
 a
 a
 a
@@ -36424,7 +36400,7 @@ a
 a
 a
 a
-a
+b
 a
 a
 a
@@ -47208,7 +47184,7 @@ a
 a
 a
 a
-a
+b
 a
 a
 a
