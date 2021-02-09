@@ -305,11 +305,11 @@
 /area/quartermaster/storage)
 "om" = (
 /turf/open/floor/plating/asteroid/airless,
-/area/space/nearstation)
+/area/asteroid/mining)
 "oM" = (
 /obj/item/pickaxe/mini,
 /turf/open/floor/plating/asteroid/airless,
-/area/space/nearstation)
+/area/asteroid/mining)
 "oO" = (
 /obj/machinery/firealarm{
 	pixel_y = 24
@@ -327,14 +327,14 @@
 	},
 /obj/effect/decal/remains/human,
 /turf/open/floor/plating/asteroid/airless,
-/area/space/nearstation)
+/area/asteroid/mining)
 "pd" = (
 /obj/item/tank/internals/emergency_oxygen{
 	pixel_x = -7;
 	pixel_y = -4
 	},
 /turf/open/floor/plating/asteroid/airless,
-/area/space/nearstation)
+/area/asteroid/mining)
 "pf" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/cable{
@@ -351,11 +351,11 @@
 	pixel_y = 9
 	},
 /turf/open/floor/plating/asteroid/airless,
-/area/space/nearstation)
+/area/asteroid/mining)
 "pj" = (
 /mob/living/simple_animal/hostile/asteroid/hivelord,
 /turf/open/floor/plating/asteroid/airless,
-/area/space/nearstation)
+/area/asteroid/mining)
 "pk" = (
 /obj/machinery/power/solar,
 /obj/structure/cable{
