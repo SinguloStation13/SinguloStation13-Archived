@@ -207,7 +207,11 @@ VOTE_AUTOTRANSFER_INTERVAL 18000
 # DEFAULT_NO_VOTE
 
 ## disable abandon mob
-NORESPAWN
+## NORESPAWN
+## Commented out due to replacement, kept in for future shitcoding
+
+## lets malt change cooldown time on respawn. This took too long to make.
+# RESPAWNCOOLDOWN
 
 ## disables calling del(src) on newmobs if they logout before spawnin in
 # DONT_DEL_NEWMOB

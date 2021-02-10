@@ -75,6 +75,11 @@
 	integer = FALSE
 	min_val = 1
 
+/datum/config_entry/number/respawncooldown
+	config_entry_value = 90
+	integer = TRUE
+	min_val = 1
+
 /datum/config_entry/number/brother_scaling_coeff	//how many players per brother team
 	config_entry_value = 25
 	integer = FALSE
