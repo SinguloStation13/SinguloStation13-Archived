@@ -44,8 +44,8 @@
 	qdel(src)
 
 /mob/living/proc/dust_animation()
-	var/icon/I = icon
-	if(I.Width() > 32 || I.Height() > 32 )
+	var/icon/I = new(icon)
+	if(I.Width() > 32 || I.Height() > 32)
 		return 0;
 	var/obj/effect/displacement/D = new /obj/effect/displacement/dust/(loc, src)
 	return D.duration
