@@ -44,7 +44,11 @@
 	qdel(src)
 
 /mob/living/proc/dust_animation()
-	return
+	var/icon/I = icon
+	if(I.Width() > 32 || I.Height() > 32 )
+		return 0;
+	var/obj/effect/displacement/D = new /obj/effect/displacement/dust/(loc, src)
+	return D.duration
 
 /mob/living/proc/spawn_dust(just_ash = FALSE)
 	new /obj/effect/decal/cleanable/ash(loc)
