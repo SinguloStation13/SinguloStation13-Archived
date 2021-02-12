@@ -39,11 +39,7 @@
 	spawn_dust(just_ash)
 	addtimer(CALLBACK(src, .proc/after_dust), dust_time) // Singulo edit - Dust animation
 
-/mob/living/proc/after_dust() // Singulo edit - Dust animation
-	death(TRUE)
-	qdel(src)
-
-/mob/living/proc/dust_animation()
+/mob/living/proc/dust_animation() //Singulo edit - Dust animation
 	var/icon/I = new(icon)
 	if(I.Width() > 32 || I.Height() > 32)
 		return 0;
