@@ -3199,6 +3199,7 @@
 #include "singulostation\code\datums\mapgen\Asteroidgens\AsteroidGenerator.dm"
 #include "singulostation\code\game\area\Space_Station_13_areas.dm"
 #include "singulostation\code\game\area\areas\asteroid.dm"
+#include "singulostation\code\game\objects\effects\displacement.dm"
 #include "waspstation\code\__DEFINES\DCM.dm"
 #include "waspstation\code\__DEFINES\DNA.dm"
 #include "waspstation\code\__DEFINES\keybinding.dm"

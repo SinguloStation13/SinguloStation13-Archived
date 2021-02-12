@@ -27,7 +27,7 @@
 	return
 
 /mob/living/dust(just_ash, drop_items, force)
-	death(TRUE)
+	Stun(100, ignore_canstun=TRUE) // Singulo edit - Dust animation
 
 	if(drop_items)
 		unequip_everything()
@@ -35,9 +35,13 @@
 	if(buckled)
 		buckled.unbuckle_mob(src, force = TRUE)
 
-	dust_animation()
+	var/dust_time = dust_animation() // Singulo edit - Dust animation
 	spawn_dust(just_ash)
-	QDEL_IN(src,5) // since this is sometimes called in the middle of movement, allow half a second for movement to finish, ghosting to happen and animation to play. Looks much nicer and doesn't cause multiple runtimes.
+	addtimer(CALLBACK(src, .proc/after_dust), dust_time) // Singulo edit - Dust animation
+
+/mob/living/proc/after_dust() // Singulo edit - Dust animation
+	death(TRUE)
+	qdel(src)
 
 /mob/living/proc/dust_animation()
 	return
