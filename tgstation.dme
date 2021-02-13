@@ -3323,7 +3323,6 @@
 #include "waspstation\code\modules\atmospherics\gasmixtures\immutable_mixtures.dm"
 #include "waspstation\code\modules\atmospherics\machinery\components\binary_devices\relief_valve.dm"
 #include "waspstation\code\modules\atmospherics\machinery\components\unary_devices\relief_valve.dm"
-#include "waspstation\code\modules\atmospherics\machinery\portable\canister.dm"
 #include "waspstation\code\modules\awaymissions\corpse.dm"
 #include "waspstation\code\modules\awaymissions\mission_code\speedway.dm"
 #include "waspstation\code\modules\buildmode\submodes\map_export.dm"

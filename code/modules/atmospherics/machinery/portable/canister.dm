@@ -3,6 +3,7 @@
 /obj/machinery/portable_atmospherics/canister
 	name = "canister"
 	desc = "A canister for the storage of gas."
+	icon = 'icons/obj/atmos.dmi' //SinguloStation13 Edit (Revert to old canister sprites)
 	icon_state = "yellow"
 	density = TRUE
 	base_icon_state = "yellow" //Used to make dealing with breaking the canister less hellish.
@@ -239,8 +240,7 @@
 		. += "can-open"
 	if(connected_port)
 		. += "can-connector"
-	/* WaspStation Edit - Use our overlays
-	var/pressure = air_contents.return_pressure()
+	var/pressure = air_contents.return_pressure() //SinguloStation13 Edit (Revert WaspStation Canister Sprites)
 	if(pressure >= 40 * ONE_ATMOSPHERE)
 		. += "can-o3"
 	else if(pressure >= 10 * ONE_ATMOSPHERE)
@@ -249,7 +249,6 @@
 		. += "can-o1"
 	else if(pressure >= 10)
 		. += "can-o0"
-	WaspStation End */
 
 
 /obj/machinery/portable_atmospherics/canister/temperature_expose(datum/gas_mixture/air, exposed_temperature, exposed_volume)
