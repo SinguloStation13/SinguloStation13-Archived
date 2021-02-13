@@ -141,10 +141,6 @@
 	},
 /turf/open/floor/mineral/titanium/yellow,
 /area/shuttle/supply)
-"k" = (
-/obj/machinery/computer/security,
-/turf/open/floor/mineral/titanium/blue,
-/area/shuttle/supply)
 "l" = (
 /obj/effect/turf_decal/tile/blue,
 /obj/effect/turf_decal/tile/blue{
@@ -259,9 +255,6 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 10
 	},
-/obj/machinery/camera{
-	dir = 5
-	},
 /turf/open/floor/mineral/titanium,
 /area/shuttle/supply)
 "x" = (
@@ -300,9 +293,6 @@
 /area/shuttle/supply)
 "E" = (
 /obj/structure/chair/comfy/shuttle{
-	dir = 1
-	},
-/obj/machinery/camera{
 	dir = 1
 	},
 /turf/open/floor/mineral/titanium/blue,
@@ -507,7 +497,7 @@ p
 "}
 (3,1,1) = {"
 O
-k
+R
 F
 B
 v

@@ -275,6 +275,15 @@
 	},
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
+"eU" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/obj/machinery/airalarm/directional/west,
+/turf/open/floor/plasteel,
+/area/construction/storage_wing)
 "gv" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1{
 	dir = 4
@@ -607,7 +616,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/obj/effect/landmark/latejoin,
+/obj/effect/landmark/observer_start,
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
 "sh" = (
@@ -630,11 +639,11 @@
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
 "sm" = (
-/obj/machinery/suit_storage_unit,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3,
 /obj/machinery/light/small{
 	dir = 1
 	},
+/obj/machinery/suit_storage_unit/standard_unit,
 /turf/open/floor/plating,
 /area/engine/storage_shared)
 "sr" = (
@@ -674,6 +683,9 @@
 	pixel_y = 4
 	},
 /obj/machinery/power/apc/auto_name/west,
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
 "tn" = (
@@ -944,7 +956,7 @@
 "zs" = (
 /obj/docking_port/stationary{
 	dir = 4;
-	dwidth = 4;
+	dwidth = 5;
 	height = 7;
 	id = "supply_home";
 	name = "Cargo Bay";
@@ -1340,21 +1352,21 @@
 /turf/open/space/basic,
 /area/space/nearstation)
 "Fg" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
-	dir = 1
-	},
 /obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/structure/cable{
-	icon_state = "2-4"
+	icon_state = "4-8"
 	},
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
 "Fs" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /obj/structure/cable{
-	icon_state = "0-8"
+	icon_state = "1-2"
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
 	},
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
@@ -1397,7 +1409,7 @@
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
 "GQ" = (
-/obj/machinery/suit_storage_unit,
+/obj/machinery/suit_storage_unit/standard_unit,
 /turf/open/floor/plating,
 /area/engine/storage_shared)
 "Ha" = (
@@ -1485,7 +1497,6 @@
 /obj/structure/cable{
 	icon_state = "1-4"
 	},
-/obj/effect/landmark/event_spawn,
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1,
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3,
 /obj/structure/cable{
@@ -1513,6 +1524,7 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
+/obj/effect/landmark/event_spawn,
 /turf/open/floor/plasteel,
 /area/construction/storage_wing)
 "Ia" = (
@@ -2089,7 +2101,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 8
 	},
-/obj/structure/closet/crate/solarpanel_small,
+/obj/machinery/portable_atmospherics/canister/nitrogen,
 /turf/open/floor/plating,
 /area/science/research)
 "TR" = (
@@ -16552,7 +16564,7 @@ xI
 zy
 Bl
 Dg
-EB
+eU
 EB
 HS
 Ko
@@ -18086,7 +18098,7 @@ ZW
 qF
 sa
 aL
-sa
+Fg
 sa
 sa
 sa
@@ -18343,7 +18355,7 @@ po
 qt
 wO
 sg
-wO
+Fs
 wO
 wO
 wO
@@ -18351,7 +18363,7 @@ Dj
 GO
 BB
 Dj
-Fg
+GO
 GO
 Ij
 KM
@@ -18608,7 +18620,7 @@ CN
 Aa
 BC
 CN
-Fs
+sa
 sa
 Ih
 KQ
