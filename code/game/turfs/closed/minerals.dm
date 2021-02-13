@@ -260,8 +260,8 @@
 		/turf/closed/mineral/gibtonite/ice/icemoon = 8, /obj/item/stack/ore/bluespace_crystal = 2)
 
 /turf/closed/mineral/random/snow/high_chance
-	icon = 'singulostation/icons/turf/walls/mountain_wall.dmi' //SinguloStation13 edit (more visible map texture)
-	icon_state = "mountainrock_highchance" //SinguloStation13 edit
+	icon = 'singulostation/icons/turf/mining.dmi' //SinguloStation13 Edit (Better mapping area visibility)
+	icon_state = "mountainrock_highchance" //SinguloStation13 Edit
 	mineralSpawnChanceList = list(
 		/obj/item/stack/ore/uranium = 35, /obj/item/stack/ore/diamond  = 30, /obj/item/stack/ore/gold = 45, /obj/item/stack/ore/titanium = 45,
 		/obj/item/stack/ore/silver = 50, /obj/item/stack/ore/plasma = 50, /obj/item/stack/ore/bluespace_crystal = 20)
