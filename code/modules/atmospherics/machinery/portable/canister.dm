@@ -3,7 +3,7 @@
 /obj/machinery/portable_atmospherics/canister
 	name = "canister"
 	desc = "A canister for the storage of gas."
-	icon = 'icons/obj/atmos.dmi' //SinguloStation13 Edit (Revert to old canister sprites)
+	icon = 'icons/obj/atmos.dmi' //SinguloStation13 Edit (Revert WaspStation Canister Sprites)
 	icon_state = "yellow"
 	density = TRUE
 	base_icon_state = "yellow" //Used to make dealing with breaking the canister less hellish.
