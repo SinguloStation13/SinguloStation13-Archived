@@ -30,7 +30,14 @@
 			adjust_nutrition(-(HUNGER_FACTOR/10))
 			if(m_intent == MOVE_INTENT_RUN)
 				adjust_nutrition(-(HUNGER_FACTOR/10))
-
+		if(body_position == STANDING_UP) //singulo start - Tripping
+			var/trip_chance
+			var/turf/T = get_turf(NewLoc)
+			for(var/obj/item/I in T.contents)
+				trip_chance += I.w_class/4
+			if(prob(20*log(trip_chance+0.5)))
+				Knockdown(3 SECONDS)
+				to_chat(src, "<span class='warning'>You trip over all the items on the ground.</span>") //singulo end - Tripping
 
 /mob/living/carbon/set_usable_legs(new_value)
 	. = ..()
