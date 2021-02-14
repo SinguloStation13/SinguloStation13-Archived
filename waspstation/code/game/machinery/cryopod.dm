@@ -14,7 +14,7 @@ GLOBAL_LIST_EMPTY(cryopod_computers)
 	desc = "An interface between crew and the cryogenic storage oversight systems."
 	icon = 'icons/obj/Cryogenic2.dmi'
 	icon_state = "cellconsole_1"
-	// circuit = /obj/item/circuitboard/cryopodcontrol
+	circuit = /obj/item/circuitboard/cryopodcontrol
 	density = FALSE
 	interaction_flags_machine = INTERACT_MACHINE_OFFLINE
 	req_one_access = list(ACCESS_HEADS, ACCESS_ARMORY) //Heads of staff or the warden can go here to claim recover items from their department that people went were cryodormed with.
@@ -127,12 +127,11 @@ GLOBAL_LIST_EMPTY(cryopod_computers)
 
 	updateUsrDialog()
 	return
-/* Should more cryos be buildable?
-    /obj/item/circuitboard/cryopodcontrol
+
+/obj/item/circuitboard/cryopodcontrol
 	name = "Circuit board (Cryogenic Oversight Console)"
-	build_path = "/obj/machinery/computer/cryopod"
-	origin_tech = "programming=1"
-*/
+	build_path = /obj/machinery/computer/cryopod
+
 //Cryopods themselves.
 /obj/machinery/cryopod
 	name = "cryogenic freezer"
