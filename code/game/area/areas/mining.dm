@@ -246,7 +246,8 @@
 
 /area/whitesands/surface
 	name = "Whitesands"
-	icon_state = "explored"
+	icon = 'singulostation/icons/turf/areas.dmi' //SinguloStation 13 Edit (Better mapping area visibility)
+	icon_state = "mining_surface" //SinguloStation 13 Edit
 	always_unpowered = TRUE
 	poweralm = FALSE
 	power_environ = FALSE
@@ -260,13 +261,16 @@
 
 /area/whitesands/surface/outdoors // weather happens here
 	name = "Whitesands Dunes"
+	icon_state = "mining_outdoors" //SinguloStation 13 Edit
 	outdoors = TRUE
 
 /area/whitesands/surface/outdoors/explored
+	icon = 'icons/turf/areas.dmi' //SinguloStation 13 Edit
 	icon_state = "explored"
 	area_flags = VALID_TERRITORY | UNIQUE_AREA | FLORA_ALLOWED | MOB_SPAWN_ALLOWED
 
 /area/whitesands/surface/outdoors/unexplored //monsters and ruins spawn here
+	icon = 'icons/turf/areas.dmi' //SinguloStation 13 Edit
 	icon_state = "unexplored"
 	area_flags = VALID_TERRITORY | UNIQUE_AREA | CAVES_ALLOWED | FLORA_ALLOWED | MOB_SPAWN_ALLOWED
 
