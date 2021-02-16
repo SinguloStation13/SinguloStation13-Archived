@@ -310,7 +310,7 @@
 			close()
 
 /obj/machinery/door/firedoor/border_only
-	icon = 'icons/obj/doors/edge_Doorfire.dmi'
+	icon = 'singulostation/icons/obj/doors/edge_Doorfire.dmi' //Singulo edit - Firedoor fixes
 	can_crush = FALSE
 	flags_1 = ON_BORDER_1
 	CanAtmosPass = ATMOS_PASS_PROC
@@ -404,7 +404,7 @@
 
 /obj/machinery/door/firedoor/window
 	name = "firelock window shutter"
-	icon = 'icons/obj/doors/doorfirewindow.dmi'
+	icon = 'singulostation/icons/obj/doors/doorfirewindow.dmi' //Singulo edit - Firedoor fixes
 	desc = "A second window that slides in when the original window is broken, designed to protect against hull breaches. Truly a work of genius by NT engineers."
 	glass = TRUE
 	explosion_block = 0
@@ -427,16 +427,17 @@
 	anchored = FALSE
 	density = TRUE
 	var/constructionStep = CONSTRUCTION_NOCIRCUIT
-	var/reinforced = 0
-	var/firelock_type
+	//var/reinforced = 0 //Singulo edit - Firelock fixes
+	var/firelock_type = /obj/machinery/door/firedoor
 
 /obj/structure/firelock_frame/examine(mob/user)
 	. = ..()
 	switch(constructionStep)
 		if(CONSTRUCTION_PANEL_OPEN)
 			. += "<span class='notice'>It is <i>unbolted</i> from the floor. A small <b>loosely connected</b> metal plate is covering the wires.</span>"
-			if(!reinforced)
+			if(type == /obj/structure/firelock_frame) //Singulo edit - Firelock fixes
 				. += "<span class='notice'>It could be reinforced with plasteel.</span>"
+				. += "<span class='notice'>It could have reinforced glass added to it.</span>" //Singulo edit - Firelock fixes
 		if(CONSTRUCTION_WIRES_EXPOSED)
 			. += "<span class='notice'>The maintenance plate has been <i>pried away</i>, and <b>wires</b> are trailing.</span>"
 		if(CONSTRUCTION_GUTTED)
@@ -480,18 +481,16 @@
 				user.visible_message("<span class='notice'>[user] finishes the firelock.</span>", \
 									 "<span class='notice'>You finish the firelock.</span>")
 				playsound(get_turf(src), 'sound/items/deconstruct.ogg', 50, TRUE)
-				if(reinforced)
-					new /obj/machinery/door/firedoor/heavy(get_turf(src))
-				else
-					var/obj/machinery/door/firedoor/F = new firelock_type(get_turf(src))
+				var/obj/machinery/door/firedoor/F = new firelock_type(get_turf(src)) //Singulo edit - Firelock fixes
+				if(istype(F, /obj/machinery/door/firedoor/border_only)) //Singulo edit - Firelock fixes
 					F.dir = src.dir
 					F.update_icon()
 				qdel(src)
 				return
-			if(istype(C, /obj/item/stack/sheet/plasteel))
+			if(istype(C, /obj/item/stack/sheet/plasteel) && type != /obj/structure/firelock_frame/border) //Singulo edit - Firelock fixes
 				var/obj/item/stack/sheet/plasteel/P = C
-				if(reinforced)
-					to_chat(user, "<span class='warning'>[src] is already reinforced.</span>")
+				if(!(type == /obj/structure/firelock_frame)) //Singulo edit - Firelock fixes
+					to_chat(user, "<span class='warning'>[src] is already upgraded.</span>") //Singulo edit - Firelock fixes
 					return
 				if(P.get_amount() < 2)
 					to_chat(user, "<span class='warning'>You need more plasteel to reinforce [src].</span>")
@@ -500,13 +499,37 @@
 									 "<span class='notice'>You begin reinforcing [src]...</span>")
 				playsound(get_turf(src), 'sound/items/deconstruct.ogg', 50, TRUE)
 				if(do_after(user, 60, target = src))
-					if(constructionStep != CONSTRUCTION_PANEL_OPEN || reinforced || P.get_amount() < 2 || !P)
+					if(constructionStep != CONSTRUCTION_PANEL_OPEN || P.get_amount() < 2 || !P) //Singulo edit - Firelock fixes
 						return
 					user.visible_message("<span class='notice'>[user] reinforces [src].</span>", \
 										 "<span class='notice'>You reinforce [src].</span>")
 					playsound(get_turf(src), 'sound/items/deconstruct.ogg', 50, TRUE)
 					P.use(2)
-					reinforced = 1
+					var/obj/structure/firelock_frame/heavy/F = new /obj/structure/firelock_frame/heavy(src.loc) //Singulo start - Firelock fixes
+					F.constructionStep = constructionStep
+					qdel(src)
+				return
+			if(istype(C, /obj/item/stack/sheet/rglass) && type != /obj/structure/firelock_frame/border)
+				var/obj/item/stack/sheet/rglass/P = C
+				if(!(type == /obj/structure/firelock_frame))
+					to_chat(user, "<span class='warning'>[src] is already upgraded.</span>")
+					return
+				if(P.get_amount() < 2)
+					to_chat(user, "<span class='warning'>You need more reinforced glass to add glass to [src].</span>")
+					return
+				user.visible_message("<span class='notice'>[user] begins adding glass to [src]...</span>", \
+									 "<span class='notice'>You begin adding glass to [src]...</span>")
+				playsound(get_turf(src), 'sound/items/deconstruct.ogg', 50, TRUE)
+				if(do_after(user, 60, target = src))
+					if(constructionStep != CONSTRUCTION_PANEL_OPEN || P.get_amount() < 2 || !P)
+						return
+					user.visible_message("<span class='notice'>[user] adds glass to [src].</span>", \
+										 "<span class='notice'>You add glass to [src].</span>")
+					playsound(get_turf(src), 'sound/items/deconstruct.ogg', 50, TRUE)
+					P.use(2)
+					var/obj/structure/firelock_frame/window/F = new /obj/structure/firelock_frame/window(src.loc)
+					F.constructionStep = constructionStep
+					qdel(src)  //Singulo end - Firelock fixes
 				return
 
 		if(CONSTRUCTION_WIRES_EXPOSED)
@@ -584,8 +607,10 @@
 										 "<span class='notice'>You cut [src] into metal.</span>")
 					var/turf/T = get_turf(src)
 					new /obj/item/stack/sheet/metal(T, 3)
-					if(reinforced)
+					if(istype(src, /obj/structure/firelock_frame/heavy)) //Singulo edit - Firelock fixes
 						new /obj/item/stack/sheet/plasteel(T, 2)
+					if(istype(src, /obj/structure/firelock_frame/window)) //Singulo edit - Firelock fixes
+						new /obj/item/stack/sheet/rglass(T, 2) //Singulo edit - Firelock fixes
 					qdel(src)
 				return
 			if(istype(C, /obj/item/electronics/firelock))
@@ -637,13 +662,13 @@
 
 /obj/structure/firelock_frame/heavy
 	name = "heavy firelock frame"
-	reinforced = TRUE
+	firelock_type = /obj/machinery/door/firedoor/heavy //Singulo edit - Firelock fixes
 
 /obj/structure/firelock_frame/border
 	name = "firelock frame"
 	icon = 'icons/obj/doors/edge_Doorfire.dmi'
 	icon_state = "frame1"
-	firelock_type = /obj/machinery/door/firedoor/border_only/closed
+	firelock_type = /obj/machinery/door/firedoor/border_only //Singulo edit - Firelock fixes
 	flags_1 = ON_BORDER_1
 
 /obj/structure/firelock_frame/border/ComponentInitialize()
@@ -658,8 +683,9 @@
 
 /obj/structure/firelock_frame/window
 	name = "window firelock frame"
-	icon = 'icons/obj/doors/doorfirewindow.dmi'
+	icon = 'singulostation/icons/obj/doors/doorfirewindow.dmi' //Singulo edit - Firelock fixes
 	icon_state = "door_frame"
+	firelock_type = /obj/machinery/door/firedoor/window //Singulo edit - Firelock fixes
 
 /obj/structure/firelock_frame/window/update_icon()
 	return
