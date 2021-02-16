@@ -212,6 +212,12 @@
 /obj/machinery/door/airlock/command/glass{
 	name = "R&D Server Access"
 	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
 /turf/open/floor/plasteel,
 /area/science/research)
 "cD" = (
@@ -812,6 +818,10 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper,
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/obj/machinery/door/firedoor/border_only,
 /turf/open/floor/plating,
 /area/engine/gravity_generator)
 "wE" = (
@@ -1224,6 +1234,10 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 1
 	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/obj/machinery/door/firedoor/border_only,
 /turf/open/floor/plating,
 /area/engine/gravity_generator)
 "Dj" = (
@@ -1831,22 +1845,18 @@
 /turf/open/floor/plasteel,
 /area/construction/storage_wing)
 "MK" = (
-/obj/structure/closet/crate,
-/obj/item/clothing/suit/space/eva,
-/obj/item/clothing/suit/space/eva,
-/obj/item/clothing/suit/space/eva,
-/obj/item/clothing/suit/space/eva,
-/obj/item/clothing/suit/space/eva,
-/obj/item/clothing/head/helmet/space/eva,
-/obj/item/clothing/head/helmet/space/eva,
-/obj/item/clothing/head/helmet/space/eva,
-/obj/item/clothing/head/helmet/space/eva,
-/obj/item/clothing/head/helmet/space/eva,
-/obj/item/tank/internals/oxygen,
-/obj/item/tank/internals/oxygen,
-/obj/item/tank/internals/oxygen,
-/obj/item/tank/internals/oxygen,
-/obj/item/tank/internals/oxygen,
+/obj/structure/closet/crate{
+	name = "Valuables Crate"
+	},
+/obj/item/card/id/captains_spare,
+/obj/item/areaeditor/blueprints,
+/obj/item/card/id/departmental_budget/car,
+/obj/item/card/id/departmental_budget/civ,
+/obj/item/card/id/departmental_budget/eng,
+/obj/item/card/id/departmental_budget/med,
+/obj/item/card/id/departmental_budget/sci,
+/obj/item/card/id/departmental_budget/sec,
+/obj/item/card/id/departmental_budget/srv,
 /turf/open/floor/plasteel,
 /area/construction/storage_wing)
 "ML" = (
@@ -2264,6 +2274,12 @@
 	},
 /obj/machinery/door/airlock/command,
 /obj/effect/mapping_helpers/airlock/locked,
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
 /turf/open/floor/plasteel/dark,
 /area/science/research)
 "Yc" = (
