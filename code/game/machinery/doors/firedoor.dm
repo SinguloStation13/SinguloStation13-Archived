@@ -282,7 +282,10 @@
 	if(density || operating || welded)
 		return
 	if(world.time >= emergency_close_timer || !consider_timer)
-		close()
+		if(istype(src, /obj/machinery/door/firedoor/window))
+			close()
+		else
+			addtimer(CALLBACK(src, close()), 10)
 
 /obj/machinery/door/firedoor/deconstruct(disassembled = TRUE)
 	if(!(flags_1 & NODECONSTRUCT_1))
