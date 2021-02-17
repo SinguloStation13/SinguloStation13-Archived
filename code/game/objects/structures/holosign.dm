@@ -103,6 +103,7 @@
 /obj/structure/holosign/barrier/atmos/Initialize()
 	. = ..()
 	air_update_turf(TRUE)
+	timerid = QDEL_IN(src, duration) //Singulo edit - Nerfs holofirelocks, plastic flaps, and firedoors
 
 /obj/structure/holosign/barrier/cyborg
 	name = "Energy Field"
