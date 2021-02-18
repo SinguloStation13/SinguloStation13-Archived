@@ -104,6 +104,8 @@
 	to_chat(src, "<span class='danger'>Warning: Electromagnetic pulse detected.</span>")
 	if(. & EMP_PROTECT_SELF)
 		return
+	if(status_flags & GODMODE) // SinguloStation13 Edit (Cryogenic freezers change - EMP proof if Godmode is enabled)
+		return
 	switch(severity)
 		if(1)
 			src.take_bodypart_damage(20)

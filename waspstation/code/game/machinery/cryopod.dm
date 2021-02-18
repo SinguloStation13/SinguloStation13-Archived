@@ -1,11 +1,12 @@
 /*
+ * Moved to singulostation/code/game/machinery/cryopod.dm
  * Cryogenic refrigeration unit. Basically a despawner.
  * Stealing a lot of concepts/code from sleepers due to massive laziness.
  * The despawn tick will only fire if it's been more than time_till_despawned ticks
  * since time_entered, which is world.time when the occupant moves in.
  * ~ Zuhayr
  */
-GLOBAL_LIST_EMPTY(cryopod_computers)
+/*GLOBAL_LIST_EMPTY(cryopod_computers)
 
 //Main cryopod console.
 
@@ -458,3 +459,4 @@ GLOBAL_LIST_EMPTY(cryopod_computers)
 //Attacks/effects.
 /obj/machinery/cryopod/blob_act()
 	return //Sorta gamey, but we don't really want these to be destroyed.
+*/

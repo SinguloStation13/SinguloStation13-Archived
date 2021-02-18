@@ -1,0 +1,39 @@
+//For use in the cryogenic freezer. Makes you invincible while inside.
+/obj/screen/alert/status_effect/cryo_protection
+	name = "Cryogenetic freeze"
+	desc = "You are confined within the deep depths of the local cryogenetic storage. Nothing there will be able to hurt you. Press this to eject yourself from cryo storage"
+	icon = 'singulostation/icons/mob/screen_alert.dmi'
+	icon_state = "cryo_protection"
+
+/obj/screen/alert/status_effect/cryo_protection/Click()
+	if(isliving(usr))
+		if (istype(usr.loc, /obj/machinery/computer/cryopod))
+			var/obj/machinery/computer/cryopod/C = usr.loc
+			C.eject_from_storage(usr)
+
+/datum/status_effect/cryo_protection
+	id = "cryo_protection"
+	alert_type = /obj/screen/alert/status_effect/cryo_protection
+
+/datum/status_effect/cryo_protection/on_apply()
+	owner.PermaSleeping()
+	owner.status_flags |= GODMODE
+	owner.reagents.clear_reagents()
+	ADD_TRAIT(owner, TRAIT_PACIFISM, /datum/status_effect/cryo_protection)
+	to_chat(owner,"<span class='warning'>You feel yourself rapidly entering cryogenetic freeze. It seems that nothing will be able to harm you within.")
+	return ..()
+
+//Copy pasted effects from on_apply since i don't wanna do tick() in on_apply and risk some sub-shenanigens happening
+/datum/status_effect/cryo_protection/tick()
+	owner.PermaSleeping()
+	owner.status_flags |= GODMODE //In case any item/ status effects wearing off while in cryogenetic freeze causes GODMODE to disable.
+	owner.reagents.clear_reagents() //Don't want smoke grenades or other shit doing stuff on
+	return ..()
+
+/datum/status_effect/cryo_protection/on_remove()
+	owner.status_flags &= ~GODMODE
+	if (iscarbon(owner))
+		owner.SetSleeping(5 SECONDS)
+	REMOVE_TRAIT(owner, TRAIT_PACIFISM, /datum/status_effect/cryo_protection)
+	owner.visible_message("<span class='notice'>[owner] emerges from cryogenetic freeze, waking from his slumber.</span>",
+		"<span class='warning'>You emerge from your cryogenetic slumber. You no longer feel protected.</span>")
