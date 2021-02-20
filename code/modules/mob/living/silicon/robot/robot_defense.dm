@@ -316,8 +316,6 @@ GLOBAL_LIST_INIT(blacklisted_borg_hats, typecacheof(list( //Hats that don't real
 
 /mob/living/silicon/robot/emp_act(severity)
 	. = ..()
-	if(status_flags & GODMODE) // SinguloStation13 Edit (Cryogenic freezers change - EMP proof if Godmode is enabled)
-		return
 	if(. & EMP_PROTECT_SELF)
 		return
 	switch(severity)

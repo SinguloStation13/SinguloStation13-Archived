@@ -29,8 +29,6 @@
 
 /mob/living/silicon/ai/emp_act(severity)
 	. = ..()
-	if(status_flags & GODMODE) // SinguloStation13 Edit (Cryogenic freezers change - EMP proof if Godmode is enabled)
-		return
 	if(. & EMP_PROTECT_SELF)
 		return
 	disconnect_shell()
@@ -42,8 +40,6 @@
 				SSshuttle.requestEvac(src,"ALERT: Energy surge detected in AI core! Station integrity may be compromised! Initiati--%m091#ar-BZZT")
 
 /mob/living/silicon/ai/ex_act(severity, target)
-	if(status_flags & GODMODE) // SinguloStation13 Edit (Cryogenic freezers change - Explosion proof if Godmode is enabled)
-		return
 	switch(severity)
 		if(1)
 			gib()
