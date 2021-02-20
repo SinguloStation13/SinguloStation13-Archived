@@ -1416,6 +1416,7 @@
 /obj/structure/cable{
 	icon_state = "2-8"
 	},
+/obj/effect/landmark/latejoin,
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
 "Ft" = (

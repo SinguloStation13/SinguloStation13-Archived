@@ -1,7 +1,7 @@
 //For use in the cryogenic freezer. Makes you invincible while inside. See singulostation/code/game/machinery/cryopod.dm
 /obj/screen/alert/status_effect/cryo_protection
-	name = "Cryogenetic freeze"
-	desc = "You are confined within the deep depths of the local cryogenetic storage. Nothing there will be able to hurt you. Press this to eject yourself from cryo storage"
+	name = "Cryogenic freeze"
+	desc = "You are confined within the deep depths of the local cryogenic storage. Nothing there will be able to hurt you. Press this to eject yourself from cryogenic storage!"
 	icon = 'singulostation/icons/mob/screen_alert.dmi'
 	icon_state = "cryo_protection"
 

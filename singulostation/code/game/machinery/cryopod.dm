@@ -18,7 +18,7 @@ GLOBAL_LIST_EMPTY(cryopod_computers)
 	desc = "An interface for the cryogenic storage oversight systems."
 	icon = 'icons/obj/Cryogenic2.dmi'
 	icon_state = "cellconsole_1"
-	circuit = /obj/item/circuitboard/cryopodcontrol
+	circuit = /obj/item/circuitboard/computer/cryogenicpodcontrol
 	density = FALSE
 	interaction_flags_machine = INTERACT_MACHINE_ALLOW_SILICON | INTERACT_MACHINE_OPEN_SILICON | INTERACT_MACHINE_SET_MACHINE
 	resistance_flags = LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF
@@ -44,7 +44,7 @@ GLOBAL_LIST_EMPTY(cryopod_computers)
 	var/static/list/unhighlighted_items = list (
 
 	)
-/obj/item/circuitboard/cryopodcontrol
+/obj/item/circuitboard/computer/cryogenicpodcontrol
 	name = "Circuit board (Cryogenic Oversight Console)"
 	build_path = /obj/machinery/computer/cryopod
 
@@ -82,21 +82,25 @@ GLOBAL_LIST_EMPTY(cryopod_computers)
 			remove_from_record(L)
 
 	//TODO: make this cleaner
+	pixel_x = 0
+	pixel_y = 0
 	if(dir == NORTH)
-		pixel_y = 32
-	if(dir == SOUTH)
 		pixel_y = -32
+	if(dir == SOUTH)
+		pixel_y = 32
 	if(dir == EAST)
 		pixel_x = -32
 	if(dir == WEST)
 		pixel_x = 32
 
 /obj/machinery/computer/cryopod/update_icon_state()
+	icon = 'icons/obj/Cryogenic2.dmi'
 	if(machine_stat & (NOPOWER|BROKEN))
 		icon_state = "cellconsole"
 		return
 	if(highlighted_item_inside)
-		icon_state = "cellconsole_2"
+		icon = 'singulostation/icons/obj/Cryogenic2.dmi'
+		icon_state = "cryogenic_console_highlight"
 	else
 		icon_state = "cellconsole_1"
 
@@ -257,7 +261,7 @@ GLOBAL_LIST_EMPTY(cryopod_computers)
 	desc = "Suited for Cyborgs and Humanoids, the pod is a safe place for personnel affected by the Space Sleep Disorder to get some rest."
 	icon = 'icons/obj/cryogenic2.dmi'
 	icon_state = "cryopod-open"
-	circuit = /obj/item/circuitboard/machine/cryopod
+	circuit = /obj/item/circuitboard/machine/cryogenicpod
 	density = TRUE
 	resistance_flags = LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF
 	anchored = TRUE
@@ -274,7 +278,7 @@ GLOBAL_LIST_EMPTY(cryopod_computers)
 	var/obj/machinery/computer/cryopod/control_computer
 	var/last_no_computer_message = 0
 
-/obj/item/circuitboard/machine/cryopod
+/obj/item/circuitboard/machine/cryogenicpod
 	name = "Cryogenic freezer (Machine Board)"
 	icon_state = "engineering"
 	build_path = /obj/machinery/cryopod
@@ -291,10 +295,11 @@ GLOBAL_LIST_EMPTY(cryopod_computers)
 
 /obj/machinery/cryopod/LateInitialize()
 	update_icon()
-	check_control_computer()
+	check_control_computer(TRUE)
 
 /obj/machinery/cryopod/Destroy()
-	control_computer.cryopods -= src
+	if(check_control_computer(FALSE))
+		control_computer.cryopods -= src
 	. = ..()
 
 
@@ -311,10 +316,11 @@ GLOBAL_LIST_EMPTY(cryopod_computers)
 //Searches for a control computer and links it.
 //Checks whether the linked control computer is functional
 //Returns TRUE is the
-/obj/machinery/cryopod/proc/check_control_computer()
+/obj/machinery/cryopod/proc/check_control_computer(var/announce = FALSE)
 	if(control_computer) //we got a linked one
 		if(machine_stat & (NOPOWER|BROKEN)) //It's unusable right now.
-			say("Warning: Linked cryogenic console at ([control_computer.x] : [control_computer.y]) is unavailable! Cryogenic freezer inoperable!")
+			if(announce)
+				say("Warning: Linked cryogenic console at ([control_computer.x] : [control_computer.y]) is unavailable! Cryogenic freezer inoperable!")
 			return FALSE //We do not spontaniously relink the cryopods to a new console because of a power outage.
 		return TRUE
 	for(var/M in GLOB.cryopod_computers)
@@ -324,7 +330,8 @@ GLOBAL_LIST_EMPTY(cryopod_computers)
 				control_computer = C
 				control_computer.cryopods += src
 				return TRUE
-	say("Warning: Cannot find operable cryogenic console in this area! Cryogenic freezer inoperable!")
+	if(announce)
+		say("Warning: Cannot find operable cryogenic console in this area! Cryogenic freezer inoperable!")
 	control_computer = null
 	return FALSE
 
@@ -343,6 +350,8 @@ GLOBAL_LIST_EMPTY(cryopod_computers)
 
 /obj/machinery/cryopod/close_machine(mob/user, exiting = FALSE)
 	active = !exiting //If we exit, don't immediately try to put us into cryo thanks.
+	if(!check_control_computer(TRUE)) //Unusable control computer
+		return
 	if((isnull(user) || istype(user)) && state_open && !panel_open)
 		user.drop_all_held_items()
 		..(user)
@@ -354,12 +363,14 @@ GLOBAL_LIST_EMPTY(cryopod_computers)
 			return
 		var/mob/living/mob_occupant = occupant
 		if(mob_occupant && mob_occupant.stat != DEAD)
-			if(!check_control_computer()) //Unusable control computer
-				return
 			to_chat(occupant, "<span class='boldnotice'>You feel cool air surround you. You go numb as your senses turn inward.</span>")
 			say("Cryogenic storage in <b>[time_till_storage/10]</b> seconds.")
 			storage_world_time = world.time + time_till_storage
 			name = initial(name) + " ([mob_occupant.real_name])"
+			to_chat(mob_occupant, "<span class='boldnotice'>Your character will be put into cryo storage in a short amount of time. To get out of storage on your own, click the cryo status alert</span>")
+			log_admin("<span class='notice'>[key_name(mob_occupant)] entered a stasis pod.</span>")
+			message_admins("[key_name_admin(mob_occupant)] entered a stasis pod. (<A HREF='?_src_=holder;[HrefToken()];adminplayerobservecoodjump=1;X=[x];Y=[y];Z=[z]'>JMP</a>)")
+
 	icon_state = "cryopod"
 
 /obj/machinery/cryopod/open_machine()
@@ -395,7 +406,7 @@ GLOBAL_LIST_EMPTY(cryopod_computers)
 
 		if(mob_occupant.stat <= 2) //Occupant is living and has no client.
 
-			if(!check_control_computer())
+			if(!check_control_computer(TRUE))
 				storage_world_time = world.time + 30 SECONDS
 				return
 			//is_clean(mob_occupant, FALSE)
@@ -411,7 +422,7 @@ GLOBAL_LIST_EMPTY(cryopod_computers)
 			announce_rank = G.fields["rank"]
 
 	//Make an announcement and log the person entering storage.
-	if(check_control_computer())
+	if(check_control_computer(TRUE))
 		control_computer.add_to_record(mob_occupant)
 		mob_occupant.forceMove(control_computer)
 	else
@@ -477,11 +488,6 @@ GLOBAL_LIST_EMPTY(cryopod_computers)
 		to_chat(user, "<span class='boldnotice'>\The [src] is in use.</span>")
 		return
 	close_machine(target)
-
-	to_chat(target, "<span class='boldnotice'>Your character will be put into cryo storage in a short amount of time. To get out of storage on your own, click the cryo status alert</span>")
-	name = "[name] ([occupant.name])"
-	log_admin("<span class='notice'>[key_name(target)] entered a stasis pod.</span>")
-	message_admins("[key_name_admin(target)] entered a stasis pod. (<A HREF='?_src_=holder;[HrefToken()];adminplayerobservecoodjump=1;X=[x];Y=[y];Z=[z]'>JMP</a>)")
 	add_fingerprint(target)
 
 //Attacks/effects.
