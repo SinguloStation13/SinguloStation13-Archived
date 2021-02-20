@@ -89,7 +89,7 @@
 
 	else if(isliving(A)) // You Shall Not Pass!
 		var/mob/living/M = A
-		if(iscarbon(A)) //Singulo edit - nerfs holofans and plastic flaps
+		if(ishuman(A)) //Singulo edit - nerfs holofans and plastic flaps
 			. = FALSE //Singulo edit - nerfs holofans and plastic flaps
 		if(isbot(A)) //Bots understand the secrets
 			return TRUE
