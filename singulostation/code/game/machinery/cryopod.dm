@@ -363,13 +363,12 @@ GLOBAL_LIST_EMPTY(cryopod_computers)
 			return
 		var/mob/living/mob_occupant = occupant
 		if(mob_occupant && mob_occupant.stat != DEAD)
-			to_chat(occupant, "<span class='boldnotice'>You feel cool air surround you. You go numb as your senses turn inward.</span>")
 			say("Cryogenic storage in <b>[time_till_storage/10]</b> seconds.")
 			storage_world_time = world.time + time_till_storage
 			name = initial(name) + " ([mob_occupant.real_name])"
-			to_chat(mob_occupant, "<span class='boldnotice'>Your character will be put into cryo storage in a short amount of time. To get out of storage on your own, click the cryo status alert</span>")
-			log_admin("<span class='notice'>[key_name(mob_occupant)] entered a stasis pod.</span>")
-			message_admins("[key_name_admin(mob_occupant)] entered a stasis pod. (<A HREF='?_src_=holder;[HrefToken()];adminplayerobservecoodjump=1;X=[x];Y=[y];Z=[z]'>JMP</a>)")
+			to_chat(mob_occupant, "<span class='boldnotice'>You do not need to ghost!</span>")
+			to_chat(mob_occupant, "<span class='notice'>Your character will be put into cryo storage in a short amount of time.\nTo get out of storage on your own, click the cryo status alert!</span>")
+			to_chat(occupant, "<span class='notice'>You feel cool air surround you. You go numb as your senses turn inward.</span>")
 
 	icon_state = "cryopod"
 
@@ -434,6 +433,8 @@ GLOBAL_LIST_EMPTY(cryopod_computers)
 		visible_message("<span class='notice'>\The [src] hums and hisses as it moves [mob_occupant.real_name] into storage.</span>")
 
 	mob_occupant.apply_status_effect(STATUS_EFFECT_CRYOPROTECTION)// Gives them godmode
+	log_admin("<span class='notice'>[key_name(mob_occupant)] entered a stasis pod.</span>")
+	message_admins("[key_name_admin(mob_occupant)] entered a stasis pod. (<A HREF='?_src_=holder;[HrefToken()];adminplayerobservecoodjump=1;X=[x];Y=[y];Z=[z]'>JMP</a>)")
 	open_machine()
 
 /obj/machinery/cryopod/attack_hand(mob/living/user)
