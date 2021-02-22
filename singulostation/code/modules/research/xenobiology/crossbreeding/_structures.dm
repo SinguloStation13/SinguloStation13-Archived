@@ -6,7 +6,7 @@ GLOBAL_LIST_EMPTY(bluespace_slime_crystals)
 	max_integrity = 5
 	anchored = TRUE
 	density = TRUE
-	icon = 'icons/obj/slimecrossing.dmi'
+	icon = 'singulostation/icons/obj/slimecrossing.dmi'
 	icon_state = "slime_pylon"
 	resistance_flags = FIRE_PROOF | ACID_PROOF
 	///Assoc list of affected mobs, the key is the mob while the value of the map is the amount of ticks spent inside of the zone.
@@ -335,7 +335,7 @@ GLOBAL_LIST_EMPTY(bluespace_slime_crystals)
 	desc = "Translucent and irregular, it can duplicate matter on a whim"
 	anchored = TRUE
 	density = FALSE
-	icon = 'icons/obj/slimecrossing.dmi'
+	icon = 'singulostation/icons/obj/slimecrossing.dmi'
 	icon_state = "cerulean_crystal"
 	max_integrity = 5
 	var/stage = 0
@@ -458,8 +458,9 @@ GLOBAL_LIST_EMPTY(bluespace_slime_crystals)
 		return
 	var/mob/living/carbon/human/human_user = user
 	var/list/mutation_list = human_user.dna.mutations
-	stored_mutation = pick(mutation_list)
-	stored_mutation = stored_mutation.type
+	if(mutation_list.len)
+		stored_mutation = pick(mutation_list)
+		stored_mutation = stored_mutation.type
 
 /obj/structure/slime_crystal/green/on_mob_effect(mob/living/affected_mob)
 	if(!ishuman(affected_mob) || !stored_mutation || HAS_TRAIT(affected_mob,TRAIT_BADDNA))

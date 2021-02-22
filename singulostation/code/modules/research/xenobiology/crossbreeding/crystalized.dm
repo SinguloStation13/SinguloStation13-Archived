@@ -2,6 +2,7 @@
 	name = "crystalline extract"
 	desc = "It's crystalline,"
 	effect = "crystalline"
+	icon = 'singulostation/icons/obj/slimecrossing.dmi'
 	icon_state = "crystalline"
 	var/obj/structure/slime_crystal/crystal_type
 
@@ -15,7 +16,7 @@
 
 	var/user_turf = get_turf(user)
 
-	if(!do_after(user,15 SECONDS,FALSE,user_turf))
+	if(!do_after(user,15 SECONDS,FALSE,user_turf) || locate(/obj/structure/slime_crystal) in range(6,get_turf(user)))
 		return
 
 	new crystal_type(user_turf)

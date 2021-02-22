@@ -1,7 +1,7 @@
 /obj/item/cerulean_slime_crystal
 	name = "Cerulean slime poly-crystal"
 	desc = "Translucent and irregular, it can duplicate matter on a whim"
-	icon = 'icons/obj/slimecrossing.dmi'
+	icon = 'singulostation/icons/obj/slimecrossing.dmi'
 	icon_state = "cerulean_item_crystal"
 	var/amt = 0
 
