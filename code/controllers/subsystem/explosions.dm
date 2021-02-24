@@ -257,7 +257,8 @@ SUBSYSTEM_DEF(explosions)
 	//flash mobs
 	if(flash_range)
 		for(var/mob/living/L in viewers(flash_range, epicenter))
-			L.flash_act()
+			if(!(L.status_flags & GODMODE)) // SinguloStation13 Edit (Cryogenic freezers change - Explosion flash proof if godmode)
+				L.flash_act()
 
 	var/list/affected_turfs = GatherSpiralTurfs(max_range, epicenter)
 

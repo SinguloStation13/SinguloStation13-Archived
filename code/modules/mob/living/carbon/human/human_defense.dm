@@ -384,6 +384,8 @@
 
 
 /mob/living/carbon/human/ex_act(severity, target, origin)
+	if(status_flags & GODMODE) // SinguloStation13 Edit (Cryogenic freezers change - Explosion proof if Godmode is enabled)
+		return
 	if(TRAIT_BOMBIMMUNE in dna.species.species_traits)
 		return
 	..()
