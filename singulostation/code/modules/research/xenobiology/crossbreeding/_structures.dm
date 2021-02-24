@@ -1,5 +1,9 @@
 GLOBAL_LIST_EMPTY(bluespace_slime_crystals)
 
+#define DEFAULT 0
+#define COOLING	1
+#define HEATING 2
+
 /obj/structure/slime_crystal
 	name = "slimic pylon"
 	desc = "Glassy, pure, transparent. Powerful artifact that relays the slimecore's influence onto space around it."
@@ -180,7 +184,21 @@ GLOBAL_LIST_EMPTY(bluespace_slime_crystals)
 			continue
 		var/datum/gas_mixture/gas = T.return_air()
 		gas.parse_gas_string(OPENTURF_DEFAULT_ATMOS)
-		T.air_update_turf()
+		var/mode = DEFAULT
+		if(gas.return_temperature() < T20C - 1)
+			mode = HEATING
+		else if(gas.return_temperature() > T20C + 1)
+			mode = COOLING
+		if(mode == DEFAULT)
+			return
+		var/heat_capacity = gas.heat_capacity()
+		var/strength = abs(gas.return_temperature() - T20C) * heat_capacity
+		var/deltaTemperature = strength / heat_capacity
+		if(mode == COOLING)
+			deltaTemperature *= -1
+		if(deltaTemperature)
+			gas.set_temperature(gas.return_temperature() + deltaTemperature)
+			air_update_turf()
 
 /obj/structure/slime_crystal/metal
 	colour = "metal"
@@ -626,3 +644,7 @@ GLOBAL_LIST_EMPTY(bluespace_slime_crystals)
 			var/obj/structure/slime_crystal/SC = inserted_cores[X]
 			SC.attacked_by(user)
 	. = ..()
+
+#undef DEFAULT
+#undef HEATING
+#undef COOLING
