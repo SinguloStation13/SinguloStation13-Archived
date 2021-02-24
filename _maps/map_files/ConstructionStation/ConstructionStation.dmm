@@ -340,6 +340,7 @@
 /area/science/research)
 "lP" = (
 /obj/machinery/computer/cryopod{
+	dir = 8;
 	pixel_x = 32
 	},
 /turf/open/floor/plasteel,
@@ -1415,6 +1416,7 @@
 /obj/structure/cable{
 	icon_state = "2-8"
 	},
+/obj/effect/landmark/latejoin,
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
 "Ft" = (
@@ -1980,7 +1982,6 @@
 "NO" = (
 /obj/machinery/rnd/server,
 /obj/machinery/atmospherics/components/unary/vent_pump/siphon/on{
-	dir = 2;
 	external_pressure_bound = 120;
 	name = "server vent"
 	},
@@ -2156,7 +2157,7 @@
 /obj/machinery/atmospherics/components/unary/outlet_injector/on/layer3{
 	dir = 4
 	},
-/turf/open/floor/plating,
+/turf/open/floor/plating/airless,
 /area/science/research)
 "Te" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
