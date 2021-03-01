@@ -198,7 +198,7 @@ GLOBAL_LIST_EMPTY(bluespace_slime_crystals)
 			deltaTemperature *= -1
 		if(deltaTemperature)
 			gas.set_temperature(gas.return_temperature() + deltaTemperature)
-			air_update_turf()
+			T.air_update_turf()
 
 /obj/structure/slime_crystal/metal
 	colour = "metal"
