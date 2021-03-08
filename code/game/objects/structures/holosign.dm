@@ -99,10 +99,12 @@
 	alpha = 150
 	flags_1 = RAD_PROTECT_CONTENTS_1 | RAD_NO_CONTAMINATE_1
 	rad_insulation = RAD_LIGHT_INSULATION
+	//More vars and some procs in singulostation/code/game/objects/structures/holosign.dm
 
 /obj/structure/holosign/barrier/atmos/Initialize()
 	. = ..()
 	air_update_turf(TRUE)
+	timerid = QDEL_IN(src, duration) //Singulo edit - Nerfs holofirelocks and plastic flaps
 
 /obj/structure/holosign/barrier/cyborg
 	name = "Energy Field"
