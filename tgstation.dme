@@ -3196,6 +3196,7 @@
 #include "interface\skin.dmf"
 #include "singulostation\code\_DEFINES\status_effects.dm"
 #include "singulostation\code\datums\map_config.dm"
+#include "singulostation\code\datums\respawn.dm"
 #include "singulostation\code\datums\shuttles.dm"
 #include "singulostation\code\datums\mapgen\Asteroidgens\AsteroidGenerator.dm"
 #include "singulostation\code\datums\status_effects\misc_effects.dm"

@@ -145,6 +145,9 @@ GLOBAL_VAR_INIT(observer_default_invisibility, INVISIBILITY_OBSERVER)
 
 	. = ..()
 
+	if(ckey && !find_respawn_holder(ckey))
+		new /datum/respawn_holder(src)
+
 	grant_all_languages()
 	show_data_huds()
 	data_huds_on = 1
