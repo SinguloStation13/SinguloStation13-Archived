@@ -183,7 +183,6 @@ GLOBAL_LIST_EMPTY(bluespace_slime_crystals)
 		if(isspaceturf(T))
 			continue
 		var/datum/gas_mixture/gas = T.return_air()
-		gas.parse_gas_string(OPENTURF_DEFAULT_ATMOS)
 		var/mode = DEFAULT
 		if(gas.return_temperature() < T20C - 1)
 			mode = HEATING
