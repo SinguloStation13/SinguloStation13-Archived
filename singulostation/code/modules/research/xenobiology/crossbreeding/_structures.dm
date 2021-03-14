@@ -526,6 +526,7 @@ GLOBAL_LIST_EMPTY(bluespace_slime_crystals)
 	var/mob/living/carbon/human/human_mob = user
 	var/mob/living/simple_animal/pet/chosen_pet = pick(/mob/living/simple_animal/pet/dog/corgi,/mob/living/simple_animal/pet/dog/pug,/mob/living/simple_animal/pet/fox,/mob/living/simple_animal/pet/cat/kitten,/mob/living/simple_animal/pet/cat/space)
 	chosen_pet = new chosen_pet(get_turf(human_mob))
+	affected_mobs[chosen_pet] = 0
 	human_mob.forceMove(chosen_pet)
 	human_mob.mind.transfer_to(chosen_pet)
 
