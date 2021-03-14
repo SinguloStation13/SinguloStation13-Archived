@@ -263,7 +263,7 @@ CHECK_RANDOMIZER
 # RULESURL https://wiki.white-sands.space/Rules
 
 ## Github address
-# GITHUBURL https://github.com/WaspStation/WaspStation-1.0
+# GITHUBURL https://github.com/Whitesands13/Whitesands
 
 ## Discord address
 # DISCORDURL https://discord.gg/BUM8uRc
@@ -425,7 +425,7 @@ AUTOADMIN_RANK Game Master
 #AUTO_DEADMIN_PLAYERS
 
 ## Uncomment to automatically deadmin antagonists when they gain the role.
-#AUTO_DEADMIN_ANTAGONISTS
+AUTO_DEADMIN_ANTAGONISTS
 
 ## Uncomment to automatically deadmin specific role sets when a player joins the game.
 #AUTO_DEADMIN_HEADS
@@ -540,6 +540,10 @@ AUTO_PROFILE
 ## Uncomment to enable global ban DB using the provided URL. The API should expect to receive a ckey at the end of the URL.
 ## More API details can be found here: https://centcom.melonmesa.com/swagger/index.html
 #CENTCOM_BAN_DB https://centcom.melonmesa.com/ban/search
+
+## Uncomment to enable source whitelisting, a comma-separated list (no spaces) of CentCom sources (sourceName).
+## If enabled, only bans from these servers will be shown to admins using CentCom. The default sources list is an example.
+#CENTCOM_SOURCE_WHITELIST Beestation MRP,TGMC,FTL13
 
 #### DISCORD STUFFS ####
 ## MAKE SURE ALL SECTIONS OF THIS ARE FILLED OUT BEFORE ENABLING
