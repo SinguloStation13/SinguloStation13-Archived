@@ -852,12 +852,12 @@
 			altered_grab_state++
 		var/resist_chance = BASE_GRAB_RESIST_CHANCE // see defines/combat.dm
 		resist_chance = max((resist_chance/altered_grab_state)-sqrt((getBruteLoss()+getFireLoss()+getOxyLoss()+getToxLoss()+getCloneLoss())*0.5+getStaminaLoss()), 0) //stamina loss is weighted twice as heavily as the other damage types in this calculation
-		//Waspstation - Yuggolith tentacle grip/slip
+		//WS - Yuggolith tentacle grip/slip
 		if(issquidperson(pulledby))
 			resist_chance = resist_chance * 0.5
 		if(issquidperson(src))
 			resist_chance = resist_chance + (resist_chance * 0.5)
-		//Waspstation - End
+		//WS - End
 		if(prob(resist_chance))
 			visible_message("<span class='danger'>[src] breaks free of [pulledby]'s grip!</span>", \
 							"<span class='danger'>You break free of [pulledby]'s grip!</span>", null, null, pulledby)
@@ -1657,7 +1657,7 @@
 	. = buckled
 	buckled = new_buckled
 	if(buckled)
-		ADD_TRAIT(src, TRAIT_IMMOBILIZED, BUCKLED_TRAIT)
+		//ADD_TRAIT(src, TRAIT_IMMOBILIZED, BUCKLED_TRAIT)         // WS Edit - Can use buttons in chairs again
 		switch(buckled.buckle_lying)
 			if(NO_BUCKLE_LYING) // The buckle doesn't force a lying angle.
 				REMOVE_TRAIT(src, TRAIT_FLOORED, BUCKLED_TRAIT)
@@ -1670,7 +1670,7 @@
 				set_body_position(LYING_DOWN)
 				set_lying_angle(buckled.buckle_lying)
 	else
-		REMOVE_TRAIT(src, TRAIT_IMMOBILIZED, BUCKLED_TRAIT)
+		//REMOVE_TRAIT(src, TRAIT_IMMOBILIZED, BUCKLED_TRAIT)      // WS Edit - Can use buttons in chairs again
 		REMOVE_TRAIT(src, TRAIT_FLOORED, BUCKLED_TRAIT)
 		if(.) // We unbuckled from something.
 			var/atom/movable/old_buckled = .
