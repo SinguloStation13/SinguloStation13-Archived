@@ -438,12 +438,15 @@
 /obj/item/storage/bag/construction/ComponentInitialize()
 	. = ..()
 	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
-	STR.max_combined_w_class = 100
-	STR.max_items = 50
-	STR.max_w_class = WEIGHT_CLASS_SMALL
+	STR.max_combined_w_class = 400       //Singulostation edit - Buff construction bags
+	STR.max_items = 300                   //Singulostation edit - Buff construction bags
+	STR.max_w_class = WEIGHT_CLASS_NORMAL //Singulostation edit - Buff construction bags
 	STR.insert_preposition = "in"
 	STR.set_holdable(list(
 		/obj/item/stack/ore/bluespace_crystal,
+		/obj/item/stack/sheet, //Singulostation edit - Buff construction bags
+		/obj/item/stack/tile,  //Singulostation edit - Buff construction bags
+		/obj/item/stack/rods,  //Singulostation edit - Buff construction bags
 		/obj/item/assembly,
 		/obj/item/stock_parts,
 		/obj/item/reagent_containers/glass/beaker,
