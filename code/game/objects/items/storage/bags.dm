@@ -438,7 +438,7 @@
 /obj/item/storage/bag/construction/ComponentInitialize()
 	. = ..()
 	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
-	STR.max_combined_w_class = 1000       //Singulostation edit - Buff construction bags
+	STR.max_combined_w_class = 400       //Singulostation edit - Buff construction bags
 	STR.max_items = 300                   //Singulostation edit - Buff construction bags
 	STR.max_w_class = WEIGHT_CLASS_NORMAL //Singulostation edit - Buff construction bags
 	STR.insert_preposition = "in"
