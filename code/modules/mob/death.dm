@@ -12,5 +12,8 @@
 /mob/proc/death(gibbed)
 	SEND_SIGNAL(src, COMSIG_MOB_DEATH, gibbed)
 	SEND_GLOBAL_SIGNAL(COMSIG_GLOB_MOB_DEATH, src , gibbed)
-	if(ckey && !find_respawn_holder(ckey)) //Singulostation edit - respawn timer
-		new /datum/respawn_holder(src)
+	if(ckey) //Singulostation start - respawn timer
+		var/datum/respawn_holder/RH = find_respawn_holder(ckey)
+		if(RH)//Just in case there's some other way they can be respawned
+			del RH
+		new /datum/respawn_holder(src) //Singulostation end

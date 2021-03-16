@@ -704,13 +704,13 @@
 		to_chat(usr, "<span class='boldnotice'>You must be dead to use this!</span>")
 		return
 
-	var/datum/respawn_holder/RT = client.respawn_timer // Singulostation start - respawn timer
+	var/datum/respawn_holder/RT = find_respawn_holder(ckey) //Singulostation start - respawn timer
+	send2adminchat(RT.timerid)
 	if(RT)
 		if(!RT.ready)
 			to_chat(usr, "<span class='boldnotice'>You must wait another [timeleft(RT.timerid)] minutes before you can respawn!</span>")
 			return
-		del RT
-		// Singulostation end - respawn timer
+		del RT //Singulostation end - respawn timer
 
 	log_game("[key_name(usr)] used abandon mob.")
 
