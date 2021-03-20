@@ -478,6 +478,7 @@
 	organ_flags = ORGAN_SYNTHETIC
 	maxHealth = 1.5 * STANDARD_ORGAN_THRESHOLD
 	safe_oxygen_min = 13
+	safe_oxygen_max = 80 // Singulo edit - Max oxygen pp
 	emp_vulnerability = 40
 
 /obj/item/organ/lungs/cybernetic/tier3
@@ -486,6 +487,7 @@
 	icon_state = "lungs-c-u2"
 	safe_toxins_max = 20
 	safe_co2_max = 20
+	safe_oxygen_max = 80 // Singulo edit - Max oxygen pp
 	maxHealth = 2 * STANDARD_ORGAN_THRESHOLD
 	emp_vulnerability = 20
 
