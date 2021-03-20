@@ -106,13 +106,21 @@
 	//-- OXY --//
 
 	//Too much oxygen! //Yes, some species may not like it.
+	// Singulo edits begin - Max oxygen pp
+	var/oxy_poisoning = FALSE
 	if(safe_oxygen_max)
 		if(O2_pp > safe_oxygen_max)
-			var/ratio = (breath.get_moles(/datum/gas/oxygen)/safe_oxygen_max) * 10
-			H.apply_damage_type(clamp(ratio, oxy_breath_dam_min, oxy_breath_dam_max), oxy_damage_type)
+			if(oxy_damage_type == OXY)
+				var/ratio = O2_pp/safe_oxygen_max
+				H.adjustOxyLoss(min(ratio - 1, HUMAN_MAX_OXYLOSS)) // 1 damage at 100 kPa oxygen, ~1 atmosphere
+			else
+				var/ratio = (breath.get_moles(/datum/gas/oxygen)/safe_oxygen_max) * 10
+				H.apply_damage_type(clamp(ratio, oxy_breath_dam_min, oxy_breath_dam_max), oxy_damage_type)
 			H.throw_alert("too_much_oxy", /obj/screen/alert/too_much_oxy)
+			oxy_poisoning = TRUE
 		else
 			H.clear_alert("too_much_oxy")
+	// Singulo edits end - Max oxygen pp
 
 	//Too little oxygen!
 	if(safe_oxygen_min)
@@ -121,7 +129,7 @@
 			H.throw_alert("not_enough_oxy", /obj/screen/alert/not_enough_oxy)
 		else
 			H.failed_last_breath = FALSE
-			if(H.health >= H.crit_threshold)
+			if(H.health >= H.crit_threshold && !oxy_poisoning) // Singulo edit - Max oxygen pp
 				H.adjustOxyLoss(-5)
 			gas_breathed = breath.get_moles(/datum/gas/oxygen)
 			H.clear_alert("not_enough_oxy")
@@ -437,6 +445,7 @@
 	icon_state = "lungs-plasma"
 
 	safe_oxygen_min = 0 //We don't breath this
+	safe_oxygen_max = 0 // Singulo edit - Max oxygen pp
 	safe_toxins_min = 16 //We breath THIS!
 	safe_toxins_max = 0
 
