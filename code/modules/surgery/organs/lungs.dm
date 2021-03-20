@@ -113,6 +113,8 @@
 			if(oxy_damage_type == OXY)
 				var/ratio = O2_pp/safe_oxygen_max
 				H.adjustOxyLoss(min(ratio - 1, HUMAN_MAX_OXYLOSS)) // 1 damage at 100 kPa oxygen, ~1 atmosphere
+				if(prob(5))
+					to_chat(H, "<span class='warning'>You feel lightheaded.</span>")
 			else
 				var/ratio = (breath.get_moles(/datum/gas/oxygen)/safe_oxygen_max) * 10
 				H.apply_damage_type(clamp(ratio, oxy_breath_dam_min, oxy_breath_dam_max), oxy_damage_type)
