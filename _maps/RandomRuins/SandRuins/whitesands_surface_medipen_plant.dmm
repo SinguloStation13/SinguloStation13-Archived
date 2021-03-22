@@ -353,6 +353,12 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers{
 	dir = 8
 	},
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/visible{
+	dir = 8
+	},
 /turf/closed/wall,
 /area/whitesands/surface/outdoors/unexplored)
 "kk" = (
