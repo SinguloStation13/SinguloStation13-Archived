@@ -350,12 +350,6 @@
 /turf/open/floor/plasteel/dark,
 /area/whitesands/surface/outdoors/unexplored)
 "jM" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers{
-	dir = 8
-	},
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/visible{
 	dir = 8
 	},
