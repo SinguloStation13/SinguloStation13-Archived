@@ -28,14 +28,15 @@
 		var/entry_image = null
 
 		if(istype(buffer_entry, /datum/dcm_net)) //Special case for deepcore mining network, since it stuffs a datum into the buffer
-			var/datum/dcm_net/network = buffer_entry
-			var/obj/machinery/machine = network.netHub
-			entry_name = "Deepcore Mining Network ([length(network.connected)] machines)"
+			var/datum/dcm_net/buffer_network = buffer_entry
+			var/obj/machinery/machine = buffer_network.netHub
+			entry_name = "Deepcore Mining Network ([length(buffer_network.connected)] machines)"
 			entry_image = image(icon = machine.icon, icon_state = machine.icon_state)
 
 		if(istype(buffer_entry, /obj/machinery)) //Default handling for machines
-			entry_name = buffer_entry.name
-			entry_image = image(icon = buffer_entry.icon, icon_state = buffer_entry.icon_state)
+			/var/obj/machinery/buffer_machine = buffer_entry
+			entry_name = buffer_machine.name
+			entry_image = image(icon = buffer_machine.icon, icon_state = buffer_machine.icon_state)
 
 		if(entry_name == null)
 			if(buffer_entry)
