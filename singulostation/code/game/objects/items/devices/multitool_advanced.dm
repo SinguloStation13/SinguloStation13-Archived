@@ -34,7 +34,7 @@
 			entry_image = image(icon = machine.icon, icon_state = machine.icon_state)
 
 		if(istype(buffer_entry, /obj/machinery)) //Default handling for machines
-			/var/obj/machinery/buffer_machine = buffer_entry
+			var/obj/machinery/buffer_machine = buffer_entry
 			entry_name = buffer_machine.name
 			entry_image = image(icon = buffer_machine.icon, icon_state = buffer_machine.icon_state)
 
