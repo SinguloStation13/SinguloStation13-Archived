@@ -24,34 +24,34 @@
 	var/list/choice_index_lookup = list()
 	for(var/i = 1, i<=buffer_list.len, i++)
 		var/obj/machinery/buffer_entry = buffer_list[i]
-		var/name = null
-		var/image = null
+		var/entry_name = null
+		var/entry_image = null
 
 		if(istype(buffer_entry, /datum/dcm_net))
 			var/datum/dcm_net/network = buffer_entry
 			var/obj/machinery/machine = network.netHub
-			name = "Deepcore Mining Network ([length(network.connected)] machines)"
-			image = image(icon = machine.icon, icon_state = machine.icon_state)
+			entry_name = "Deepcore Mining Network ([length(network.connected)] machines)"
+			entry_image = image(icon = machine.icon, icon_state = machine.icon_state)
 
 		if(istype(buffer_entry))
-			name = buffer_entry.name
-			image = image(icon = buffer_entry.icon, icon_state = buffer_entry.icon_state)
+			entry_name = buffer_entry.name
+			entry_image = image(icon = buffer_entry.icon, icon_state = buffer_entry.icon_state)
 
-		if(name == null)
+		if(entry_name == null)
 			if(buffer_entry)
-				name = buffer_entry
+				entry_name = buffer_entry
 			else
-				name = "Empty"
+				entry_name = "Empty"
 
-		var/label = "[num2text(i)]: [name]"
-		choices[label] = image
+		var/label = "[num2text(i)]: [entry_name]"
+		choices[label] = entry_image
 		choice_index_lookup[label] = i
 
 	var/choice = show_radial_menu(user, src, choices, custom_check = CALLBACK(src, .proc/check_menu, user), require_near = TRUE, tooltips = TRUE)
 	if(!check_menu(user))
 		return
 	
-	var/index = choice_index_lookup[choice]
-	if(index)
-		buffer_index = index
-		buffer = buffer_list[index]
+	var/selected_index = choice_index_lookup[choice]
+	if(selected_index)
+		buffer_index = selected_index
+		buffer = buffer_list[selected_index]
