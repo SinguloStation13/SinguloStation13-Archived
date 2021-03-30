@@ -7,7 +7,7 @@
 /obj/item/stock_parts/cell
 	name = "power cell"
 	desc = "A rechargeable electrochemical power cell."
-	icon = 'icons/obj/power.dmi'
+	icon = 'singulostation/icons/obj/power.dmi' //Singulostation edit - Port BeeStation stock part sprites
 	icon_state = "cell"
 	item_state = "cell"
 	lefthand_file = 'icons/mob/inhands/misc/devices_lefthand.dmi'
