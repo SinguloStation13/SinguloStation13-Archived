@@ -1,7 +1,8 @@
 /obj/item/multitool/advanced
 	name = "advanced multitool"
 	desc = "Used for pulsing wires to test which to cut. This one can be switched between 6 buffers for device linkage."
-	icon_state = "multitool" // Needs spriting
+	icon = 'singulostation/icons/obj/tools.dmi'
+	icon_state = "multitool_advanced" // Codersprite
 	custom_materials = list(/datum/material/iron=50, /datum/material/glass=30, /datum/material/gold=20, /datum/material/silver=20)
 	usesound = 'sound/weapons/empty.ogg'
 	var/list/buffer_list = list(null, null, null, null, null, null) // list of buffers that can be switched between
