@@ -5,7 +5,7 @@
 	icon_state = "multitool_advanced" // Codersprite
 	custom_materials = list(/datum/material/iron=50, /datum/material/glass=30, /datum/material/gold=20, /datum/material/silver=20)
 	usesound = 'sound/weapons/empty.ogg'
-	var/list/buffer_list = list(null, null, null, null, null, null) // list of buffers that can be switched between
+	var/list/buffer_list[6] // list of buffers that can be switched between
 	var/buffer_index = 1
 
 /obj/item/multitool/advanced/examine(mob/user)
