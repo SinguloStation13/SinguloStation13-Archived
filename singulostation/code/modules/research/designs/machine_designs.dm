@@ -93,3 +93,4 @@
 	build_path = /obj/item/circuitboard/machine/techfab/department/cargo
 	departmental_flags = DEPARTMENTAL_FLAG_CARGO
 	category = list("Misc. Machinery")
+	
