@@ -18,7 +18,7 @@
 	name = "Machine Design (Service Protolathe Board)"
 	desc = "A circuit board for a service protolathe."
 	id = "protolathe_departmental_service"
-	build_path = /obj/item/circuitboard/machine/protolathe/department/medical
+	build_path = /obj/item/circuitboard/machine/protolathe/department/service
 	departmental_flags = DEPARTMENTAL_FLAG_SERVICE
 	category = list("Misc. Machinery")
 
@@ -34,7 +34,7 @@
 	name = "Machine Design (Science Protolathe Board)"
 	desc = "A circuit board for a science protolathe."
 	id = "protolathe_departmental_science"
-	build_path = /obj/item/circuitboard/machine/protolathe/department/medical
+	build_path = /obj/item/circuitboard/machine/protolathe/department/science
 	departmental_flags = DEPARTMENTAL_FLAG_SCIENCE
 	category = list("Research Machinery")
 
@@ -45,14 +45,6 @@
 	build_path = /obj/item/circuitboard/machine/protolathe/department/cargo
 	departmental_flags = DEPARTMENTAL_FLAG_CARGO
 	category = list("Misc. Machinery")
-
-// /datum/design/board/circuitimprinter_departmental
-//	name = "Machine Design (Cryogenic Freezer)"
-//	desc = "A cryogenic refrigeration device capable of putting you in cryogenic freeze with the help of a nearby Cryogenic Oversight Console."
-//	id = "circuitimprinter_departmental"
-//	build_path = /obj/item/circuitboard/machine/cryogenicpod
-//	departmental_flags = DEPARTMENTAL_FLAG_MEDICAL
-//	category = list("Medical Machinery")
 
 /datum/design/board/techfab_medical
 	name = "Machine Design (Medical Techfab Board)"
@@ -74,7 +66,7 @@
 	name = "Machine Design (Service Techfab Board)"
 	desc = "A circuit board for a service techfab."
 	id = "techfab_departmental_service"
-	build_path = /obj/item/circuitboard/machine/techfab/department/medical
+	build_path = /obj/item/circuitboard/machine/techfab/department/service
 	departmental_flags = DEPARTMENTAL_FLAG_SERVICE
 	category = list("Misc. Machinery")
 
@@ -90,7 +82,7 @@
 	name = "Machine Design (Science Techfab Board)"
 	desc = "A circuit board for a science techfab."
 	id = "techfab_departmental_science"
-	build_path = /obj/item/circuitboard/machine/techfab/department/medical
+	build_path = /obj/item/circuitboard/machine/techfab/department/science
 	departmental_flags = DEPARTMENTAL_FLAG_SCIENCE
 	category = list("Research Machinery")
 
