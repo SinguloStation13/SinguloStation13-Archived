@@ -11,7 +11,10 @@
 	design_ids = list("basic_matter_bin", "basic_cell", "basic_scanning", "basic_capacitor", "basic_micro_laser", "micro_mani", "c-reader", "desttagger", "salestagger", "handlabel", "packagewrap",
 					"destructive_analyzer", "circuit_imprinter", "experimentor", "rdconsole", "bepis", "design_disk", "tech_disk", "rdserver", "rdservercontrol", "mechfab",
 					"paystand", "space_heater", "bucket", "sec_rshot", "sec_beanbag_slug", "sec_bshot", "sec_slug", "sec_Islug", "sec_dart", "sec_38", "rglass", "plasteel",
-					"plastitanium", "plasmaglass", "plasmareinforcedglass", "titaniumglass", "plastitaniumglass", "plastic_knife", "plastic_fork", "plastic_spoon")
+					"plastitanium", "plasmaglass", "plasmareinforcedglass", "titaniumglass", "plastitaniumglass", "plastic_knife", "plastic_fork", "plastic_spoon", // Singulostation Begin - Make techfabs and protolathes printable
+					"techfab_departmental_engineering", "techfab_departmental_science", "techfab_departmental_medical", "techfab_departmental_cargo", "techfab_departmental_security", "techfab_departmental_service",
+					"protolathe_departmental_engineering", "protolathe_departmental_science", "protolathe_departmental_medical", "protolathe_departmental_cargo", "protolathe_departmental_security", "protolathe_departmental_service",
+					) // Singulostation End
 
 /datum/techweb_node/mmi
 	id = "mmi"
