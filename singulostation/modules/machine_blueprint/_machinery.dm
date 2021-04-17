@@ -14,4 +14,3 @@
 //Copies settings to other machine
 /obj/machinery/proc/blueprint_to(obj/machinery/other)
 	return
-
