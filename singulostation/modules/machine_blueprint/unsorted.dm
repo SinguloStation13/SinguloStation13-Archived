@@ -8,4 +8,4 @@
 		return
 	other.on = on
 	other.setMode = setMode
-	other.targetTemperature = clamp(target, max(other.settableTemperatureMedian - other.settableTemperatureRange, TCMB), other.settableTemperatureMedian + other.settableTemperatureRange) //This is exactly what the space heater code uses, and I don't want to mess with it
+	other.targetTemperature = clamp(targetTemperature, max(other.settableTemperatureMedian - other.settableTemperatureRange, TCMB), other.settableTemperatureMedian + other.settableTemperatureRange) //This is exactly what the space heater code uses, and I don't want to mess with it
