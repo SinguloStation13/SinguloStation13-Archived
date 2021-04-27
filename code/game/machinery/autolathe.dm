@@ -593,8 +593,6 @@
 					stored_research.remove_design(D)
 			if(("emagged" in D.category) && (obj_flags & EMAGGED))
 				stored_research.add_design(D)
-			else
-				stored_research.remove_design(D)
 	update_viewer_statics()
 
 /obj/machinery/autolathe/emag_act(mob/user)
