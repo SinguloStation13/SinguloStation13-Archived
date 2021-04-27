@@ -5,9 +5,9 @@
 /datum/wires/autolathe/New(atom/holder)
 	wires = list(
 		WIRE_HACK, WIRE_DISABLE,
-		WIRE_SHOCK, WIRE_ZAP, WIRE_ACTIVATE
+		WIRE_SHOCK, WIRE_ZAP, WIRE_ACTIVATE //Singulostation edit - Port BeeStation autolathe
 	)
-	add_duds(5)
+	add_duds(5) //Singulostation edit - Port BeeStation autolathe
 	..()
 
 /datum/wires/autolathe/interactable(mob/user)

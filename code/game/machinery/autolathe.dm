@@ -1,3 +1,4 @@
+//Singulostation begin - Port BeeStation autolathe
 #define AUTOLATHE_MAX_POWER_USE 2000
 
 /obj/machinery/autolathe
@@ -612,3 +613,4 @@
 //Has a reference to the autolathe so you can do !!FUN!! things with hacked lathes
 /obj/item/proc/autolathe_crafted(obj/machinery/autolathe/A)
 	return
+//Singulostation end - Port BeeStation autolathe
