@@ -229,6 +229,23 @@
 
 	return null
 
+// Allows picks with non-integer weights and also 0
+/proc/pickweight_float(list/L, default=1)
+	var/total = 0
+	var/item
+	for (item in L)
+		if (!isnum(L[item]))
+			L[item] = default
+		total += L[item]
+
+	total = rand()*total
+	for (item in L)
+		total -=L [item]
+		if (total <= 0 && L[item])
+			return item
+
+	return null
+
 //Pick a random element from the list and remove it from the list.
 /proc/pick_n_take(list/L)
 	RETURN_TYPE(L[_].type)
