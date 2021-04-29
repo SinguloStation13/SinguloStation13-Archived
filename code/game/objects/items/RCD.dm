@@ -61,6 +61,25 @@ RLD
 	silo_mats = null
 	return ..()
 
+//Singulostation begin - Silo link for everybody
+/obj/item/construction/verb/toggle_silo_link_verb()
+	set name = "Toggle silo link"
+	set category = "Object"
+	set src in view(1)
+
+	if(!ishuman(usr))
+		return
+
+	if(silo_mats) //Copied directly from rcd-specific code.
+		if(!silo_mats.mat_container)
+			to_chat(usr, "<span class='alert'>No silo link detected. Connect to silo via multitool.</span>")
+			return FALSE
+		silo_link = !silo_link
+		to_chat(usr, "<span class='notice'>You change \the [src]'s storage link state: [silo_link ? "ON" : "OFF"].</span>")
+	else
+		to_chat(usr, "<span class='warning'>\the [src] dont have remote storage connection.</span>")
+//Singulostation end - Silo link for everybody
+
 /obj/item/construction/attackby(obj/item/W, mob/user, params)
 	if(iscyborg(user))
 		return
