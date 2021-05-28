@@ -137,30 +137,35 @@ If you create T5+ please take a pass at gene_modder.dm [L40]. Max_values MUST fi
 	desc = "A basic capacitor used in the construction of a variety of devices."
 	icon_state = "capacitor"
 	custom_materials = list(/datum/material/iron=50, /datum/material/glass=50)
+	icon = 'singulostation/icons/obj/stock_parts.dmi' //Singulostation edit - Port BeeStation stock part sprites
 
 /obj/item/stock_parts/scanning_module
 	name = "scanning module"
 	desc = "A compact, high resolution scanning module used in the construction of certain devices."
 	icon_state = "scan_module"
 	custom_materials = list(/datum/material/iron=50, /datum/material/glass=20)
+	icon = 'singulostation/icons/obj/stock_parts.dmi' //Singulostation edit - Port BeeStation stock part sprites
 
 /obj/item/stock_parts/manipulator
 	name = "micro-manipulator"
 	desc = "A tiny little manipulator used in the construction of certain devices."
 	icon_state = "micro_mani"
 	custom_materials = list(/datum/material/iron=30)
+	icon = 'singulostation/icons/obj/stock_parts.dmi' //Singulostation edit - Port BeeStation stock part sprites
 
 /obj/item/stock_parts/micro_laser
 	name = "micro-laser"
 	desc = "A tiny laser used in certain devices."
 	icon_state = "micro_laser"
 	custom_materials = list(/datum/material/iron=10, /datum/material/glass=20)
+	icon = 'singulostation/icons/obj/stock_parts.dmi' //Singulostation edit - Port BeeStation stock part sprites
 
 /obj/item/stock_parts/matter_bin
 	name = "matter bin"
 	desc = "A container designed to hold compressed matter awaiting reconstruction."
 	icon_state = "matter_bin"
 	custom_materials = list(/datum/material/iron=80)
+	icon = 'singulostation/icons/obj/stock_parts.dmi' //Singulostation edit - Port BeeStation stock part sprites
 
 //Rating 2
 

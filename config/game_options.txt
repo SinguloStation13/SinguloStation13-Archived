@@ -592,7 +592,7 @@ MAXFINE 2000
 ECONOMY
 
 ## Put the name of your custom currency here
-METACURRENCY_NAME Singulocoins
+METACURRENCY_NAME Singulocoin
 
 ## Crew objectives
 ALLOW_CREW_OBJECTIVES

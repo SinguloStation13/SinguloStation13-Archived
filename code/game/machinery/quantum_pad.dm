@@ -22,6 +22,7 @@
 
 /obj/machinery/quantumpad/Initialize()
 	. = ..()
+	wires = new /datum/wires/quantum_pad(src) //Singulostation edit - Quantum pad wires
 	if(map_pad_id)
 		mapped_quantum_pads[map_pad_id] = src
 
@@ -53,6 +54,11 @@
 /obj/machinery/quantumpad/attackby(obj/item/I, mob/user, params)
 	if(default_deconstruction_screwdriver(user, "pad-idle-o", "qpad-idle", I))
 		return
+	//Singulostation begin - Quantum pad wires
+	else if(panel_open && I.tool_behaviour == TOOL_WIRECUTTER)
+		wires.interact(user)
+		return TRUE
+	//Singulostation end - Quantum pad wires
 
 	if(panel_open)
 		if(I.tool_behaviour == TOOL_MULTITOOL)

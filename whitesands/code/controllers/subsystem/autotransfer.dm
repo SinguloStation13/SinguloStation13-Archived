@@ -1,3 +1,7 @@
+// Singulo edit - Disable autotransfer subsystem
+// Autotransfer? Kinda cringe bro
+
+/*
 SUBSYSTEM_DEF(autotransfer)
 	name = "Autotransfer Vote"
 	flags = SS_KEEP_TIMING | SS_BACKGROUND
@@ -15,3 +19,4 @@ SUBSYSTEM_DEF(autotransfer)
 	if (world.time > targettime)
 		SSvote.initiate_vote("transfer",null, FALSE) //WS Edit - Ghost Vote Rework
 		targettime = targettime + CONFIG_GET(number/vote_autotransfer_interval)
+*/
