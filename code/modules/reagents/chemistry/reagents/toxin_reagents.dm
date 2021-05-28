@@ -251,7 +251,8 @@
 	taste_description = "sourness"
 
 /datum/reagent/toxin/mindbreaker/on_mob_life(mob/living/carbon/M)
-	M.hallucination += 5
+	if(!HAS_TRAIT(M, TRAIT_INSANITY)) // SinguloStation edit - Fix mindbreaker toxin curing RDS
+		M.hallucination += 5
 	return ..()
 
 /datum/reagent/toxin/plantbgone
