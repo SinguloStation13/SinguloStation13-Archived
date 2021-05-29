@@ -704,13 +704,16 @@
 		to_chat(usr, "<span class='boldnotice'>You must be dead to use this!</span>")
 		return
 
-	var/datum/respawn_holder/RT = find_respawn_holder(ckey) //Singulostation start - respawn timer
-	send2adminchat(RT.timerid)
-	if(RT)
-		if(!RT.ready)
-			to_chat(usr, "<span class='boldnotice'>You must wait another [timeleft(RT.timerid)] minutes before you can respawn!</span>")
-			return
-		del RT //Singulostation end - respawn timer
+	if(GLOB.respawn_queue[key] && !GLOB.respawn_ready[key])
+		var/time_left = timeleft(GLOB.respawn_queue[key])
+		to_chat(usr, "<span class='boldnotice'>You must wait another "\
+		+ "[time_left/600>1?\
+		"[time_left/600]" + " minutes":\
+		"[time_left/10]" + " seconds"]"\
+		+ " before you can respawn.")
+		return
+	GLOB.respawn_queue[key] = null
+	GLOB.respawn_ready[key] = FALSE
 
 	log_game("[key_name(usr)] used abandon mob.")
 

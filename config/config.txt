@@ -209,6 +209,9 @@ VOTE_AUTOTRANSFER_INTERVAL 18000
 ## disable abandon mob
 # NORESPAWN
 
+## determines the respawn time in deciseconds. This is a Singulostation addition
+RESPAWNTIME 27000
+
 ## disables calling del(src) on newmobs if they logout before spawnin in
 # DONT_DEL_NEWMOB
 
