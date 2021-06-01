@@ -18,10 +18,6 @@
 		qdel(src)
 		return
 	
-	// The stack will be filled by the remaining amount of material needed, or amount left in the crystal, whichever is lower.
-	// This is to make sure we don't add more material than is intended by the crystal nor exceed the sheet stack size.
-	// Temporary variable to increase the item stack
-	var/amt_to_add = min(stack_item.max_amount - stack_item.get_amount(), amt)
-	stack_item.add(amt_to_add)
-	amt -= amt_to_add
-	if (amt <= 0) qdel(src)
+	new target.type(get_turf(target), amt)
+	
+	qdel(src)
