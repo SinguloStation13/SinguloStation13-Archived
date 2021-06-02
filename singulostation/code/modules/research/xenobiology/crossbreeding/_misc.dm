@@ -18,6 +18,10 @@
 		qdel(src)
 		return
 	
+	var/amt_to_add = min(stack_item.max_amount - stack_item.get_amount(), amt)
+    stack_item.add(amt_to_add)
+    amt -= amt_to_add
+	
 	new target.type(get_turf(target), amt)
 	
 	qdel(src)
