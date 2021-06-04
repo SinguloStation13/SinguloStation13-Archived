@@ -27,7 +27,6 @@
 /obj/structure/closet/crate{
 	name = "SinguloStation Supplies"
 	},
-/obj/item/crowbar,
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
 "ba" = (
@@ -855,6 +854,10 @@
 "zd" = (
 /obj/structure/table,
 /obj/effect/spawner/lootdrop/donkpockets,
+/obj/item/crowbar{
+	pixel_x = -4;
+	pixel_y = 9
+	},
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
 "zV" = (
@@ -1020,15 +1023,11 @@
 /turf/open/space/basic,
 /area/solar/starboard)
 "ET" = (
-/obj/machinery/atmospherics/pipe/layer_manifold,
 /obj/machinery/advanced_airlock_controller{
 	pixel_y = 24
 	},
-/turf/open/floor/plasteel,
-/area/hallway/primary/central)
-"Fd" = (
-/obj/structure/cable{
-	icon_state = "1-2"
+/obj/machinery/atmospherics/components/unary/vent_pump/layer1{
+	dir = 4
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
@@ -1037,6 +1036,9 @@
 /area/space/nearstation)
 "Fk" = (
 /obj/structure/ore_box,
+/obj/machinery/atmospherics/components/unary/vent_pump/siphon/layer3{
+	dir = 8
+	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
 "FF" = (
@@ -1114,6 +1116,7 @@
 /area/quartermaster/storage)
 "Hk" = (
 /obj/structure/closet/firecloset/full,
+/obj/item/crowbar,
 /turf/open/floor/plating,
 /area/hallway/secondary/entry)
 "Hy" = (
@@ -1217,17 +1220,23 @@
 /turf/open/floor/plasteel,
 /area/construction/storage_wing)
 "Kg" = (
-/obj/machinery/atmospherics/components/binary/dp_vent_pump/high_volume/layer1,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /obj/machinery/light/small{
 	dir = 8
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/layer1{
+	dir = 4
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
 "Ki" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /obj/structure/cable{
 	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3{
+	dir = 8
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
@@ -1462,11 +1471,8 @@
 /turf/open/floor/plasteel,
 /area/construction/storage_wing)
 "Qx" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
-	dir = 5
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
-	dir = 5
+/obj/machinery/atmospherics/components/unary/vent_pump/layer1{
+	dir = 4
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
@@ -1475,19 +1481,22 @@
 /turf/open/floor/plasteel,
 /area/engine/engineering)
 "QP" = (
-/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3{
-	dir = 4
-	},
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1{
 	dir = 4
 	},
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3{
+	dir = 8
+	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
 "Ri" = (
 /obj/machinery/suit_storage_unit/standard_unit,
+/obj/machinery/atmospherics/components/unary/vent_pump/siphon/layer3{
+	dir = 8
+	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
 "Rp" = (
@@ -1670,6 +1679,8 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
 "Ul" = (
@@ -40967,7 +40978,7 @@ pH
 pH
 pH
 vd
-Fd
+Ki
 Ki
 QP
 Uk
