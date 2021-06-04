@@ -40,6 +40,19 @@
 /obj/machinery/door/firedoor/heavy,
 /turf/open/floor/plasteel,
 /area/quartermaster/warehouse)
+"ds" = (
+/obj/machinery/door/airlock/public/glass,
+/obj/effect/mapping_helpers/airlock/locked,
+/obj/machinery/door/firedoor/border_only,
+/obj/machinery/door/firedoor/border_only/closed{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/hallway/secondary/entry)
+"dB" = (
+/obj/effect/turf_decal/stripes/corner,
+/turf/open/floor/plasteel,
+/area/engine/gravity_generator)
 "eP" = (
 /turf/closed/wall,
 /area/hallway/primary/starboard)
@@ -54,12 +67,21 @@
 /obj/machinery/door/firedoor/border_only{
 	dir = 8
 	},
+/obj/machinery/door/airlock/mining/glass{
+	name = "Cargo Bay"
+	},
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
 "gY" = (
 /obj/machinery/cryopod/latejoin,
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
+"hc" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/engine/atmos)
 "hi" = (
 /turf/closed/wall,
 /area/engine/gravity_generator)
@@ -75,11 +97,30 @@
 "if" = (
 /obj/machinery/door/airlock/public/glass,
 /obj/effect/mapping_helpers/airlock/locked,
+/obj/machinery/door/firedoor/border_only/closed{
+	dir = 1
+	},
+/obj/machinery/door/firedoor/border_only,
 /turf/open/floor/plasteel,
 /area/hallway/primary/port)
 "ip" = (
 /turf/closed/wall/r_wall,
 /area/hallway/secondary/entry)
+"iy" = (
+/obj/machinery/atmospherics/components/unary/portables_connector/visible{
+	dir = 4
+	},
+/obj/machinery/portable_atmospherics/canister/air,
+/turf/open/floor/plating,
+/area/engine/atmos)
+"iA" = (
+/obj/machinery/door/firedoor,
+/turf/open/floor/plasteel,
+/area/hallway/primary/starboard)
+"iW" = (
+/obj/effect/turf_decal/stripes/line,
+/turf/open/floor/plasteel,
+/area/engine/gravity_generator)
 "jg" = (
 /obj/machinery/conveyor{
 	dir = 8;
@@ -97,9 +138,25 @@
 "jx" = (
 /turf/closed/wall,
 /area/hallway/primary/port)
+"jy" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 6
+	},
+/turf/open/floor/plating,
+/area/engine/atmos)
+"li" = (
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden{
+	dir = 1
+	},
+/turf/open/floor/plating,
+/area/engine/atmos)
 "lJ" = (
 /obj/machinery/door/airlock/public/glass,
 /obj/effect/mapping_helpers/airlock/locked,
+/obj/machinery/door/firedoor/border_only/closed,
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
 "lO" = (
@@ -109,6 +166,7 @@
 /obj/machinery/door/firedoor/border_only{
 	dir = 4
 	},
+/obj/machinery/door/airlock/external,
 /turf/open/floor/plating,
 /area/engine/gravity_generator)
 "mD" = (
@@ -118,6 +176,7 @@
 /obj/machinery/door/firedoor/border_only{
 	dir = 8
 	},
+/obj/machinery/door/airlock/atmos/glass,
 /turf/open/floor/plating,
 /area/engine/atmos)
 "mF" = (
@@ -125,8 +184,43 @@
 /obj/machinery/keycard_auth{
 	pixel_x = -26
 	},
+/obj/item/storage/toolbox/mechanical,
+/obj/item/storage/toolbox/mechanical,
+/obj/item/storage/toolbox/electrical,
+/obj/item/storage/toolbox/electrical,
+/obj/item/storage/toolbox/electrical,
+/obj/item/storage/toolbox/electrical,
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
+"mH" = (
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1,
+/turf/open/floor/plating,
+/area/engine/atmos)
+"nj" = (
+/obj/machinery/atmospherics/components/binary/valve/on/layer1{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/engine/atmos)
+"od" = (
+/obj/effect/turf_decal/bot_white,
+/turf/open/floor/plasteel/dark,
+/area/engine/gravity_generator)
+"of" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 5
+	},
+/turf/open/floor/plating,
+/area/engine/atmos)
+"om" = (
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/hallway/primary/port)
 "oV" = (
 /turf/closed/wall/r_wall,
 /area/engine/atmos)
@@ -142,6 +236,12 @@
 "px" = (
 /turf/open/floor/plasteel,
 /area/quartermaster/warehouse)
+"pJ" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/engine/gravity_generator)
 "pM" = (
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 8
@@ -151,17 +251,80 @@
 	},
 /turf/open/floor/plating,
 /area/quartermaster/storage)
+"qg" = (
+/obj/effect/turf_decal/stripes/corner{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/engine/gravity_generator)
 "qF" = (
 /turf/closed/wall,
 /area/quartermaster/warehouse)
+"sU" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/engine/gravity_generator)
+"uF" = (
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3{
+	dir = 1
+	},
+/turf/open/floor/plating,
+/area/engine/atmos)
+"uO" = (
+/obj/machinery/door/airlock/public/glass,
+/obj/effect/mapping_helpers/airlock/locked,
+/obj/machinery/door/firedoor/border_only/closed{
+	dir = 1
+	},
+/obj/machinery/door/firedoor/border_only,
+/turf/open/floor/plasteel,
+/area/hallway/primary/starboard)
+"uP" = (
+/obj/machinery/door/airlock/maintenance/glass,
+/turf/open/floor/plating,
+/area/maintenance/disposal)
+"uU" = (
+/obj/machinery/atmospherics/components/binary/pump/on/layer1{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 6
+	},
+/turf/open/floor/plating,
+/area/engine/atmos)
+"uW" = (
+/obj/machinery/door/firedoor,
+/turf/open/floor/plasteel,
+/area/hallway/primary/port)
 "vd" = (
 /obj/machinery/door/airlock/public/glass,
 /obj/effect/mapping_helpers/airlock/locked,
+/obj/machinery/door/firedoor/border_only/closed,
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/starboard)
 "vR" = (
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
+"vU" = (
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/hallway/primary/starboard)
+"wj" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/engine/atmos)
 "xM" = (
 /obj/structure/closet/crate,
 /turf/open/floor/plasteel,
@@ -170,6 +333,10 @@
 /obj/effect/landmark/observer_start,
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
+"ys" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/turf/open/floor/plating,
+/area/engine/atmos)
 "yH" = (
 /obj/machinery/conveyor{
 	dir = 4;
@@ -177,6 +344,29 @@
 	},
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
+"yP" = (
+/obj/machinery/atmospherics/components/unary/tank/air{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/engine/atmos)
+"zf" = (
+/obj/machinery/door/window,
+/turf/open/floor/plating,
+/area/maintenance/disposal)
+"zr" = (
+/obj/machinery/atmospherics/pipe/layer_manifold{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/engine/atmos)
+"zN" = (
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/machinery/power/apc/auto_name/south,
+/turf/open/floor/plating,
+/area/engine/gravity_generator)
 "zT" = (
 /obj/machinery/door/airlock/public/glass,
 /obj/effect/mapping_helpers/airlock/locked,
@@ -188,9 +378,31 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/port)
+"Av" = (
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/engine/atmos)
 "Ay" = (
 /turf/open/space/basic,
 /area/space)
+"Bo" = (
+/obj/machinery/power/terminal,
+/obj/structure/closet/radiation,
+/turf/open/floor/plating,
+/area/engine/gravity_generator)
+"Cs" = (
+/obj/effect/turf_decal/bot_white/right,
+/turf/open/floor/plasteel/dark,
+/area/engine/gravity_generator)
+"Cz" = (
+/obj/machinery/power/smes/engineering,
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/turf/open/floor/plating,
+/area/engine/gravity_generator)
 "CC" = (
 /obj/structure/closet/emcloset/anchored,
 /obj/item/storage/toolbox/emergency,
@@ -207,6 +419,17 @@
 	},
 /turf/open/floor/plating,
 /area/quartermaster/storage)
+"CH" = (
+/obj/machinery/door/airlock/public/glass,
+/obj/effect/mapping_helpers/airlock/locked,
+/obj/machinery/door/firedoor/border_only/closed{
+	dir = 8
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/hallway/primary/starboard)
 "Di" = (
 /turf/open/floor/plating,
 /area/engine/gravity_generator)
@@ -215,8 +438,15 @@
 	anchored = 1
 	},
 /obj/item/storage/toolbox/emergency,
+/obj/structure/fireaxecabinet{
+	pixel_x = -32
+	},
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
+"Ee" = (
+/obj/effect/turf_decal/bot_white/left,
+/turf/open/floor/plasteel/dark,
+/area/engine/gravity_generator)
 "Ep" = (
 /obj/machinery/conveyor{
 	dir = 8;
@@ -237,19 +467,51 @@
 "EQ" = (
 /turf/open/floor/plasteel,
 /area/hallway/primary/starboard)
+"EV" = (
+/obj/machinery/door/airlock/external/glass,
+/turf/open/floor/plasteel,
+/area/engine/gravity_generator)
 "GV" = (
 /obj/effect/spawner/structure/window/reinforced/shutters,
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
+"Hg" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 10
+	},
+/turf/open/floor/plating,
+/area/engine/atmos)
+"Ia" = (
+/obj/machinery/atmospherics/components/unary/outlet_injector/on/layer3{
+	dir = 1
+	},
+/turf/open/floor/plating,
+/area/engine/atmos)
 "IN" = (
 /turf/closed/wall,
 /area/quartermaster/storage)
+"Jp" = (
+/obj/structure/window/spawner,
+/turf/open/floor/plating,
+/area/maintenance/disposal)
 "JJ" = (
 /obj/machinery/modular_computer/console/preset/civilian{
 	dir = 8
 	},
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
+"Kc" = (
+/obj/effect/turf_decal/stripes/corner{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/engine/gravity_generator)
+"Ke" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/engine/gravity_generator)
 "Lt" = (
 /obj/machinery/door/airlock/public/glass,
 /obj/effect/mapping_helpers/airlock/locked,
@@ -285,14 +547,26 @@
 /obj/machinery/power/apc/auto_name/west{
 	pixel_x = -24
 	},
+/obj/item/pipe_dispenser,
+/obj/item/pipe_dispenser,
+/obj/item/pipe_dispenser,
+/obj/item/pipe_dispenser,
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
+"MZ" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/turf/closed/wall/r_wall,
+/area/engine/atmos)
 "NB" = (
+/obj/effect/turf_decal/stripes/corner{
+	dir = 4
+	},
 /turf/open/floor/plasteel,
 /area/engine/gravity_generator)
 "NI" = (
 /obj/structure/table/reinforced,
 /obj/machinery/airalarm/directional/east,
+/obj/machinery/microwave,
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
 "Ou" = (
@@ -316,10 +590,27 @@
 /obj/effect/spawner/structure/window/reinforced/shutters,
 /turf/open/floor/plasteel,
 /area/hallway/primary/port)
+"Sv" = (
+/obj/effect/turf_decal/bot_white,
+/obj/machinery/gravity_generator/main/station,
+/turf/open/floor/plasteel/dark,
+/area/engine/gravity_generator)
+"SP" = (
+/obj/machinery/atmospherics/components/trinary/filter/layer3,
+/turf/open/floor/plating,
+/area/engine/atmos)
 "Uo" = (
 /obj/structure/table/reinforced,
+/obj/effect/spawner/lootdrop/donkpockets,
+/obj/effect/spawner/lootdrop/donkpockets,
+/obj/effect/spawner/lootdrop/donkpockets,
+/obj/effect/spawner/lootdrop/donkpockets,
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
+"Vh" = (
+/obj/machinery/suit_storage_unit/engine,
+/turf/open/floor/plating,
+/area/engine/gravity_generator)
 "VA" = (
 /obj/machinery/conveyor{
 	dir = 4;
@@ -328,6 +619,17 @@
 /obj/structure/plasticflaps,
 /turf/open/floor/plating,
 /area/quartermaster/storage)
+"VF" = (
+/obj/machinery/door/airlock/public/glass,
+/obj/effect/mapping_helpers/airlock/locked,
+/obj/machinery/door/firedoor/border_only/closed{
+	dir = 4
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/hallway/primary/starboard)
 "WO" = (
 /obj/machinery/advanced_airlock_controller{
 	pixel_y = 24
@@ -348,6 +650,12 @@
 	},
 /turf/open/space/basic,
 /area/space)
+"YU" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 9
+	},
+/turf/open/floor/plating,
+/area/engine/atmos)
 "Zr" = (
 /obj/machinery/door/firedoor,
 /turf/open/floor/plasteel,
@@ -24912,10 +25220,10 @@ Ay
 Ay
 Ay
 OK
-NB
-NB
-NB
-NB
+dB
+sU
+sU
+sU
 NB
 OK
 Ay
@@ -25169,19 +25477,19 @@ Ay
 Ay
 Ay
 OK
-NB
-NB
-NB
-NB
-NB
+iW
+Cs
+od
+Ee
+pJ
 OK
 Ay
 oV
-Ou
-Ou
-Ou
-Ou
-Ou
+iy
+iy
+yP
+yP
+yP
 oV
 Ay
 Ay
@@ -25426,19 +25734,19 @@ Ay
 Ay
 Ay
 OK
-NB
-NB
-NB
-NB
-NB
+iW
+od
+od
+Sv
+pJ
 OK
 Ay
 oV
-Ou
-Ou
-Ou
-Ou
-Ou
+li
+Av
+Av
+Av
+YU
 oV
 Ay
 Ay
@@ -25683,15 +25991,15 @@ Ay
 Ay
 Ay
 OK
-NB
-NB
-NB
-NB
-NB
+iW
+Ee
+od
+Cs
+pJ
 OK
 Ay
 oV
-Ou
+zr
 Ou
 Ou
 Ou
@@ -25940,18 +26248,18 @@ Ay
 Ay
 Ay
 OK
-NB
-NB
-NB
-NB
-NB
+Kc
+Ke
+Ke
+Ke
+qg
 OK
 Ay
 oV
+nj
 Ou
-Ou
-Ou
-Ou
+jy
+of
 Ou
 oV
 Ay
@@ -26201,14 +26509,14 @@ OK
 OK
 OK
 OK
-NB
+EV
 OK
 Ay
 oV
+wj
 Ou
-Ou
-Ou
-Ou
+zr
+hc
 Ou
 oV
 Ay
@@ -26454,19 +26762,19 @@ Ay
 Ay
 Ay
 hi
+Vh
 Di
 Di
 Di
-Di
-Di
+zN
 hi
 Ay
 oV
-Ou
-Ou
-Ou
-Ou
-Ou
+Hg
+ys
+mH
+uF
+of
 oV
 Ay
 Ay
@@ -26711,21 +27019,21 @@ Ay
 Ay
 Ay
 hi
+Vh
 Di
-Di
-Di
-Di
-Di
+Vh
+Bo
+Cz
 hi
 Ay
 oV
 Ou
 Ou
-Ou
-Ou
-Ou
-oV
-Ay
+uU
+SP
+SP
+MZ
+Ia
 Ay
 Ay
 Ay
@@ -27240,7 +27548,7 @@ LK
 LK
 LK
 Me
-jm
+Jp
 jm
 jm
 jm
@@ -27496,8 +27804,8 @@ LK
 LK
 LK
 LK
-jm
-jm
+uP
+Jp
 jm
 jm
 jm
@@ -27754,7 +28062,7 @@ LK
 LK
 LK
 Me
-jm
+zf
 jm
 jm
 jm
@@ -27983,11 +28291,11 @@ Lt
 RY
 jx
 jx
-LK
-LK
-LK
-LK
-LK
+om
+uW
+om
+uW
+om
 jx
 jx
 jx
@@ -32091,7 +32399,7 @@ Ay
 Ay
 Ay
 Ay
-lJ
+ds
 vR
 fF
 vR
@@ -36442,52 +36750,52 @@ Ay
 eP
 eP
 cD
-vd
+CH
 cD
 eP
 eP
 eP
 cD
-vd
+CH
 cD
 eP
 eP
 eP
 cD
-vd
+CH
 cD
 eP
 eP
 eP
 cD
-vd
+CH
 cD
 eP
 eP
-EQ
-EQ
-EQ
-EQ
-EQ
+vU
+iA
+vU
+iA
+vU
 eP
 eP
 cD
-vd
-cD
-eP
-eP
-eP
-cD
-vd
+CH
 cD
 eP
 eP
 eP
+cD
+CH
+cD
+eP
+eP
+eP
 eP
 eP
 eP
 cD
-vd
+CH
 cD
 eP
 eP
@@ -36953,7 +37261,7 @@ Ay
 Ay
 Ay
 Ay
-vd
+uO
 EQ
 EQ
 EQ
@@ -37470,43 +37778,43 @@ Ay
 eP
 eP
 cD
-vd
+VF
 cD
 eP
 eP
 eP
 cD
-vd
+VF
 cD
 eP
 eP
 eP
 cD
-vd
+VF
 cD
 eP
 eP
 eP
 cD
-vd
+VF
 cD
 eP
 eP
 eP
 cD
-vd
+VF
 cD
 eP
 eP
 eP
 cD
-vd
+VF
 cD
 eP
 eP
 eP
 cD
-vd
+VF
 cD
 eP
 eP
@@ -37515,7 +37823,7 @@ eP
 eP
 eP
 cD
-vd
+VF
 cD
 eP
 eP
