@@ -22,6 +22,7 @@
     stack_item.add(amt_to_add)
     amt -= amt_to_add
 	
-	new target.type(get_turf(target), amt)
+    if(amt > 0)
+	    new target.type(get_turf(target), amt)
 	
 	qdel(src)
