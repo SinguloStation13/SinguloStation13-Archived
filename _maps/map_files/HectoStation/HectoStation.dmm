@@ -11,6 +11,13 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3,
 /turf/open/floor/plasteel,
 /area/science/server)
+"ai" = (
+/obj/effect/decal/cleanable/oil,
+/turf/open/floor/plating/airless{
+	icon_plating = "plating_rust";
+	icon_state = "plating_rust"
+	},
+/area/asteroid/mining)
 "aw" = (
 /obj/machinery/power/solar,
 /obj/structure/cable{
@@ -59,6 +66,13 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
+"bP" = (
+/obj/effect/decal/cleanable/blood,
+/turf/open/floor/plating/airless{
+	icon_plating = "plating_rust";
+	icon_state = "plating_rust"
+	},
+/area/asteroid/mining)
 "bU" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
 	dir = 1
@@ -101,11 +115,13 @@
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
 "di" = (
-/obj/machinery/atmospherics/pipe/simple/supply/visible/layer1,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/visible/layer3,
 /obj/machinery/door/airlock/maintenance_hatch,
 /obj/structure/cable{
 	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/components/binary/pump/on/layer1{
+	target_pressure = 300
 	},
 /turf/open/floor/plating,
 /area/engine/atmos)
@@ -152,6 +168,13 @@
 	},
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
+"ee" = (
+/obj/effect/decal/cleanable/robot_debris/old,
+/turf/open/floor/plating/airless{
+	icon_plating = "plating_rust";
+	icon_state = "plating_rust"
+	},
+/area/asteroid/mining)
 "em" = (
 /obj/structure/closet/radiation,
 /turf/open/floor/plating/asteroid/airless,
@@ -175,6 +198,16 @@
 	},
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
+"eT" = (
+/obj/item/stack/ore/glass{
+	pixel_x = 4;
+	pixel_y = -1
+	},
+/turf/open/floor/plating/airless{
+	icon_plating = "plating_rust";
+	icon_state = "plating_rust"
+	},
+/area/asteroid/mining)
 "eU" = (
 /obj/machinery/conveyor{
 	dir = 8;
@@ -230,6 +263,7 @@
 /obj/machinery/atmospherics/pipe/simple/general/hidden{
 	dir = 10
 	},
+/obj/effect/landmark/event_spawn,
 /turf/open/floor/plasteel,
 /area/science/server)
 "gt" = (
@@ -241,6 +275,13 @@
 "gO" = (
 /turf/closed/wall,
 /area/construction/storage_wing)
+"hf" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/obj/structure/table,
+/turf/open/floor/plasteel,
+/area/engine/engineering)
 "ht" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -353,6 +394,16 @@
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plasteel,
 /area/quartermaster/warehouse)
+"jB" = (
+/obj/item/stack/ore/glass{
+	pixel_x = -2;
+	pixel_y = 3
+	},
+/turf/open/floor/plating/airless{
+	icon_plating = "plating_rust";
+	icon_state = "plating_rust"
+	},
+/area/asteroid/mining)
 "jE" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/visible/layer3,
 /obj/structure/cable{
@@ -372,6 +423,10 @@
 	},
 /turf/open/floor/plasteel/airless,
 /area/engine/gravity_generator)
+"jX" = (
+/obj/effect/landmark/carpspawn,
+/turf/open/space/basic,
+/area/space)
 "kj" = (
 /turf/open/floor/plasteel/airless,
 /area/engine/gravity_generator)
@@ -393,6 +448,10 @@
 	},
 /turf/open/floor/plating/asteroid/airless,
 /area/asteroid/nearstation)
+"kU" = (
+/obj/structure/lattice,
+/turf/open/space/basic,
+/area/space/nearstation)
 "kV" = (
 /obj/effect/turf_decal/bot_white,
 /obj/machinery/gravity_generator/main/station,
@@ -461,6 +520,10 @@
 	},
 /turf/open/floor/plating/asteroid/airless,
 /area/asteroid/nearstation)
+"nu" = (
+/obj/effect/landmark/event_spawn,
+/turf/open/floor/plasteel,
+/area/engine/engineering)
 "nA" = (
 /obj/effect/turf_decal/stripes/corner{
 	dir = 4
@@ -483,12 +546,32 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
+"nP" = (
+/mob/living/simple_animal/hostile/asteroid/goliath,
+/turf/open/floor/plating/airless{
+	icon_plating = "plating_rust";
+	icon_state = "plating_rust"
+	},
+/area/asteroid/mining)
+"nY" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/effect/landmark/event_spawn,
+/turf/open/floor/plasteel/airless,
+/area/engine/gravity_generator)
 "on" = (
 /obj/effect/turf_decal/stripes/corner{
 	dir = 1
 	},
 /turf/open/floor/plasteel/airless,
 /area/engine/gravity_generator)
+"os" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/obj/effect/landmark/event_spawn,
+/turf/open/floor/plasteel,
+/area/quartermaster/storage)
 "ov" = (
 /obj/machinery/door/firedoor/border_only{
 	dir = 4
@@ -550,6 +633,9 @@
 	},
 /turf/open/floor/plating/asteroid/airless,
 /area/asteroid/nearstation)
+"qd" = (
+/turf/closed/wall/rust,
+/area/asteroid/mining)
 "qk" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
 	dir = 8
@@ -776,6 +862,17 @@
 	},
 /turf/open/floor/plating,
 /area/engine/engineering)
+"wk" = (
+/obj/structure/closet/crate/secure/science,
+/obj/item/slime_extract/grey,
+/obj/item/slime_extract/grey,
+/obj/item/slime_extract/grey,
+/obj/item/stack/sheet/mineral/plasma/twenty,
+/turf/open/floor/plating/airless{
+	icon_plating = "plating_rust";
+	icon_state = "plating_rust"
+	},
+/area/asteroid/mining)
 "xl" = (
 /obj/structure/table,
 /obj/machinery/microwave{
@@ -818,6 +915,13 @@
 	},
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
+"ya" = (
+/obj/item/stack/sheet/metal/five,
+/turf/open/floor/plating/airless{
+	icon_plating = "plating_rust";
+	icon_state = "plating_rust"
+	},
+/area/asteroid/mining)
 "yw" = (
 /obj/structure/closet/crate,
 /obj/item/stack/sheet/glass/fifty,
@@ -999,6 +1103,13 @@
 /obj/structure/plasticflaps,
 /turf/open/floor/plating,
 /area/quartermaster/storage)
+"Eq" = (
+/obj/structure/girder,
+/turf/open/floor/plating/airless{
+	icon_plating = "plating_rust";
+	icon_state = "plating_rust"
+	},
+/area/asteroid/mining)
 "Eu" = (
 /obj/machinery/cryopod/latejoin,
 /turf/open/floor/plasteel,
@@ -1254,9 +1365,12 @@
 /turf/open/floor/plasteel,
 /area/quartermaster/warehouse)
 "KU" = (
-/obj/machinery/airalarm/directional/west,
+/obj/machinery/cryopod/latejoin,
+/obj/machinery/light{
+	dir = 4
+	},
 /turf/open/floor/plasteel,
-/area/engine/engineering)
+/area/hallway/secondary/entry)
 "Ll" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -1271,6 +1385,7 @@
 /area/hallway/secondary/entry)
 "LC" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer1,
+/obj/effect/landmark/event_spawn,
 /turf/open/floor/plasteel,
 /area/quartermaster/miningoffice)
 "LI" = (
@@ -1599,6 +1714,9 @@
 "SM" = (
 /obj/machinery/door/airlock/command,
 /obj/effect/mapping_helpers/airlock/locked,
+/obj/machinery/atmospherics/pipe/simple/general/hidden{
+	dir = 4
+	},
 /turf/open/floor/plasteel/dark,
 /area/science/server)
 "SS" = (
@@ -1620,6 +1738,7 @@
 "Tm" = (
 /obj/machinery/power/port_gen/pacman,
 /obj/structure/cable,
+/obj/item/stack/sheet/mineral/plasma/twenty,
 /turf/open/floor/plating,
 /area/hallway/secondary/entry)
 "To" = (
@@ -1648,9 +1767,7 @@
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
 "TK" = (
-/obj/machinery/light{
-	dir = 8
-	},
+/obj/machinery/autolathe/hacked,
 /turf/open/floor/plasteel,
 /area/engine/engineering)
 "TZ" = (
@@ -1775,6 +1892,15 @@
 "VU" = (
 /turf/closed/mineral/random,
 /area/asteroid/mining)
+"Wk" = (
+/obj/item/stack/ore/glass{
+	pixel_x = 3
+	},
+/turf/open/floor/plating/airless{
+	icon_plating = "plating_rust";
+	icon_state = "plating_rust"
+	},
+/area/asteroid/mining)
 "Wo" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -1787,6 +1913,19 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
+"Ws" = (
+/obj/structure/door_assembly/door_assembly_highsecurity,
+/turf/open/floor/plating/airless{
+	icon_plating = "plating_rust";
+	icon_state = "plating_rust"
+	},
+/area/asteroid/mining)
+"WK" = (
+/turf/open/floor/plating/airless{
+	icon_plating = "plating_rust";
+	icon_state = "plating_rust"
+	},
+/area/asteroid/mining)
 "WR" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 8
@@ -1854,6 +1993,11 @@
 /obj/machinery/airalarm/directional/west,
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
+"XA" = (
+/obj/structure/table,
+/obj/machinery/cell_charger,
+/turf/open/floor/plasteel,
+/area/engine/engineering)
 "XE" = (
 /obj/structure/closet/crate{
 	name = "Valuables Crate"
@@ -1916,6 +2060,10 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
+"Yd" = (
+/obj/machinery/airalarm/directional/west,
+/turf/open/floor/plasteel,
+/area/engine/engineering)
 "Yi" = (
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plasteel,
@@ -1959,6 +2107,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/visible/layer3{
 	dir = 9
 	},
+/obj/effect/landmark/event_spawn,
 /turf/open/floor/plating,
 /area/engine/atmos)
 "YL" = (
@@ -7493,7 +7642,7 @@ qS
 qS
 qS
 qS
-qS
+jX
 qS
 qS
 qS
@@ -10695,7 +10844,7 @@ qS
 qS
 qS
 qS
-qS
+jX
 qS
 qS
 qS
@@ -13065,7 +13214,7 @@ qS
 qS
 qS
 qS
-qS
+jX
 qS
 qS
 qS
@@ -25342,7 +25491,7 @@ qS
 qS
 qS
 qS
-qS
+jX
 qS
 qS
 qS
@@ -26744,8 +26893,8 @@ XW
 XW
 XW
 XW
-XW
-XW
+VU
+VU
 XW
 XW
 XW
@@ -26994,15 +27143,15 @@ XW
 XW
 XW
 XW
-XW
-XW
-XW
-XW
-XW
-XW
-XW
-XW
-XW
+WK
+jB
+WK
+VU
+VU
+VU
+VU
+VU
+VU
 XW
 XW
 XW
@@ -27251,16 +27400,16 @@ XW
 XW
 XW
 XW
-XW
-XW
-XW
-XW
-XW
-XW
-XW
-XW
-XW
-XW
+Wk
+VU
+VU
+eT
+VU
+Eq
+VU
+VU
+VU
+VU
 XW
 XW
 XW
@@ -27508,16 +27657,16 @@ XW
 XW
 XW
 XW
-XW
-XW
-XW
-XW
-XW
-XW
-XW
-XW
-XW
-XW
+VU
+ya
+bP
+WK
+Eq
+WK
+qd
+VU
+VU
+VU
 XW
 XW
 XW
@@ -27764,16 +27913,16 @@ XW
 XW
 XW
 XW
-XW
-XW
-XW
-XW
-XW
-XW
-XW
-XW
-XW
-XW
+VU
+VU
+Ws
+WK
+WK
+WK
+ai
+qd
+VU
+VU
 XW
 XW
 XW
@@ -28020,16 +28169,16 @@ XW
 XW
 XW
 XW
-XW
-XW
-XW
-XW
-XW
-XW
-XW
-XW
-XW
-XW
+VU
+VU
+Ws
+WK
+nP
+WK
+wk
+WK
+Eq
+VU
 XW
 XW
 XW
@@ -28277,16 +28426,16 @@ XW
 XW
 XW
 XW
-XW
-XW
-XW
-XW
-XW
-XW
-XW
-XW
-XW
-XW
+VU
+VU
+Eq
+WK
+WK
+ee
+WK
+WK
+qd
+VU
 XW
 XW
 XW
@@ -28534,16 +28683,16 @@ XW
 XW
 XW
 XW
-XW
-XW
-XW
-XW
-XW
-XW
-XW
-XW
-XW
-XW
+VU
+VU
+VU
+WK
+qd
+Eq
+qd
+qd
+qd
+VU
 XW
 XW
 XW
@@ -28791,16 +28940,16 @@ XW
 XW
 XW
 XW
+VU
+VU
+VU
 XW
 XW
 XW
-XW
-XW
-XW
-XW
-XW
-XW
-XW
+VU
+VU
+VU
+VU
 XW
 XW
 XW
@@ -29246,7 +29395,7 @@ qS
 qS
 qS
 qS
-qS
+jX
 qS
 qS
 qS
@@ -33539,10 +33688,10 @@ qS
 qS
 qS
 qS
-aK
-aK
-aK
-aK
+kU
+kU
+kU
+kU
 qS
 qS
 qS
@@ -34569,8 +34718,8 @@ qS
 jk
 uL
 jk
-aK
-aK
+kU
+kU
 qS
 qS
 qS
@@ -35346,7 +35495,7 @@ zZ
 zZ
 zZ
 XU
-aK
+kU
 qS
 qS
 qS
@@ -35597,12 +35746,12 @@ qS
 jk
 uL
 jk
-aK
+kU
 qS
-aK
+kU
 qS
 qS
-aK
+kU
 qS
 qS
 qS
@@ -35860,7 +36009,7 @@ aw
 aw
 aw
 XU
-aK
+kU
 jk
 jk
 jk
@@ -36625,7 +36774,7 @@ qS
 jk
 uL
 jk
-aK
+kU
 qS
 qS
 qS
@@ -37645,11 +37794,11 @@ qS
 YP
 qS
 qS
-qS
-qS
-qS
-qS
-qS
+Yw
+Yw
+Yw
+Yw
+Yw
 Yw
 xx
 Sx
@@ -37903,10 +38052,10 @@ Zi
 Ul
 Ul
 Ul
-Yw
-Yw
-Yw
-Yw
+TK
+XA
+hf
+Yd
 Yw
 rt
 Yw
@@ -38162,8 +38311,8 @@ PR
 Ul
 pl
 pl
-TK
-KU
+nu
+pl
 rm
 ht
 uZ
@@ -39684,7 +39833,7 @@ cG
 fS
 kj
 kV
-nB
+nY
 bi
 YL
 YL
@@ -40208,7 +40357,7 @@ YL
 YL
 sK
 Eu
-Eu
+KU
 Eu
 il
 WS
@@ -42016,7 +42165,7 @@ II
 II
 II
 Hg
-II
+os
 uC
 II
 nI
@@ -51852,7 +52001,7 @@ qS
 qS
 qS
 qS
-qS
+jX
 qS
 qS
 qS
@@ -52181,7 +52330,7 @@ qS
 qS
 qS
 qS
-qS
+jX
 qS
 qS
 qS
@@ -54052,7 +54201,7 @@ qS
 qS
 qS
 qS
-qS
+jX
 qS
 qS
 qS
@@ -57223,7 +57372,7 @@ qS
 qS
 qS
 qS
-qS
+jX
 qS
 qS
 qS
@@ -61032,7 +61181,7 @@ qS
 qS
 qS
 qS
-qS
+jX
 qS
 qS
 qS
@@ -62776,7 +62925,7 @@ qS
 qS
 qS
 qS
-qS
+jX
 qS
 qS
 qS
