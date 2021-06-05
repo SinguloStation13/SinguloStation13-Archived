@@ -17,7 +17,12 @@
 		carbie.gain_trauma(/datum/brain_trauma/special/beepsky,TRAUMA_RESILIENCE_ABSOLUTE)
 		qdel(src)
 		return
-
-	stack_item.add(amt)
-
+	
+	var/amt_to_add = min(stack_item.max_amount - stack_item.get_amount(), amt)
+	stack_item.add(amt_to_add)
+	amt -= amt_to_add
+	
+	if(amt > 0)
+		new target.type(get_turf(target), amt)
+	
 	qdel(src)
