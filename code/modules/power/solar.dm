@@ -479,6 +479,25 @@
 	for(var/obj/machinery/power/solar/S in connected_panels)
 		S.queue_turn(azimuth)
 
+// Singulostation edit begin - autoconnect solar panel computers
+//
+// Solar Control Computer that automatically connects to solar panels roundstart
+//
+
+/obj/machinery/power/solar_control/auto_connect
+
+/obj/machinery/power/solar_control/auto_connect/Initialize(mapload)
+	. = ..()
+	if(mapload)
+		RegisterSignal(src, COMSIG_MACHINE_POWERNET_ROUNDSTART_INIT, .proc/auto_connect)
+
+/obj/machinery/power/solar_control/auto_connect/proc/auto_connect()
+	SIGNAL_HANDLER
+	search_for_connected()
+	track = SOLAR_TRACK_AUTO
+
+// Singulostation edit end - autoconnect solar panel computers
+
 //
 // MISC
 //
