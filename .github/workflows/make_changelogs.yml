@@ -24,8 +24,8 @@ jobs:
           pip install ruamel.yaml PyGithub
       - name: Make CL
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
-          #GITHUB_TOKEN: ${{ secrets.CHANGELOG_TOKEN }} Use this instead if you have protected branches. Make a secret named CHANGELOG_TOKEN with a valid access token before enabling this
+          #GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.CHANGELOG_TOKEN }} # Use this instead if you have protected branches. Make a secret named CHANGELOG_TOKEN with a valid access token before enabling this
           GIT_EMAIL: "60119942+WaspStation-Bot@users.noreply.github.com"
           GIT_NAME: "WaspStation-Bot"
         run: python tools/changelog/generate_cl.py
