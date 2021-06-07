@@ -130,14 +130,16 @@
 		playsound(src, item_recycle_sound, (50 + nom.len*5), TRUE, nom.len, ignore_walls = (nom.len - 10)) // As a substitute for playing 50 sounds at once.
 	if(not_eaten)
 		playsound(src, 'sound/machines/buzz-sigh.ogg', (50 + not_eaten*5), FALSE, not_eaten, ignore_walls = (not_eaten - 10)) // Ditto.
-	if(!ismob(AM0))
-		AM0.moveToNullspace()
-		qdel(AM0)
-	else // Lets not move a mob to nullspace and qdel it, yes?
+	// SinguloStation edit begin - Stop recycler form recycling effects
+	if(ismob(AM0)) // Lets not move a mob to nullspace and qdel it, yes?
 		for(var/i in AM0.contents)
 			var/atom/movable/content = i
 			content.moveToNullspace()
-			qdel(content)
+			qdel(content
+	else if(!istype(AM0, /obj/effect))
+		AM0.moveToNullspace()
+		qdel(AM0)
+	// SinguloStation edit end - Stop recycler form recycling effects
 
 /obj/machinery/recycler/proc/recycle_item(obj/item/I)
 
