@@ -103,6 +103,8 @@
 	var/living_detected = FALSE //technically includes silicons as well but eh
 	var/list/nom = list()
 	var/list/crunchy_nom = list() //Mobs have to be handled differently so they get a different list instead of checking them multiple times.
+	// SinguloStation edit - Stop recycler form recycling effects
+	var/dont_nom_count = 0 //Count things like effects that we can't eat, so we don't buzz when we don't accept it
 
 	for(var/i in to_eat)
 		var/atom/movable/AM = i
@@ -115,7 +117,11 @@
 		else if(isliving(AM))
 			living_detected = TRUE
 			crunchy_nom += AM
-	var/not_eaten = to_eat.len - nom.len - crunchy_nom.len
+	// SinguloStation edit begin - Stop recycler form recycling effects
+		else if(istype(AM, /obj/effect))
+			dont_nom_count++
+	var/not_eaten = to_eat.len - nom.len - crunchy_nom.len - dont_nom_count
+	// SinguloStation edit end - Stop recycler form recycling effects
 	if(living_detected) // First, check if we have any living beings detected.
 		if(obj_flags & EMAGGED)
 			for(var/CRUNCH in crunchy_nom) // Eat them and keep going because we don't care about safety.
@@ -135,7 +141,7 @@
 		for(var/i in AM0.contents)
 			var/atom/movable/content = i
 			content.moveToNullspace()
-			qdel(content
+			qdel(content)
 	else if(!istype(AM0, /obj/effect))
 		AM0.moveToNullspace()
 		qdel(AM0)
