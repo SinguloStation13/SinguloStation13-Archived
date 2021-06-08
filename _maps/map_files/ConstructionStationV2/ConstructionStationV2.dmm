@@ -317,6 +317,12 @@
 	},
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
+"gq" = (
+/obj/structure/sign/warning/vacuum/external{
+	pixel_x = -32
+	},
+/turf/open/floor/plasteel,
+/area/hallway/primary/port)
 "gw" = (
 /obj/machinery/door/firedoor/border_only{
 	dir = 4
@@ -2566,12 +2572,6 @@
 	id = "trash";
 	pixel_x = -26;
 	pixel_y = -6
-	},
-/obj/machinery/button/door{
-	id = "Disposal Exit";
-	name = "Disposal Vent Control";
-	pixel_x = -25;
-	pixel_y = 4
 	},
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plating,
@@ -42773,7 +42773,7 @@ LK
 LK
 Do
 LK
-LK
+gq
 pG
 DU
 LK
