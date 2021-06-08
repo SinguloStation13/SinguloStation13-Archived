@@ -19,6 +19,16 @@
 "aG" = (
 /turf/closed/mineral/random,
 /area/asteroid/mining)
+"aQ" = (
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/machinery/power/solar{
+	id = "portsolar";
+	name = "Port Solar Array"
+	},
+/turf/open/floor/plasteel/airless/solarpanel,
+/area/solar/port)
 "bd" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -48,7 +58,19 @@
 	icon_state = "1-4"
 	},
 /turf/open/space/basic,
-/area/maintenance/solars/port)
+/area/solar/port)
+"by" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/quartermaster/storage)
 "bB" = (
 /obj/machinery/light,
 /turf/open/floor/plasteel,
@@ -159,20 +181,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/starboard)
-"ds" = (
-/obj/machinery/door/airlock/public/glass,
-/obj/effect/mapping_helpers/airlock/locked,
-/obj/machinery/door/firedoor/border_only,
-/obj/machinery/door/firedoor/border_only/closed{
-	dir = 1
-	},
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
-/turf/open/floor/plasteel,
-/area/space/nearstation)
 "dG" = (
 /obj/machinery/atmospherics/pipe/manifold/general/hidden,
 /obj/machinery/light/small,
@@ -204,6 +212,18 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
+"ef" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/obj/machinery/door/firedoor/border_only,
+/turf/open/floor/plasteel,
+/area/hallway/primary/starboard)
 "eq" = (
 /obj/machinery/computer/bounty{
 	dir = 8
@@ -234,26 +254,6 @@
 	},
 /turf/open/floor/plating,
 /area/engine/storage_shared)
-"fg" = (
-/obj/machinery/door/airlock/public/glass,
-/obj/effect/mapping_helpers/airlock/locked,
-/obj/machinery/door/firedoor/border_only{
-	dir = 4
-	},
-/obj/machinery/door/firedoor/border_only/closed{
-	dir = 8
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
-	dir = 8
-	},
-/turf/open/floor/plasteel,
-/area/space/nearstation)
 "fw" = (
 /obj/structure/disposaloutlet{
 	dir = 4
@@ -315,6 +315,12 @@
 /obj/structure/disposalpipe/segment{
 	dir = 6
 	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 6
+	},
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
 "gq" = (
@@ -359,7 +365,7 @@
 	icon_state = "1-8"
 	},
 /turf/open/space/basic,
-/area/maintenance/solars/port)
+/area/solar/port)
 "gI" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
 	dir = 4
@@ -461,8 +467,7 @@
 /area/quartermaster/storage)
 "if" = (
 /obj/machinery/door/airlock/public/glass,
-/obj/effect/mapping_helpers/airlock/locked,
-/obj/machinery/door/firedoor/border_only/closed{
+/obj/machinery/door/firedoor/border_only{
 	dir = 1
 	},
 /obj/machinery/door/firedoor/border_only,
@@ -595,8 +600,7 @@
 /area/engine/storage_shared)
 "kp" = (
 /obj/machinery/door/airlock/public/glass,
-/obj/effect/mapping_helpers/airlock/locked,
-/obj/machinery/door/firedoor/border_only/closed,
+/obj/machinery/door/firedoor/border_only,
 /obj/machinery/door/firedoor/border_only{
 	dir = 1
 	},
@@ -630,21 +634,9 @@
 /area/hallway/secondary/entry)
 "ky" = (
 /obj/structure/closet/crate,
-/obj/item/clothing/suit/space/eva,
-/obj/item/clothing/suit/space/eva,
-/obj/item/clothing/suit/space/eva,
-/obj/item/clothing/suit/space/eva,
-/obj/item/clothing/suit/space/eva,
-/obj/item/clothing/head/helmet/space/eva,
-/obj/item/clothing/head/helmet/space/eva,
-/obj/item/clothing/head/helmet/space/eva,
-/obj/item/clothing/head/helmet/space/eva,
-/obj/item/clothing/head/helmet/space/eva,
-/obj/item/tank/internals/oxygen,
-/obj/item/tank/internals/oxygen,
-/obj/item/tank/internals/oxygen,
-/obj/item/tank/internals/oxygen,
-/obj/item/tank/internals/oxygen,
+/obj/effect/spawner/lootdrop/donkpockets,
+/obj/effect/spawner/lootdrop/donkpockets,
+/obj/effect/spawner/lootdrop/donkpockets,
 /turf/open/floor/plasteel,
 /area/construction/storage_wing)
 "lu" = (
@@ -674,7 +666,7 @@
 	name = "Port Solar Array"
 	},
 /turf/open/floor/plasteel/airless/solarpanel,
-/area/maintenance/solars/port)
+/area/solar/port)
 "lO" = (
 /obj/machinery/door/firedoor/border_only{
 	dir = 8
@@ -723,11 +715,17 @@
 	name = "Port Solar Array"
 	},
 /turf/open/floor/plasteel/airless/solarpanel,
-/area/maintenance/solars/port)
+/area/solar/port)
 "mC" = (
 /obj/structure/window/reinforced/spawner,
 /obj/structure/disposalpipe/segment{
 	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 8
 	},
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
@@ -760,14 +758,12 @@
 /obj/item/storage/toolbox/electrical,
 /obj/item/storage/toolbox/electrical,
 /obj/item/storage/toolbox/electrical,
-/obj/item/storage/toolbox/electrical,
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
 /obj/machinery/light{
 	dir = 8
 	},
-/obj/item/storage/toolbox/mechanical,
 /obj/item/storage/toolbox/mechanical,
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
@@ -789,7 +785,7 @@
 /turf/open/floor/plasteel,
 /area/quartermaster/warehouse)
 "nj" = (
-/obj/machinery/atmospherics/components/binary/valve/on/layer1{
+/obj/machinery/atmospherics/components/binary/valve/layer1{
 	dir = 4
 	},
 /turf/open/floor/plating,
@@ -811,16 +807,14 @@
 /obj/structure/cable{
 	icon_state = "2-8"
 	},
-/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1{
-	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
-	dir = 10
-	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
 /obj/structure/disposalpipe/segment,
+/obj/machinery/atmospherics/pipe/manifold4w/supply/hidden/layer1,
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3{
+	dir = 4
+	},
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
 "nT" = (
@@ -880,6 +874,18 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 8
+	},
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
 "oR" = (
@@ -927,7 +933,7 @@
 	icon_state = "4-8"
 	},
 /turf/open/space/basic,
-/area/maintenance/solars/port)
+/area/solar/port)
 "pG" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -1099,8 +1105,15 @@
 /obj/structure/cable,
 /obj/machinery/power/tracker,
 /turf/open/floor/plasteel/airless/solarpanel,
-/area/maintenance/solars/port)
+/area/solar/port)
 "tP" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/quartermaster/storage)
+"uh" = (
+/obj/structure/window/reinforced/spawner,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 8
 	},
@@ -1109,7 +1122,7 @@
 "uk" = (
 /obj/structure/lattice/catwalk,
 /turf/open/space/basic,
-/area/maintenance/solars/port)
+/area/solar/port)
 "um" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -1132,6 +1145,7 @@
 	icon_state = "1-8"
 	},
 /obj/machinery/light/small,
+/obj/machinery/airalarm/directional/south,
 /turf/open/floor/plating,
 /area/engine/storage_shared)
 "ur" = (
@@ -1182,7 +1196,6 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 5
 	},
-/obj/effect/turf_decal/bot,
 /turf/open/floor/plasteel,
 /area/quartermaster/warehouse)
 "uP" = (
@@ -1235,7 +1248,7 @@
 	icon_state = "2-4"
 	},
 /turf/open/space/basic,
-/area/maintenance/solars/port)
+/area/solar/port)
 "vP" = (
 /obj/machinery/vending/engineering,
 /turf/open/floor/plasteel,
@@ -1284,6 +1297,13 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
+"xo" = (
+/obj/machinery/firealarm{
+	dir = 8;
+	pixel_x = 24
+	},
+/turf/open/floor/plasteel,
+/area/hallway/primary/starboard)
 "xu" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -1497,16 +1517,6 @@
 	},
 /turf/open/floor/plating,
 /area/engine/gravity_generator)
-"zW" = (
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
-/obj/machinery/power/solar{
-	id = "portsolar";
-	name = "Port Solar Array"
-	},
-/turf/open/floor/plasteel/airless/solarpanel,
-/area/maintenance/solars/port)
 "Aj" = (
 /obj/machinery/conveyor{
 	dir = 8;
@@ -1612,6 +1622,10 @@
 "CC" = (
 /obj/structure/closet/emcloset/anchored,
 /obj/item/storage/toolbox/emergency,
+/obj/machinery/computer/cryopod{
+	dir = 8;
+	pixel_x = 32
+	},
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
 "CG" = (
@@ -1625,34 +1639,14 @@
 	},
 /turf/open/floor/plating,
 /area/quartermaster/storage)
-"CH" = (
-/obj/machinery/door/airlock/public/glass,
-/obj/effect/mapping_helpers/airlock/locked,
-/obj/machinery/door/firedoor/border_only/closed{
-	dir = 8
-	},
-/obj/machinery/door/firedoor/border_only{
-	dir = 4
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
-	dir = 8
-	},
-/turf/open/floor/plasteel,
-/area/space/nearstation)
 "Dg" = (
 /obj/machinery/atmospherics/pipe/simple/general/hidden,
 /obj/machinery/door/airlock/command,
-/obj/effect/mapping_helpers/airlock/locked,
 /obj/machinery/door/firedoor/border_only,
 /obj/machinery/door/firedoor/border_only{
 	dir = 1
 	},
+/obj/effect/mapping_helpers/airlock/locked,
 /turf/open/floor/plasteel/dark/telecomms,
 /area/science/server)
 "Di" = (
@@ -1705,6 +1699,16 @@
 	},
 /obj/machinery/light{
 	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/quartermaster/storage)
+"DG" = (
+/obj/structure/window/reinforced/spawner,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 8
 	},
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
@@ -1784,6 +1788,19 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3,
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
+"EN" = (
+/obj/structure/lattice/catwalk,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/turf/open/space/basic,
+/area/solar/port)
 "EQ" = (
 /turf/open/floor/plasteel,
 /area/hallway/primary/starboard)
@@ -1930,13 +1947,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/port)
-"Hj" = (
-/obj/machinery/firealarm{
-	dir = 4;
-	pixel_x = -24
-	},
-/turf/open/floor/plasteel,
-/area/hallway/primary/starboard)
 "Hr" = (
 /obj/machinery/door/firedoor/border_only{
 	dir = 8
@@ -2115,25 +2125,21 @@
 /turf/open/floor/plasteel,
 /area/construction/storage_wing)
 "Lj" = (
-/obj/structure/lattice/catwalk,
 /obj/structure/cable{
-	icon_state = "4-8"
+	icon_state = "0-4"
 	},
-/obj/structure/cable{
-	icon_state = "1-4"
+/obj/machinery/power/solar{
+	id = "portsolar";
+	name = "Port Solar Array"
 	},
-/obj/structure/cable{
-	icon_state = "2-4"
-	},
-/turf/open/space/basic,
-/area/maintenance/solars/port)
+/turf/open/floor/plasteel/airless/solarpanel,
+/area/solar/port)
 "Lt" = (
 /obj/machinery/door/airlock/public/glass,
-/obj/effect/mapping_helpers/airlock/locked,
 /obj/machinery/door/firedoor/border_only{
 	dir = 8
 	},
-/obj/machinery/door/firedoor/border_only/closed{
+/obj/machinery/door/firedoor/border_only{
 	dir = 4
 	},
 /obj/structure/cable{
@@ -2226,7 +2232,6 @@
 /obj/item/pipe_dispenser,
 /obj/item/pipe_dispenser,
 /obj/item/pipe_dispenser,
-/obj/item/pipe_dispenser,
 /obj/structure/cable,
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
@@ -2251,9 +2256,6 @@
 /turf/closed/wall/r_wall,
 /area/engine/atmos)
 "Nk" = (
-/obj/machinery/light/small{
-	dir = 1
-	},
 /obj/structure/disposaloutlet{
 	dir = 8
 	},
@@ -2292,6 +2294,13 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel,
 /area/hallway/primary/port)
+"Of" = (
+/obj/item/pen,
+/obj/structure/table/reinforced,
+/obj/item/paper_bin,
+/obj/item/pen,
+/turf/open/floor/plasteel,
+/area/hallway/secondary/entry)
 "Ol" = (
 /obj/machinery/power/solar_control{
 	dir = 1
@@ -2334,12 +2343,6 @@
 /turf/open/space/basic,
 /area/space)
 "Pg" = (
-/obj/machinery/door/window{
-	base_state = "right";
-	dir = 4;
-	icon_state = "right";
-	layer = 3
-	},
 /obj/structure/window/reinforced,
 /obj/structure/window/reinforced{
 	dir = 8
@@ -2447,6 +2450,19 @@
 	},
 /turf/open/floor/plasteel,
 /area/construction/storage_wing)
+"PQ" = (
+/obj/structure/window/reinforced/spawner,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 8
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/quartermaster/storage)
 "PX" = (
 /turf/open/space/basic,
 /area/space/nearstation)
@@ -2516,8 +2532,6 @@
 /obj/item/circuitboard/machine/circuit_imprinter/department/science,
 /obj/item/circuitboard/machine/circuit_imprinter/department/science,
 /obj/item/circuitboard/machine/circuit_imprinter/department/science,
-/obj/item/circuitboard/machine/circuit_imprinter/department,
-/obj/machinery/airalarm/directional/south,
 /obj/machinery/airalarm/directional/east,
 /turf/open/floor/plasteel,
 /area/construction/storage_wing)
@@ -2627,6 +2641,19 @@
 	},
 /turf/open/floor/plasteel,
 /area/construction/storage_wing)
+"Sj" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/obj/structure/disposalpipe/segment,
+/obj/machinery/door/firedoor/border_only,
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/hallway/primary/port)
 "Sv" = (
 /obj/effect/turf_decal/bot_white,
 /obj/machinery/gravity_generator/main/station,
@@ -2644,7 +2671,7 @@
 	icon_state = "2-8"
 	},
 /turf/open/space/basic,
-/area/maintenance/solars/port)
+/area/solar/port)
 "SF" = (
 /obj/machinery/conveyor/inverted{
 	dir = 6;
@@ -2705,10 +2732,10 @@
 /turf/open/floor/plasteel,
 /area/construction/storage_wing)
 "TU" = (
-/obj/structure/tank_dispenser,
 /obj/machinery/light/small{
 	dir = 1
 	},
+/obj/machinery/autolathe/hacked,
 /turf/open/floor/plating,
 /area/engine/storage_shared)
 "Ub" = (
@@ -2723,16 +2750,31 @@
 /obj/structure/disposalpipe/segment{
 	dir = 9
 	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 8
+	},
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
+"Uk" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/obj/machinery/door/firedoor/border_only,
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/hallway/primary/port)
 "Uo" = (
 /obj/structure/table/reinforced,
-/obj/effect/spawner/lootdrop/donkpockets,
-/obj/effect/spawner/lootdrop/donkpockets,
-/obj/effect/spawner/lootdrop/donkpockets,
-/obj/effect/spawner/lootdrop/donkpockets,
 /obj/machinery/light{
 	dir = 4
+	},
+/obj/item/paper{
+	info = "The map you are about to or are playing has plenty of bad ideas and problems. Please report them to https://github.com/SinguloStation13/SinguloStation13/pull/61";
+	name = "DISCLAIMER"
 	},
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
@@ -2756,6 +2798,13 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/starboard)
+"UF" = (
+/obj/structure/window/reinforced/spawner,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/quartermaster/storage)
 "UQ" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -2785,16 +2834,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/engine/gravity_generator)
-"UZ" = (
-/obj/structure/cable{
-	icon_state = "0-8"
-	},
-/obj/machinery/power/solar{
-	id = "portsolar";
-	name = "Port Solar Array"
-	},
-/turf/open/floor/plasteel/airless/solarpanel,
-/area/maintenance/solars/port)
 "Vg" = (
 /obj/machinery/conveyor_switch/oneway{
 	dir = 8;
@@ -2825,8 +2864,7 @@
 /area/quartermaster/storage)
 "VF" = (
 /obj/machinery/door/airlock/public/glass,
-/obj/effect/mapping_helpers/airlock/locked,
-/obj/machinery/door/firedoor/border_only/closed{
+/obj/machinery/door/firedoor/border_only{
 	dir = 4
 	},
 /obj/machinery/door/firedoor/border_only{
@@ -2997,7 +3035,7 @@
 	icon_state = "1-2"
 	},
 /turf/open/space/basic,
-/area/maintenance/solars/port)
+/area/solar/port)
 "ZA" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
 	dir = 8
@@ -37124,13 +37162,13 @@ Ay
 Ay
 Ay
 Ay
-zW
 Ay
 Ay
-zW
 Ay
 Ay
-zW
+Ay
+Ay
+Ay
 Ay
 Ay
 Ay
@@ -37380,15 +37418,15 @@ Ay
 Ay
 Ay
 Ay
-lN
+Ay
 Lj
-mv
-lN
-bn
-mv
-lN
+Ay
+Ay
 Lj
-mv
+Ay
+Ay
+Lj
+Ay
 Ay
 Ay
 Ay
@@ -37638,13 +37676,13 @@ Ay
 Ay
 Ay
 lN
-Lj
+EN
 mv
 lN
 bn
 mv
 lN
-Lj
+EN
 mv
 Ay
 Ay
@@ -37895,13 +37933,13 @@ Ay
 Ay
 Ay
 lN
-Lj
+EN
 mv
 lN
 bn
 mv
 lN
-Lj
+EN
 mv
 Ay
 Ay
@@ -38152,13 +38190,13 @@ uk
 uk
 Ay
 lN
-Lj
+EN
 mv
 lN
 bn
 mv
 lN
-Lj
+EN
 mv
 Ay
 Ay
@@ -39436,15 +39474,15 @@ oq
 GJ
 Vz
 Hy
-lN
-Sx
-mv
-lN
-Sx
-mv
-lN
-Sx
-mv
+Ay
+aQ
+Ay
+Ay
+aQ
+Ay
+Ay
+aQ
+Ay
 Ay
 Ay
 Ay
@@ -39694,13 +39732,13 @@ xy
 oh
 Hy
 Ay
-UZ
 Ay
 Ay
-UZ
 Ay
 Ay
-UZ
+Ay
+Ay
+Ay
 Ay
 Ay
 Ay
@@ -42487,31 +42525,31 @@ Ay
 jx
 jx
 RY
-fg
+VF
 RY
 jx
 jx
 jx
 RY
-fg
+VF
 RY
 jx
 jx
 jx
 RY
-fg
+VF
 RY
 jx
 jx
 jx
 RY
-fg
+VF
 RY
 jx
 jx
 jx
 RY
-fg
+VF
 RY
 jx
 jx
@@ -42764,7 +42802,7 @@ LK
 LK
 pG
 LK
-LK
+uW
 DU
 LK
 LT
@@ -42772,7 +42810,7 @@ pG
 LK
 LK
 Do
-LK
+uW
 gq
 pG
 DU
@@ -43021,7 +43059,7 @@ WM
 WM
 fV
 WM
-WM
+Uk
 WM
 WM
 hn
@@ -43029,7 +43067,7 @@ Ky
 Ob
 Ob
 yX
-Ob
+Sj
 Ob
 YL
 Ob
@@ -43278,7 +43316,7 @@ LK
 LK
 pG
 LK
-LK
+uW
 Hi
 LK
 OT
@@ -43286,7 +43324,7 @@ HY
 LK
 LK
 nv
-LK
+uW
 LK
 HY
 QC
@@ -44058,7 +44096,7 @@ vR
 vR
 MM
 PE
-lu
+by
 tt
 Kr
 tP
@@ -44315,7 +44353,7 @@ vR
 bB
 MM
 hJ
-lu
+by
 lX
 lu
 Dn
@@ -44572,7 +44610,7 @@ vR
 vR
 MM
 hJ
-lu
+by
 eq
 ED
 DA
@@ -45343,7 +45381,7 @@ wP
 bB
 MM
 hZ
-mC
+PQ
 Ay
 Ay
 Ay
@@ -45600,7 +45638,7 @@ vR
 vR
 MM
 Rk
-mC
+DG
 Ay
 Ay
 Ay
@@ -45857,7 +45895,7 @@ vR
 vR
 MM
 po
-mC
+DG
 Ay
 Ay
 Ay
@@ -46370,8 +46408,8 @@ AI
 vR
 bB
 MM
-hZ
-hj
+hJ
+uh
 Ay
 Ay
 Ay
@@ -46627,8 +46665,8 @@ AI
 vR
 vR
 MM
-hZ
-hj
+hJ
+UF
 Ay
 Ay
 Ay
@@ -47902,7 +47940,7 @@ Ay
 gZ
 gZ
 qf
-ds
+kp
 HG
 fF
 HG
@@ -49704,7 +49742,7 @@ Ay
 Ay
 Ay
 MM
-vR
+Of
 vR
 vR
 UQ
@@ -52253,25 +52291,25 @@ Ay
 eP
 eP
 cD
-CH
+Lt
 cD
 eP
 eP
 eP
 cD
-CH
+Lt
 cD
 eP
 eP
 eP
 cD
-CH
+Lt
 cD
 eP
 eP
 eP
 cD
-CH
+Lt
 cD
 eP
 eP
@@ -52283,13 +52321,13 @@ vU
 eP
 eP
 cD
-CH
+Lt
 cD
 eP
 eP
 eP
 cD
-CH
+Lt
 cD
 eP
 eP
@@ -52298,7 +52336,7 @@ eP
 eP
 eP
 cD
-CH
+Lt
 cD
 eP
 eP
@@ -52530,7 +52568,7 @@ EQ
 EQ
 XD
 EQ
-EQ
+iA
 RT
 EQ
 gI
@@ -52538,7 +52576,7 @@ EU
 Qq
 Qq
 ql
-Hj
+iA
 EQ
 XD
 Mn
@@ -52787,7 +52825,7 @@ LJ
 LJ
 Pw
 LJ
-LJ
+ef
 LJ
 LJ
 nV
@@ -52795,7 +52833,7 @@ FY
 LJ
 LJ
 LJ
-LJ
+ef
 LJ
 um
 LJ
@@ -53044,15 +53082,15 @@ EQ
 EQ
 XD
 EQ
-EQ
+iA
 Tt
-EQ
+xo
 hN
 XD
 EQ
 EQ
 Tt
-EQ
+iA
 EQ
 XD
 Tt
