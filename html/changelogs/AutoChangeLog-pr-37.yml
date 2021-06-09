@@ -1,0 +1,5 @@
+author: KubeRoot
+delete-after: true
+changes:
+  - tweak: Stock parts now use BeeStation sprites where applicable
+  - imageadd: Added BeeStation stock parts and power cells by SomeAngryMiner and Dingo-Dongler
