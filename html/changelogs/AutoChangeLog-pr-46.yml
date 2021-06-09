@@ -1,0 +1,4 @@
+author: Urumasi
+delete-after: true
+changes:
+  - bugfix: Directional firelocks have been whipped into place.
