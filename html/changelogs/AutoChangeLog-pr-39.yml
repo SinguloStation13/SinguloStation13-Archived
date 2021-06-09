@@ -1,5 +1,0 @@
-author: KubeRoot
-delete-after: true
-changes:
-  - bugfix: Unpowered cryosleepers can be spawned from.
-  - bugfix: Destroyed cryosleepers are removed as possible spawn locations.

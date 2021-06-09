@@ -1,4 +1,0 @@
-author: TheOneAndMightyRed
-delete-after: true
-changes:
-  - bugfix: wallmounts now fit on both sides of a 1-wide corridor

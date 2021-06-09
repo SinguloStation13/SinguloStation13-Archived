@@ -1,5 +1,0 @@
-author: KubeRoot
-delete-after: true
-changes:
-  - tweak: Clicking airlock electronics with another airlock electronics will now
-      copy access settings to the one you clicked on
