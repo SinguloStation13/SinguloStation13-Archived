@@ -1,0 +1,5 @@
+author: KubeRoot
+delete-after: true
+changes:
+  - rscadd: Departmental protolathe and techfab boards are now printable.
+  - tweak: Circuit Imprinter boards print departmental version now.
