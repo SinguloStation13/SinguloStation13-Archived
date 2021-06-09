@@ -1,0 +1,4 @@
+author: Urumasi
+delete-after: true
+changes:
+  - rscdel: Disabled automatic transfer votes

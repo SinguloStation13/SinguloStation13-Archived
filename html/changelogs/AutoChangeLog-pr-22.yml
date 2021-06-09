@@ -1,0 +1,9 @@
+author: TheOneAndMightyRed
+delete-after: true
+changes:
+  - rscadd: New Cryopods which don't delete you with fancy tgui
+  - rscdel: Old Cryopods
+  - balance: made godmoded mobs be explosion immune and also makes all their belongings
+      immune to damage too
+  - imageadd: new cryopod console state (yellow)
+  - code_imp: used defines in some explosion code instead of numerals
