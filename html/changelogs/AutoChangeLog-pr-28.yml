@@ -1,0 +1,5 @@
+author: KubeRoot
+delete-after: true
+changes:
+  - tweak: Construction bags can now hold sheets, rods and floor tiles
+  - balance: Construction bags have greatly increased capacity
