@@ -1,0 +1,6 @@
+author: Redory
+delete-after: true
+changes:
+  - rscadd: Added CryoStation. A new construction based station.
+  - rscadd: Added CryoStation cargo shuttle.
+  - config: Added Cryostation to the map rotation config as non-voteable.
