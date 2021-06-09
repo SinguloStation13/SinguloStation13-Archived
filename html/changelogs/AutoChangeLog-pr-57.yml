@@ -1,0 +1,4 @@
+author: Urumasi
+delete-after: true
+changes:
+  - bugfix: Hilbert's analyzer now has an icon again.
