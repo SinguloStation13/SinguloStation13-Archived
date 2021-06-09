@@ -1,0 +1,6 @@
+author: MaltVinegar
+delete-after: true
+changes:
+  - rscadd: new firelock sprites
+  - bugfix: firelocks are buildable now
+  - rscadd: adds a way to build window firelocks
