@@ -1,0 +1,4 @@
+author: ZombieNub
+delete-after: true
+changes:
+  - bugfix: fixed cerulean slime crystals going over sheet stack maximums
