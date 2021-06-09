@@ -1,0 +1,5 @@
+author: KubeRoot
+delete-after: true
+changes:
+  - rscadd: Cable coils can be recolored via a right-click verb
+  - balance: Cable coil stack size increased from 30 to 300
