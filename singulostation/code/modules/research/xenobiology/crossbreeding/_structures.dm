@@ -199,6 +199,21 @@ GLOBAL_LIST_EMPTY(bluespace_slime_crystals)
 			gas.set_temperature(gas.return_temperature() + deltaTemperature)
 			T.air_update_turf()
 
+/obj/structure/slime_crystal/blue/attacked_by(obj/item/I, mob/living/user)
+	if(istype(I,/obj/item/tank/internals))
+		var/obj/item/tank/internals/tank = I
+		//There is no punishment for greed because I'm not messing with atmos code more than I need to. Shit's dangerous.
+		/*
+		if(cell.charge == cell.maxcharge)
+			to_chat("<span class = 'danger'> You try to charge the cell, but it is already fully energized. You are not sure if this was a good idea...")
+			cell.explode()
+			return
+		*/
+		to_chat(user, "<span class = 'notice'>The [name] takes the [I.name] and replaces its air with Oxygen.")
+		tank.air_contents.set_moles(/datum/gas/oxygen, (12*ONE_ATMOSPHERE)*tank.volume/(R_IDEAL_GAS_EQUATION*T20C))
+		return
+	return ..()
+
 /obj/structure/slime_crystal/metal
 	colour = "metal"
 
