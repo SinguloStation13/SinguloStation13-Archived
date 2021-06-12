@@ -1,7 +1,7 @@
 {
-    "map_name": "Construction Station V2",
-    "map_path": "map_files/ConstructionStationV2",
-    "map_file": "ConstructionStationV2.dmm",
+    "map_name": "EtaStation",
+    "map_path": "map_files/EtaStation",
+    "map_file": "EtaStation.dmm",
     "shuttles": {
 	    "cargo": "cargo_con",
 	    "ferry": "ferry_fancy",
