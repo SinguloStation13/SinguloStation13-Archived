@@ -344,6 +344,8 @@
 				M.start_pulling(M2)
 	. = ..()
 
+	flags_1 &= ~PREVENT_CLICK_UNDER_1 //Singulostation edit - Fix directional firelocks blocking turf under them
+
 /obj/machinery/door/firedoor/border_only/allow_hand_open(mob/user)
 	var/area/A = get_area(src)
 	if((!A || !A.fire) && !is_holding_pressure())
