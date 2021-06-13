@@ -155,8 +155,14 @@ RLD
 		return TRUE
 
 /obj/item/construction/proc/checkResource(amount, mob/user)
-	if(!silo_link || !silo_mats || !silo_mats.mat_container)
-		. = matter >= amount
+	// SinguloStation edit begin - Infinite RCD fix
+	if(!silo_mats || !silo_mats.mat_container)
+		if(silo_link)
+			to_chat(user, "<span class='alert'>Connected silo link is invalid. Reconnect to silo via multitool.</span>")
+			return FALSE
+		else
+			. = matter >= amount
+	// SinguloStation edit end - Infinite RCD fix
 	else
 		if(silo_mats.on_hold())
 			if(user)
@@ -260,7 +266,7 @@ RLD
 
 /obj/item/construction/rcd/proc/toggle_silo_link(mob/user)
 	if(silo_mats)
-		if(!silo_mats.mat_container)
+		if(!silo_mats.mat_container && !silo_link) // SinguloStation edit - Infinite RCD fix
 			to_chat(user, "<span class='alert'>No silo link detected. Connect to silo via multitool.</span>")
 			return FALSE
 		silo_link = !silo_link
