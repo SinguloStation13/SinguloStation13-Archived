@@ -1,5 +1,0 @@
-author: KubeRoot
-delete-after: true
-changes:
-  - bugfix: Direcitonal firelocks no longer block the turf they're on from all directions
-      when closed
