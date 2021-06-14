@@ -70,14 +70,7 @@ RLD
 	if(!ishuman(usr))
 		return
 
-	if(silo_mats) //Copied directly from rcd-specific code.
-		if(!silo_mats.mat_container)
-			to_chat(usr, "<span class='alert'>No silo link detected. Connect to silo via multitool.</span>")
-			return FALSE
-		silo_link = !silo_link
-		to_chat(usr, "<span class='notice'>You change \the [src]'s storage link state: [silo_link ? "ON" : "OFF"].</span>")
-	else
-		to_chat(usr, "<span class='warning'>\the [src] dont have remote storage connection.</span>")
+	toggle_silo_link(usr)
 //Singulostation end - Silo link for everybody
 
 /obj/item/construction/attackby(obj/item/W, mob/user, params)
@@ -277,7 +270,7 @@ RLD
 
 	to_chat(user, "<span class='notice'>You change \the [src]'s window mode to [window_type_name].</span>")
 
-/obj/item/construction/rcd/proc/toggle_silo_link(mob/user)
+/obj/item/construction/proc/toggle_silo_link(mob/user) //Singulostation edit - Universal silo link
 	if(silo_mats)
 		if(!silo_mats.mat_container)
 			to_chat(user, "<span class='alert'>No silo link detected. Connect to silo via multitool.</span>")
@@ -869,14 +862,30 @@ RLD
 				name_to_type[initial(M.name)] = M
 				machinery_data["cost"][A] = initial(M.rcd_cost)
 				machinery_data["delay"][A] = initial(M.rcd_delay)
+		//Singulostation begin - Universal silo link
+		if(upgrade & RCD_UPGRADE_SILO_LINK)
+			choices += list(
+				"Silo Link" = image(icon = 'icons/obj/mining.dmi', icon_state = "silo"),
+				)
 
 	var/choice = show_radial_menu(user, src, choices, custom_check = CALLBACK(src, .proc/check_menu, user), require_near = TRUE, tooltips = TRUE)
 	if(!check_menu(user))
 		return
 
-	blueprint = name_to_type[choice]
-	playsound(src, 'sound/effects/pop.ogg', 50, FALSE)
-	to_chat(user, "<span class='notice'>You change [name]s blueprint to '[choice]'.</span>")
+	if(choice == "Silo Link")
+		toggle_silo_link(user)
+	else
+		blueprint = name_to_type[choice]
+		playsound(src, 'sound/effects/pop.ogg', 50, FALSE)
+		to_chat(user, "<span class='notice'>You change [name]s blueprint to '[choice]'.</span>")
+	//Singulostation end
+
+//Singulostation begin - Universal silo link
+/obj/item/construction/plumbing/attackby(obj/item/W, mob/user, params)
+	. = ..()
+	if(istype(W, /obj/item/rcd_upgrade))
+		choices = list() //Clear out the selections in case an upgrade needs to make changes
+//Singulostation end
 
 ///pretty much rcd_create, but named differently to make myself feel less bad for copypasting from a sibling-type
 /obj/item/construction/plumbing/proc/create_machine(atom/A, mob/user)
