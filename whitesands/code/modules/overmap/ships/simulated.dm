@@ -177,8 +177,9 @@
 /obj/structure/overmap/ship/simulated/proc/calculate_mass()
 	. = 0
 	var/list/areas = shuttle.shuttle_areas
-	for(var/shuttleArea in areas)
-		. += length(get_area_turfs(shuttleArea))
+	for(var/area/shuttleArea in areas)
+		for(var/turf/T in shuttleArea.contents)
+			. += 1
 	mass = .
 	update_icon_state()
 
