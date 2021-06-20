@@ -177,9 +177,11 @@
 /obj/structure/overmap/ship/simulated/proc/calculate_mass()
 	. = 0
 	var/list/areas = shuttle.shuttle_areas
+	//Singulostation begin - Fix shuttle mass calculation
 	for(var/area/shuttleArea in areas)
 		for(var/turf/T in shuttleArea.contents)
 			. += 1
+	//Singulostation end
 	mass = .
 	update_icon_state()
 
