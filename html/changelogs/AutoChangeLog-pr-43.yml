@@ -1,4 +1,0 @@
-author: Urumasi
-delete-after: true
-changes:
-  - bugfix: Ore vein pinpointers now correctly only show ores that are on your z-level.
