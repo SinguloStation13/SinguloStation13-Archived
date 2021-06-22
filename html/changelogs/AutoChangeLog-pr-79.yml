@@ -1,0 +1,4 @@
+author: KubeRoot
+delete-after: true
+changes:
+  - bugfix: radial menus now ignore the anchor's current alpha, color and transform.
