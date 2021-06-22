@@ -603,6 +603,7 @@
 
 	return TRUE
 
+//Singulostation begin - Implement tg arm augment refactors
 /**
   * Called by using Activate Held Object with an empty hand/limb
   *
@@ -612,6 +613,7 @@
   */
 /mob/proc/limb_attack_self()
 	return
+//Singulostation end
 
 ///Can this mob resist (default FALSE)
 /mob/proc/can_resist()
@@ -665,9 +667,9 @@
 	if(I)
 		I.attack_self(src)
 		update_inv_hands()
-		return
+		return //Singulostation edit - Implement tg arm augment refactors
 
-	limb_attack_self()
+	limb_attack_self() //Singulostation edit - Implement tg arm augment refactors
 
 
 /**

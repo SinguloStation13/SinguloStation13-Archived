@@ -1,3 +1,13 @@
+//Singulostation edit - Implement tg arm augment refactors
+
+/* THIS WHOLE FILE IS SIGNIFICANTLY MODIFIED. 
+ * See the following:
+ * https://github.com/tgstation/tgstation/pull/53893
+ * https://github.com/tgstation/tgstation/pull/54914
+ * https://github.com/tgstation/tgstation/pull/59242
+ * https://github.com/tgstation/tgstation/pull/59371
+ */
+
 /obj/item/organ/cyberimp/arm
 	name = "arm-mounted implant"
 	desc = "You shouldn't see this! Adminhelp and report this as an issue on github!"
@@ -267,7 +277,7 @@
 		if(!istype(/obj/item/assembly/flash/armimplant, potential_flash))
 			continue
 		var/obj/item/assembly/flash/armimplant/flash = potential_flash
-		flash.arm = WEAKREF(src)
+		flash.I = WEAKREF(src)
 
 /obj/item/organ/cyberimp/arm/flash/Extend()
 	. = ..()
@@ -295,7 +305,7 @@
 		if(!istype(/obj/item/assembly/flash/armimplant, potential_flash))
 			continue
 		var/obj/item/assembly/flash/armimplant/flash = potential_flash
-		flash.arm = WEAKREF(src)
+		flash.I = WEAKREF(src)
 
 /obj/item/organ/cyberimp/arm/surgery
 	name = "surgical toolset implant"
