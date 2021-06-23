@@ -17,11 +17,80 @@
 "km" = (
 /turf/closed/mineral/random/snow,
 /area/icemoon/surface/outdoors/unexplored)
+"rs" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 8
+	},
+/obj/machinery/door/airlock/external{
+	glass = 1;
+	name = "Mining Shuttle Airlock";
+	opacity = 0
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plating/asteroid/snow/icemoon,
+/area/icemoon/surface/outdoors/labor_camp)
+"sM" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 4
+	},
+/obj/machinery/door/airlock/external{
+	glass = 1;
+	name = "Mining Shuttle Airlock";
+	opacity = 0
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plating/asteroid/snow/icemoon,
+/area/icemoon/surface/outdoors/labor_camp)
+"te" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/turf/open/floor/plating/asteroid/snow/icemoon,
+/area/icemoon/surface/outdoors/labor_camp)
 "tp" = (
 /turf/closed/mineral/random/snow/high_chance,
 /area/icemoon/surface/outdoors/labor_camp)
+"wv" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plating/asteroid/snow/icemoon,
+/area/icemoon/surface/outdoors/labor_camp)
 "LB" = (
 /turf/closed/mineral/random/snow,
+/area/icemoon/surface/outdoors/labor_camp)
+"VN" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plating/asteroid/snow/icemoon,
 /area/icemoon/surface/outdoors/labor_camp)
 
 (1,1,1) = {"
@@ -14122,7 +14191,7 @@ aa
 fA
 fA
 fA
-fA
+sM
 fA
 fA
 fA
@@ -14379,7 +14448,7 @@ aa
 aa
 fA
 fA
-fA
+VN
 fA
 fA
 fA
@@ -14636,7 +14705,7 @@ aa
 aa
 fA
 fA
-fA
+rs
 fA
 fA
 fA
@@ -14893,7 +14962,7 @@ aa
 fA
 fA
 fA
-fA
+wv
 fA
 fA
 fA
@@ -15150,7 +15219,7 @@ fA
 fA
 fA
 fA
-fA
+VN
 fA
 fA
 fA
@@ -15407,7 +15476,7 @@ fA
 fA
 fA
 fA
-fA
+te
 fA
 fA
 fA

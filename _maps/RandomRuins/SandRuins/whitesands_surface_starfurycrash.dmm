@@ -1,70 +1,67 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
-"ac" = (
-/obj/effect/turf_decal/stripes/white{
-	dir = 1
+"aM" = (
+/turf/open/floor/engine{
+	initial_gas_mix = "ws_atmos"
 	},
-/obj/machinery/atmospherics/pipe/simple/cyan/visible{
-	dir = 5
-	},
-/turf/open/floor/engine,
 /area/whitesands/surface/outdoors/unexplored)
-"aO" = (
-/obj/machinery/atmospherics/pipe/simple/cyan/visible{
-	dir = 6
-	},
-/turf/open/floor/engine,
-/area/whitesands/surface/outdoors/unexplored)
-"bs" = (
-/obj/effect/turf_decal/stripes/white{
-	dir = 4
-	},
-/turf/open/floor/engine,
-/area/whitesands/surface/outdoors/unexplored)
-"cl" = (
-/obj/item/clothing/head/hardhat/red{
-	desc = "A piece of headgear used in dangerous working conditions to protect the head. On closer inspection it apears to be a regular hardhat painted red.";
-	name = "syndicate hardhat"
-	},
-/obj/machinery/atmospherics/components/unary/portables_connector/visible{
-	dir = 8
-	},
+"bV" = (
+/obj/machinery/portable_atmospherics/canister/toxins,
 /turf/open/floor/plating{
-	icon_state = "panelscorched"
+	icon_state = "panelscorched";
+	initial_gas_mix = "ws_atmos"
 	},
-/area/whitesands/surface/outdoors/unexplored)
-"cs" = (
-/obj/structure/door_assembly/door_assembly_hatch,
-/turf/open/floor/plating,
 /area/whitesands/surface/outdoors/unexplored)
 "cG" = (
 /obj/item/toy/plush/lizardplushie,
 /turf/open/floor/plating/asteroid/whitesands,
 /area/whitesands/surface/outdoors/unexplored)
-"cL" = (
-/obj/structure/safe/floor,
-/obj/item/clothing/suit/space/hardsuit/syndi,
-/obj/item/documents/syndicate,
-/turf/open/floor/plating{
-	icon_state = "panelscorched"
-	},
-/area/whitesands/surface/outdoors/unexplored)
-"cO" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers,
-/turf/open/floor/plating{
-	icon_state = "platingdmg1"
-	},
-/area/whitesands/surface/outdoors/unexplored)
-"dw" = (
-/obj/effect/turf_decal/stripes/white{
+"dv" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers{
 	dir = 5
 	},
-/turf/open/floor/engine,
-/area/whitesands/surface/outdoors/unexplored)
-"dz" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers{
-	dir = 8
+/turf/open/floor/plating{
+	icon_state = "platingdmg1";
+	initial_gas_mix = "ws_atmos"
 	},
-/turf/open/floor/engine,
+/area/whitesands/surface/outdoors/unexplored)
+"dJ" = (
+/obj/machinery/atmospherics/pipe/simple/cyan/visible{
+	dir = 9
+	},
+/turf/open/floor/plating{
+	icon_state = "platingdmg1";
+	initial_gas_mix = "ws_atmos"
+	},
+/area/whitesands/surface/outdoors/unexplored)
+"ey" = (
+/obj/machinery/atmospherics/components/unary/portables_connector/visible,
+/obj/machinery/portable_atmospherics/canister/toxins,
+/turf/open/floor/plating{
+	icon_state = "panelscorched";
+	initial_gas_mix = "ws_atmos"
+	},
+/area/whitesands/surface/outdoors/unexplored)
+"eR" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers,
+/turf/open/floor/plating{
+	icon_state = "panelscorched";
+	initial_gas_mix = "ws_atmos"
+	},
+/area/whitesands/surface/outdoors/unexplored)
+"ff" = (
+/obj/item/clothing/neck/stethoscope,
+/turf/open/floor/plating{
+	initial_gas_mix = "ws_atmos"
+	},
+/area/whitesands/surface/outdoors/unexplored)
+"fm" = (
+/obj/machinery/suit_storage_unit{
+	mask_type = /obj/item/clothing/mask/gas/syndicate;
+	storage_type = null
+	},
+/turf/open/floor/mineral/plastitanium/red{
+	initial_gas_mix = "ws_atmos"
+	},
 /area/whitesands/surface/outdoors/unexplored)
 "fx" = (
 /obj/item/storage/firstaid/ancient,
@@ -85,86 +82,107 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/whitesands/surface/outdoors/unexplored)
-"fB" = (
-/obj/machinery/atmospherics/pipe/simple/cyan/visible{
-	dir = 8
-	},
-/turf/open/floor/plating{
-	icon_state = "platingdmg1"
-	},
-/area/whitesands/surface/outdoors/unexplored)
-"fG" = (
-/obj/effect/turf_decal/stripes/white{
-	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/simple/cyan/visible{
-	dir = 8
-	},
-/turf/open/floor/engine,
-/area/whitesands/surface/outdoors/unexplored)
-"gW" = (
+"gr" = (
+/obj/structure/frame/machine,
 /obj/item/circuitboard/machine/sleeper,
 /turf/open/floor/plating{
-	icon_state = "platingdmg1"
+	icon_state = "panelscorched";
+	initial_gas_mix = "ws_atmos"
 	},
 /area/whitesands/surface/outdoors/unexplored)
-"hp" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers{
-	dir = 10
-	},
-/turf/open/floor/plating{
-	icon_state = "platingdmg1"
-	},
-/area/whitesands/surface/outdoors/unexplored)
-"hs" = (
+"gG" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers,
 /turf/open/floor/plating{
-	icon_state = "panelscorched"
+	icon_state = "platingdmg1";
+	initial_gas_mix = "ws_atmos"
+	},
+/area/whitesands/surface/outdoors/unexplored)
+"gT" = (
+/obj/structure/door_assembly/door_assembly_hatch,
+/turf/open/floor/plating{
+	initial_gas_mix = "ws_atmos"
+	},
+/area/whitesands/surface/outdoors/unexplored)
+"ht" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers{
+	dir = 8
+	},
+/turf/open/floor/plating{
+	icon_state = "panelscorched";
+	initial_gas_mix = "ws_atmos"
 	},
 /area/whitesands/surface/outdoors/unexplored)
 "hD" = (
 /obj/item/stack/tile/plasteel,
 /turf/open/floor/plating/asteroid/whitesands/dried,
 /area/whitesands/surface/outdoors/unexplored)
-"hK" = (
-/obj/machinery/atmospherics/pipe/simple/cyan/visible{
-	dir = 8
-	},
-/turf/open/floor/plating,
-/area/whitesands/surface/outdoors/unexplored)
 "hS" = (
 /obj/item/pickaxe/improvised,
 /turf/open/floor/plating/asteroid/whitesands,
 /area/whitesands/surface/outdoors/unexplored)
-"iz" = (
-/obj/structure/chair/comfy,
-/turf/open/floor/plating{
-	icon_state = "panelscorched"
+"hW" = (
+/obj/effect/turf_decal/stripes/white{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/dark/visible{
+	dir = 8
+	},
+/turf/open/floor/engine{
+	initial_gas_mix = "ws_atmos"
 	},
 /area/whitesands/surface/outdoors/unexplored)
-"iR" = (
-/obj/machinery/atmospherics/components/binary/pump{
-	dir = 4
-	},
-/turf/open/floor/plating{
-	icon_state = "panelscorched"
-	},
-/area/whitesands/surface/outdoors/unexplored)
-"iU" = (
-/obj/machinery/atmospherics/pipe/manifold/dark/visible{
-	dir = 4
-	},
-/turf/open/floor/engine,
-/area/whitesands/surface/outdoors/unexplored)
-"kE" = (
+"iD" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/visible{
 	dir = 4
 	},
-/turf/open/floor/engine,
+/turf/open/floor/engine{
+	initial_gas_mix = "ws_atmos"
+	},
 /area/whitesands/surface/outdoors/unexplored)
-"la" = (
+"iQ" = (
+/turf/open/floor/plating{
+	initial_gas_mix = "ws_atmos"
+	},
+/area/whitesands/surface/outdoors/unexplored)
+"jB" = (
+/obj/effect/decal/cleanable/ash,
+/obj/item/paper{
+	desc = null;
+	info = "Well, we failed. The undoable has been done. We were taken out. The great Starfury is stuck in orbit, and many of our systems are damaged. There is no other choice but to evacuate. However, me and a group of talented indviduals will go with me. I will activate the hyperdrive, one last time to scuttle the ship before Nanotrasen can get their grubby little hands on it, on the planet of our greatest victory.  If you are worried about me, I have my tegu plushie and all i need to survive for a year. Men and women, its been a honour.";
+	name = "Starfury Status Report - January 15th, 2501"
+	},
+/turf/open/floor/plating{
+	icon_state = "panelscorched";
+	initial_gas_mix = "ws_atmos"
+	},
+/area/whitesands/surface/outdoors/unexplored)
+"kq" = (
+/mob/living/simple_animal/hostile/syndicate/ranged/space/stormtrooper,
+/turf/open/floor/plating{
+	icon_state = "panelscorched";
+	initial_gas_mix = "ws_atmos"
+	},
+/area/whitesands/surface/outdoors/unexplored)
+"kP" = (
+/obj/item/storage/toolbox/syndicate,
+/turf/open/floor/engine{
+	initial_gas_mix = "ws_atmos"
+	},
+/area/whitesands/surface/outdoors/unexplored)
+"lm" = (
 /obj/machinery/power/generator,
-/turf/open/floor/engine,
+/turf/open/floor/engine{
+	initial_gas_mix = "ws_atmos"
+	},
+/area/whitesands/surface/outdoors/unexplored)
+"mb" = (
+/obj/machinery/atmospherics/components/binary/pump{
+	dir = 1
+	},
+/turf/open/floor/plating{
+	icon_state = "platingdmg1";
+	initial_gas_mix = "ws_atmos"
+	},
 /area/whitesands/surface/outdoors/unexplored)
 "mC" = (
 /obj/structure/window/plasma/reinforced/plastitanium/unanchored,
@@ -173,44 +191,39 @@
 	icon_state = "platingdmg1"
 	},
 /area/whitesands/surface/outdoors/unexplored)
-"nI" = (
-/obj/machinery/suit_storage_unit{
-	mask_type = /obj/item/clothing/mask/gas/syndicate;
-	storage_type = null
-	},
-/turf/open/floor/mineral/plastitanium/red,
-/area/whitesands/surface/outdoors/unexplored)
-"nJ" = (
-/mob/living/simple_animal/hostile/syndicate/ranged,
-/turf/open/floor/plating,
-/area/whitesands/surface/outdoors/unexplored)
-"og" = (
-/obj/machinery/atmospherics/components/unary/thermomachine/freezer{
-	dir = 8
-	},
-/turf/open/floor/engine,
-/area/whitesands/surface/outdoors/unexplored)
-"oE" = (
+"mM" = (
 /obj/effect/turf_decal/stripes/white{
 	dir = 1
 	},
-/obj/machinery/atmospherics/components/binary/pump,
 /obj/machinery/atmospherics/pipe/simple/dark/visible{
-	dir = 8
+	dir = 5
 	},
-/turf/open/floor/engine,
+/turf/open/floor/engine{
+	initial_gas_mix = "ws_atmos"
+	},
 /area/whitesands/surface/outdoors/unexplored)
-"oZ" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers{
-	dir = 8
+"mQ" = (
+/obj/effect/turf_decal/stripes/white{
+	dir = 1
 	},
+/obj/machinery/atmospherics/pipe/simple/cyan/visible{
+	dir = 5
+	},
+/turf/open/floor/engine{
+	initial_gas_mix = "ws_atmos"
+	},
+/area/whitesands/surface/outdoors/unexplored)
+"oO" = (
+/obj/machinery/suit_storage_unit,
 /turf/open/floor/plating{
-	icon_state = "panelscorched"
+	initial_gas_mix = "ws_atmos"
 	},
 /area/whitesands/surface/outdoors/unexplored)
-"pj" = (
+"oT" = (
 /obj/machinery/atmospherics/pipe/simple/cyan/visible,
-/turf/open/floor/engine,
+/turf/open/floor/plating{
+	initial_gas_mix = "ws_atmos"
+	},
 /area/whitesands/surface/outdoors/unexplored)
 "pn" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers{
@@ -218,16 +231,47 @@
 	},
 /turf/open/floor/plating/asteroid/whitesands,
 /area/whitesands/surface/outdoors/unexplored)
-"qv" = (
-/mob/living/simple_animal/hostile/syndicate/ranged/space/stormtrooper,
+"qe" = (
+/obj/item/clothing/head/hardhat/red{
+	desc = "A piece of headgear used in dangerous working conditions to protect the head. On closer inspection it apears to be a regular hardhat painted red.";
+	name = "syndicate hardhat"
+	},
+/obj/machinery/atmospherics/components/unary/portables_connector/visible{
+	dir = 8
+	},
 /turf/open/floor/plating{
-	icon_state = "panelscorched"
+	icon_state = "panelscorched";
+	initial_gas_mix = "ws_atmos"
 	},
 /area/whitesands/surface/outdoors/unexplored)
-"qN" = (
-/obj/machinery/portable_atmospherics/canister/toxins,
+"qF" = (
+/obj/structure/safe/floor,
+/obj/item/clothing/suit/space/hardsuit/syndi,
+/obj/item/documents/syndicate,
 /turf/open/floor/plating{
-	icon_state = "panelscorched"
+	icon_state = "panelscorched";
+	initial_gas_mix = "ws_atmos"
+	},
+/area/whitesands/surface/outdoors/unexplored)
+"rt" = (
+/obj/structure/frame/machine,
+/turf/open/floor/plating{
+	initial_gas_mix = "ws_atmos"
+	},
+/area/whitesands/surface/outdoors/unexplored)
+"rG" = (
+/obj/effect/turf_decal/stripes/white{
+	dir = 8
+	},
+/turf/open/floor/engine{
+	initial_gas_mix = "ws_atmos"
+	},
+/area/whitesands/surface/outdoors/unexplored)
+"rO" = (
+/obj/structure/frame/machine,
+/obj/item/stack/cable_coil/cut/blue,
+/turf/open/floor/mineral/plastitanium/red{
+	initial_gas_mix = "ws_atmos"
 	},
 /area/whitesands/surface/outdoors/unexplored)
 "se" = (
@@ -240,22 +284,30 @@
 	icon_state = "platingdmg2"
 	},
 /area/whitesands/surface/outdoors/unexplored)
-"sC" = (
-/obj/machinery/atmospherics/pipe/manifold/cyan/visible{
-	dir = 8
+"sr" = (
+/turf/open/floor/plating{
+	icon_state = "platingdmg2";
+	initial_gas_mix = "ws_atmos"
 	},
-/turf/open/floor/plating,
 /area/whitesands/surface/outdoors/unexplored)
 "sI" = (
 /obj/effect/turf_decal/delivery,
 /obj/machinery/portable_atmospherics/canister/toxins,
 /turf/open/floor/plasteel/dark,
 /area/whitesands/surface/outdoors/unexplored)
-"sS" = (
-/obj/effect/turf_decal/stripes/white{
+"sZ" = (
+/obj/machinery/atmospherics/pipe/manifold/cyan/visible{
 	dir = 8
 	},
-/turf/open/floor/engine,
+/turf/open/floor/plating{
+	initial_gas_mix = "ws_atmos"
+	},
+/area/whitesands/surface/outdoors/unexplored)
+"tv" = (
+/obj/machinery/atmospherics/components/binary/pump,
+/turf/open/floor/plating{
+	initial_gas_mix = "ws_atmos"
+	},
 /area/whitesands/surface/outdoors/unexplored)
 "tw" = (
 /turf/open/floor/plasteel/dark,
@@ -267,6 +319,45 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/dark,
+/area/whitesands/surface/outdoors/unexplored)
+"ur" = (
+/obj/effect/turf_decal/stripes/white{
+	dir = 1
+	},
+/turf/open/floor/engine{
+	initial_gas_mix = "ws_atmos"
+	},
+/area/whitesands/surface/outdoors/unexplored)
+"uy" = (
+/obj/effect/decal/cleanable/ash,
+/obj/effect/decal/cleanable/ash{
+	pixel_x = 3;
+	pixel_y = -3
+	},
+/obj/effect/decal/cleanable/ash{
+	pixel_x = 2;
+	pixel_y = -2
+	},
+/turf/open/floor/plating{
+	icon_state = "panelscorched";
+	initial_gas_mix = "ws_atmos"
+	},
+/area/whitesands/surface/outdoors/unexplored)
+"uz" = (
+/obj/machinery/atmospherics/pipe/simple/cyan/visible{
+	dir = 10
+	},
+/turf/open/floor/plating{
+	initial_gas_mix = "ws_atmos"
+	},
+/area/whitesands/surface/outdoors/unexplored)
+"uB" = (
+/obj/machinery/atmospherics/pipe/manifold/cyan/visible{
+	dir = 8
+	},
+/turf/open/floor/engine{
+	initial_gas_mix = "ws_atmos"
+	},
 /area/whitesands/surface/outdoors/unexplored)
 "uW" = (
 /obj/item/stack/sheet/metal,
@@ -282,65 +373,45 @@
 /obj/machinery/door/airlock/hatch,
 /turf/open/floor/plasteel/dark,
 /area/whitesands/surface/outdoors/unexplored)
-"vN" = (
-/obj/effect/turf_decal/stripes/white{
-	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/simple/dark/visible{
-	dir = 8
-	},
-/turf/open/floor/engine,
-/area/whitesands/surface/outdoors/unexplored)
-"vS" = (
-/obj/item/stack/sheet/metal,
-/turf/open/floor/plating{
-	icon_state = "platingdmg1"
-	},
-/area/whitesands/surface/outdoors/unexplored)
 "vW" = (
 /obj/machinery/door/airlock/engineering,
 /turf/open/floor/plating,
 /area/whitesands/surface/outdoors/unexplored)
-"wg" = (
-/obj/item/storage/toolbox/syndicate,
-/turf/open/floor/engine,
+"wr" = (
+/obj/machinery/atmospherics/pipe/simple/cyan/visible,
+/obj/item/pipe_dispenser,
+/turf/open/floor/plating{
+	icon_state = "panelscorched";
+	initial_gas_mix = "ws_atmos"
+	},
 /area/whitesands/surface/outdoors/unexplored)
 "wB" = (
 /obj/machinery/portable_atmospherics/scrubber,
 /turf/open/floor/plating/asteroid/whitesands,
 /area/whitesands/surface/outdoors/unexplored)
-"xc" = (
-/turf/open/floor/mineral/plastitanium/red,
-/area/whitesands/surface/outdoors/unexplored)
-"xK" = (
-/obj/machinery/suit_storage_unit,
-/turf/open/floor/plating,
-/area/whitesands/surface/outdoors/unexplored)
-"xZ" = (
-/obj/machinery/atmospherics/pipe/manifold/scrubbers/visible,
+"wY" = (
+/obj/machinery/atmospherics/components/unary/portables_connector/visible,
+/obj/machinery/portable_atmospherics/canister/oxygen,
 /turf/open/floor/plating{
-	icon_state = "platingdmg1"
+	icon_state = "platingdmg1";
+	initial_gas_mix = "ws_atmos"
+	},
+/area/whitesands/surface/outdoors/unexplored)
+"yl" = (
+/obj/structure/chair/comfy,
+/turf/open/floor/plating{
+	icon_state = "panelscorched";
+	initial_gas_mix = "ws_atmos"
+	},
+/area/whitesands/surface/outdoors/unexplored)
+"yL" = (
+/turf/open/floor/plating{
+	icon_state = "platingdmg1";
+	initial_gas_mix = "ws_atmos"
 	},
 /area/whitesands/surface/outdoors/unexplored)
 "yM" = (
 /obj/item/clothing/shoes/jackboots,
-/turf/open/floor/plating/asteroid/whitesands,
-/area/whitesands/surface/outdoors/unexplored)
-"yV" = (
-/obj/structure/frame/machine,
-/obj/item/circuitboard/machine/sleeper,
-/turf/open/floor/plating{
-	icon_state = "panelscorched"
-	},
-/area/whitesands/surface/outdoors/unexplored)
-"zk" = (
-/obj/effect/turf_decal/stripes/white{
-	dir = 1
-	},
-/turf/open/floor/engine,
-/area/whitesands/surface/outdoors/unexplored)
-"Ab" = (
-/mob/living/simple_animal/hostile/syndicate/ranged/shotgun,
 /turf/open/floor/plating/asteroid/whitesands,
 /area/whitesands/surface/outdoors/unexplored)
 "Aj" = (
@@ -353,38 +424,34 @@
 	},
 /turf/open/floor/plating/asteroid/whitesands/dried,
 /area/whitesands/surface/outdoors/unexplored)
+"Av" = (
+/turf/closed/mineral/random/whitesands,
+/area/template_noop)
 "AF" = (
 /obj/effect/turf_decal/loading_area/red,
 /turf/open/floor/plasteel/dark,
 /area/whitesands/surface/outdoors/unexplored)
-"Ba" = (
-/obj/effect/turf_decal/stripes/corner{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers{
-	dir = 6
-	},
-/turf/open/floor/engine,
-/area/whitesands/surface/outdoors/unexplored)
-"Bk" = (
-/mob/living/simple_animal/hostile/syndicate/ranged/smg/space,
-/turf/open/floor/plating{
-	icon_state = "platingdmg2"
+"BC" = (
+/obj/machinery/atmospherics/pipe/manifold/cyan/visible,
+/turf/open/floor/engine{
+	initial_gas_mix = "ws_atmos"
 	},
 /area/whitesands/surface/outdoors/unexplored)
-"Cf" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers{
+"BY" = (
+/obj/effect/turf_decal/stripes/white{
 	dir = 5
 	},
-/turf/open/floor/plating{
-	icon_state = "platingdmg1"
+/turf/open/floor/engine{
+	initial_gas_mix = "ws_atmos"
 	},
 /area/whitesands/surface/outdoors/unexplored)
-"CF" = (
-/obj/machinery/atmospherics/components/binary/circulator/cold{
+"Dc" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers{
 	dir = 8
 	},
-/turf/open/floor/engine,
+/turf/open/floor/engine{
+	initial_gas_mix = "ws_atmos"
+	},
 /area/whitesands/surface/outdoors/unexplored)
 "Dl" = (
 /obj/item/stack/sheet/metal,
@@ -397,12 +464,9 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/whitesands/surface/outdoors/unexplored)
-"DE" = (
-/obj/machinery/atmospherics/components/binary/pump{
-	dir = 1
-	},
-/turf/open/floor/plating{
-	icon_state = "platingdmg1"
+"DK" = (
+/turf/open/floor/mineral/plastitanium/red{
+	initial_gas_mix = "ws_atmos"
 	},
 /area/whitesands/surface/outdoors/unexplored)
 "Ec" = (
@@ -413,22 +477,31 @@
 	},
 /turf/open/floor/plating/asteroid/whitesands,
 /area/whitesands/surface/outdoors/unexplored)
-"Ed" = (
-/obj/effect/turf_decal/stripes/white{
-	dir = 1
+"Ee" = (
+/obj/machinery/atmospherics/components/unary/thermomachine/freezer{
+	dir = 8
 	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers,
-/turf/open/floor/engine,
+/turf/open/floor/engine{
+	initial_gas_mix = "ws_atmos"
+	},
 /area/whitesands/surface/outdoors/unexplored)
-"Ep" = (
-/obj/structure/frame/machine,
-/turf/open/floor/plating{
-	icon_state = "platingdmg1"
+"EF" = (
+/obj/machinery/atmospherics/components/binary/pump,
+/turf/open/floor/engine{
+	initial_gas_mix = "ws_atmos"
 	},
 /area/whitesands/surface/outdoors/unexplored)
 "EG" = (
 /obj/effect/turf_decal/tile/blue,
 /turf/open/floor/plasteel/dark,
+/area/whitesands/surface/outdoors/unexplored)
+"EI" = (
+/obj/machinery/atmospherics/components/binary/circulator/cold{
+	dir = 8
+	},
+/turf/open/floor/engine{
+	initial_gas_mix = "ws_atmos"
+	},
 /area/whitesands/surface/outdoors/unexplored)
 "EJ" = (
 /obj/machinery/atmospherics/pipe/simple/dark/visible{
@@ -438,12 +511,26 @@
 	dir = 8
 	},
 /area/whitesands/surface/outdoors/unexplored)
-"EM" = (
-/obj/item/clothing/neck/stethoscope,
-/turf/open/floor/plating,
+"Fd" = (
+/mob/living/simple_animal/hostile/syndicate/ranged/space,
+/turf/open/floor/plating{
+	initial_gas_mix = "ws_atmos"
+	},
 /area/whitesands/surface/outdoors/unexplored)
-"EX" = (
-/turf/open/floor/engine,
+"Fk" = (
+/obj/machinery/portable_atmospherics/scrubber,
+/turf/open/floor/plating{
+	icon_state = "platingdmg1";
+	initial_gas_mix = "ws_atmos"
+	},
+/area/whitesands/surface/outdoors/unexplored)
+"Fu" = (
+/obj/machinery/atmospherics/pipe/manifold/dark/visible{
+	dir = 4
+	},
+/turf/open/floor/engine{
+	initial_gas_mix = "ws_atmos"
+	},
 /area/whitesands/surface/outdoors/unexplored)
 "Fw" = (
 /obj/effect/turf_decal/tile/yellow{
@@ -453,12 +540,6 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel/dark,
-/area/whitesands/surface/outdoors/unexplored)
-"Fz" = (
-/obj/machinery/portable_atmospherics/scrubber,
-/turf/open/floor/plating{
-	icon_state = "platingdmg1"
-	},
 /area/whitesands/surface/outdoors/unexplored)
 "FZ" = (
 /obj/item/stock_parts/cell/empty,
@@ -473,29 +554,58 @@
 /obj/item/storage/box/stockparts/deluxe,
 /turf/open/floor/plating/asteroid/whitesands,
 /area/whitesands/surface/outdoors/unexplored)
-"Gu" = (
-/obj/machinery/atmospherics/components/unary/portables_connector/visible,
-/obj/machinery/portable_atmospherics/canister/oxygen,
-/turf/open/floor/plating{
-	icon_state = "platingdmg1"
+"Gi" = (
+/obj/effect/turf_decal/stripes/white{
+	dir = 1
+	},
+/obj/machinery/atmospherics/components/binary/pump,
+/obj/machinery/atmospherics/pipe/simple/dark/visible{
+	dir = 8
+	},
+/turf/open/floor/engine{
+	initial_gas_mix = "ws_atmos"
 	},
 /area/whitesands/surface/outdoors/unexplored)
-"GE" = (
+"Hh" = (
+/obj/machinery/atmospherics/pipe/simple/cyan/visible,
+/turf/open/floor/engine{
+	initial_gas_mix = "ws_atmos"
+	},
+/area/whitesands/surface/outdoors/unexplored)
+"HR" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers{
+	dir = 10
+	},
+/turf/open/floor/plating{
+	icon_state = "platingdmg1";
+	initial_gas_mix = "ws_atmos"
+	},
+/area/whitesands/surface/outdoors/unexplored)
+"HV" = (
+/obj/effect/turf_decal/stripes/white{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers,
+/turf/open/floor/engine{
+	initial_gas_mix = "ws_atmos"
+	},
+/area/whitesands/surface/outdoors/unexplored)
+"IF" = (
 /obj/machinery/atmospherics/pipe/simple/cyan/visible{
-	dir = 9
+	dir = 6
+	},
+/turf/open/floor/engine{
+	initial_gas_mix = "ws_atmos"
+	},
+/area/whitesands/surface/outdoors/unexplored)
+"II" = (
+/obj/machinery/atmospherics/pipe/simple/cyan/visible{
+	dir = 8
 	},
 /turf/open/floor/plating{
-	icon_state = "platingdmg1"
+	icon_state = "platingdmg1";
+	initial_gas_mix = "ws_atmos"
 	},
-/area/whitesands/surface/outdoors/unexplored)
-"GV" = (
-/obj/machinery/atmospherics/components/unary/portables_connector/visible,
-/obj/machinery/portable_atmospherics/canister/toxins,
-/turf/open/floor/plating,
-/area/whitesands/surface/outdoors/unexplored)
-"IC" = (
-/obj/structure/frame/machine,
-/turf/open/floor/engine,
 /area/whitesands/surface/outdoors/unexplored)
 "IR" = (
 /obj/item/stack/cable_coil/cut/blue,
@@ -509,98 +619,95 @@
 	},
 /turf/open/floor/plating/asteroid/whitesands,
 /area/whitesands/surface/outdoors/unexplored)
+"Jw" = (
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/visible{
+	dir = 4
+	},
+/turf/open/floor/plating{
+	icon_state = "platingdmg1";
+	initial_gas_mix = "ws_atmos"
+	},
+/area/whitesands/surface/outdoors/unexplored)
+"JC" = (
+/obj/machinery/atmospherics/pipe/simple/dark/visible{
+	dir = 10
+	},
+/turf/open/floor/plating{
+	icon_state = "platingdmg1";
+	initial_gas_mix = "ws_atmos"
+	},
+/area/whitesands/surface/outdoors/unexplored)
 "JT" = (
 /turf/open/floor/pod/dark,
 /area/whitesands/surface/outdoors/unexplored)
-"Kc" = (
-/obj/effect/decal/cleanable/ash,
-/obj/effect/decal/cleanable/ash{
-	pixel_x = 3;
-	pixel_y = -3
+"JX" = (
+/obj/structure/frame/machine,
+/turf/open/floor/engine{
+	initial_gas_mix = "ws_atmos"
 	},
-/obj/effect/decal/cleanable/ash{
-	pixel_x = 2;
-	pixel_y = -2
+/area/whitesands/surface/outdoors/unexplored)
+"Kg" = (
+/obj/effect/turf_decal/stripes/corner{
+	dir = 4
 	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers{
+	dir = 6
+	},
+/turf/open/floor/engine{
+	initial_gas_mix = "ws_atmos"
+	},
+/area/whitesands/surface/outdoors/unexplored)
+"Ki" = (
 /turf/open/floor/plating{
-	icon_state = "panelscorched"
+	icon_state = "panelscorched";
+	initial_gas_mix = "ws_atmos"
 	},
+/area/whitesands/surface/outdoors/unexplored)
+"Ku" = (
+/mob/living/simple_animal/hostile/syndicate/ranged/shotgun/space,
+/turf/open/floor/plating/asteroid/whitesands,
 /area/whitesands/surface/outdoors/unexplored)
 "Kw" = (
 /turf/open/floor/plating/asteroid/whitesands,
+/area/whitesands/surface/outdoors/unexplored)
+"KE" = (
+/obj/item/stack/sheet/metal,
+/turf/open/floor/plating{
+	icon_state = "platingdmg1";
+	initial_gas_mix = "ws_atmos"
+	},
+/area/whitesands/surface/outdoors/unexplored)
+"KT" = (
+/obj/machinery/atmospherics/components/binary/pump{
+	dir = 4
+	},
+/turf/open/floor/plating{
+	icon_state = "panelscorched";
+	initial_gas_mix = "ws_atmos"
+	},
 /area/whitesands/surface/outdoors/unexplored)
 "LB" = (
 /obj/item/clothing/gloves/combat,
 /turf/open/floor/plating/asteroid/whitesands,
 /area/whitesands/surface/outdoors/unexplored)
-"LE" = (
-/obj/machinery/atmospherics/pipe/simple/cyan/visible{
-	dir = 10
-	},
-/turf/open/floor/plating,
-/area/whitesands/surface/outdoors/unexplored)
-"LJ" = (
-/obj/machinery/atmospherics/pipe/simple/dark/visible{
-	dir = 10
-	},
-/turf/open/floor/plating{
-	icon_state = "platingdmg1"
-	},
-/area/whitesands/surface/outdoors/unexplored)
-"LR" = (
-/obj/machinery/atmospherics/pipe/simple/dark/visible{
-	dir = 8
-	},
-/turf/open/floor/plating{
-	icon_state = "platingdmg1"
-	},
-/area/whitesands/surface/outdoors/unexplored)
-"Mc" = (
-/obj/item/stack/sheet/metal,
-/turf/open/floor/engine,
-/area/whitesands/surface/outdoors/unexplored)
 "Mm" = (
 /obj/effect/turf_decal/radiation,
 /turf/open/floor/plasteel/dark,
 /area/whitesands/surface/outdoors/unexplored)
-"Mx" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers{
-	dir = 10
-	},
-/turf/open/floor/engine,
-/area/whitesands/surface/outdoors/unexplored)
 "MC" = (
 /turf/template_noop,
 /area/whitesands/surface/outdoors/unexplored)
-"Ne" = (
-/obj/machinery/atmospherics/components/binary/pump,
-/turf/open/floor/plating,
-/area/whitesands/surface/outdoors/unexplored)
-"Nf" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers{
-	dir = 8
+"MD" = (
+/obj/item/stack/sheet/metal,
+/turf/open/floor/engine{
+	initial_gas_mix = "ws_atmos"
 	},
-/turf/open/floor/plating,
-/area/whitesands/surface/outdoors/unexplored)
-"Nk" = (
-/obj/machinery/atmospherics/pipe/manifold/cyan/visible,
-/turf/open/floor/engine,
-/area/whitesands/surface/outdoors/unexplored)
-"NC" = (
-/obj/machinery/atmospherics/components/binary/circulator{
-	dir = 4
-	},
-/turf/open/floor/engine,
 /area/whitesands/surface/outdoors/unexplored)
 "NM" = (
 /obj/machinery/power/smes,
 /turf/open/floor/plating{
 	icon_state = "panelscorched"
 	},
-/area/whitesands/surface/outdoors/unexplored)
-"Oe" = (
-/obj/machinery/atmospherics/components/binary/pump,
-/turf/open/floor/engine,
 /area/whitesands/surface/outdoors/unexplored)
 "OI" = (
 /turf/open/floor/plating,
@@ -611,6 +718,29 @@
 	icon_state = "platingdmg2"
 	},
 /area/whitesands/surface/outdoors/unexplored)
+"OO" = (
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/visible,
+/turf/open/floor/plating{
+	icon_state = "platingdmg1";
+	initial_gas_mix = "ws_atmos"
+	},
+/area/whitesands/surface/outdoors/unexplored)
+"Pk" = (
+/obj/effect/turf_decal/stripes/white{
+	dir = 4
+	},
+/turf/open/floor/engine{
+	initial_gas_mix = "ws_atmos"
+	},
+/area/whitesands/surface/outdoors/unexplored)
+"Pl" = (
+/obj/machinery/atmospherics/pipe/simple/cyan/visible{
+	dir = 8
+	},
+/turf/open/floor/plating{
+	initial_gas_mix = "ws_atmos"
+	},
+/area/whitesands/surface/outdoors/unexplored)
 "Pm" = (
 /obj/machinery/atmospherics/components/unary/portables_connector/visible{
 	dir = 4
@@ -618,32 +748,43 @@
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plasteel/dark,
 /area/whitesands/surface/outdoors/unexplored)
-"RE" = (
-/obj/machinery/atmospherics/pipe/manifold/scrubbers/visible{
-	dir = 4
-	},
+"PF" = (
+/obj/machinery/door/airlock/engineering,
 /turf/open/floor/plating{
-	icon_state = "platingdmg1"
+	initial_gas_mix = "ws_atmos"
+	},
+/area/whitesands/surface/outdoors/unexplored)
+"PZ" = (
+/obj/effect/decal/cleanable/ash/large,
+/turf/open/floor/plating{
+	icon_state = "panelscorched";
+	initial_gas_mix = "ws_atmos"
+	},
+/area/whitesands/surface/outdoors/unexplored)
+"Rh" = (
+/obj/item/circuitboard/machine/sleeper,
+/turf/open/floor/plating{
+	icon_state = "platingdmg1";
+	initial_gas_mix = "ws_atmos"
 	},
 /area/whitesands/surface/outdoors/unexplored)
 "RJ" = (
 /turf/template_noop,
 /area/template_noop)
-"Tg" = (
-/obj/effect/decal/cleanable/ash,
-/obj/item/paper{
-	desc = null;
-	info = "Well, we failed. The undoable has been done. We were taken out. The great Starfury is stuck in orbit, and many of our systems are damaged. There is no other choice but to evacuate. However, me and a group of talented indviduals will go with me. I will activate the hyperdrive, one last time to scuttle the ship before Nanotrasen can get their grubby little hands on it, on the planet of our greatest victory.  If you are worried about me, I have my tegu plushie and all i need to survive for a year. Men and women, its been a honour.";
-	name = "Starfury Status Report - January 15th, 2501"
-	},
+"SG" = (
+/mob/living/simple_animal/hostile/syndicate/ranged/smg/space,
 /turf/open/floor/plating{
-	icon_state = "panelscorched"
+	icon_state = "platingdmg2";
+	initial_gas_mix = "ws_atmos"
 	},
 /area/whitesands/surface/outdoors/unexplored)
-"Tl" = (
-/obj/structure/frame/machine,
-/obj/item/stack/cable_coil/cut/blue,
-/turf/open/floor/mineral/plastitanium/red,
+"SR" = (
+/obj/machinery/atmospherics/components/binary/circulator{
+	dir = 4
+	},
+/turf/open/floor/engine{
+	initial_gas_mix = "ws_atmos"
+	},
 /area/whitesands/surface/outdoors/unexplored)
 "Tm" = (
 /obj/effect/turf_decal/tile/blue{
@@ -653,15 +794,6 @@
 /area/whitesands/surface/outdoors/unexplored)
 "Tt" = (
 /turf/open/floor/plating/asteroid/whitesands/dried,
-/area/whitesands/surface/outdoors/unexplored)
-"Tx" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers,
-/turf/open/floor/engine,
-/area/whitesands/surface/outdoors/unexplored)
-"Uc" = (
-/turf/open/floor/plating{
-	icon_state = "platingdmg2"
-	},
 /area/whitesands/surface/outdoors/unexplored)
 "Uv" = (
 /obj/machinery/power/terminal{
@@ -679,46 +811,61 @@
 	icon_state = "platingdmg1"
 	},
 /area/whitesands/surface/outdoors/unexplored)
-"Vv" = (
-/obj/machinery/atmospherics/pipe/manifold/cyan/visible{
+"Vf" = (
+/obj/effect/turf_decal/stripes/white{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/cyan/visible{
 	dir = 8
 	},
-/turf/open/floor/engine,
+/turf/open/floor/engine{
+	initial_gas_mix = "ws_atmos"
+	},
+/area/whitesands/surface/outdoors/unexplored)
+"Vi" = (
+/obj/machinery/atmospherics/pipe/simple/dark/visible{
+	dir = 8
+	},
+/turf/open/floor/plating{
+	icon_state = "platingdmg1";
+	initial_gas_mix = "ws_atmos"
+	},
+/area/whitesands/surface/outdoors/unexplored)
+"Vp" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers,
+/turf/open/floor/engine{
+	initial_gas_mix = "ws_atmos"
+	},
 /area/whitesands/surface/outdoors/unexplored)
 "VA" = (
 /obj/machinery/atmospherics/pipe/simple/dark/visible,
 /turf/closed/wall/r_wall/syndicate,
 /area/whitesands/surface/outdoors/unexplored)
-"VQ" = (
-/obj/structure/frame/machine,
-/turf/open/floor/plating,
-/area/whitesands/surface/outdoors/unexplored)
 "Wc" = (
 /turf/closed/wall/r_wall/syndicate,
 /area/whitesands/surface/outdoors/unexplored)
-"Wd" = (
-/obj/effect/turf_decal/stripes/white{
-	dir = 1
+"Wn" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers{
+	dir = 10
 	},
-/obj/machinery/atmospherics/pipe/simple/dark/visible{
-	dir = 5
+/turf/open/floor/engine{
+	initial_gas_mix = "ws_atmos"
 	},
-/turf/open/floor/engine,
 /area/whitesands/surface/outdoors/unexplored)
-"We" = (
+"Xj" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers{
+	dir = 8
+	},
+/turf/open/floor/plating{
+	initial_gas_mix = "ws_atmos"
+	},
+/area/whitesands/surface/outdoors/unexplored)
+"Ym" = (
 /obj/machinery/atmospherics/pipe/simple/cyan/visible,
 /turf/open/floor/plating{
-	icon_state = "platingdmg1"
+	icon_state = "platingdmg1";
+	initial_gas_mix = "ws_atmos"
 	},
-/area/whitesands/surface/outdoors/unexplored)
-"XV" = (
-/turf/open/floor/plating{
-	icon_state = "panelscorched"
-	},
-/area/whitesands/surface/outdoors/unexplored)
-"XX" = (
-/obj/machinery/atmospherics/pipe/simple/cyan/visible,
-/turf/open/floor/plating,
 /area/whitesands/surface/outdoors/unexplored)
 "Yx" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/visible{
@@ -726,20 +873,7 @@
 	},
 /turf/open/floor/plating/asteroid/whitesands,
 /area/whitesands/surface/outdoors/unexplored)
-"YL" = (
-/obj/machinery/atmospherics/pipe/simple/cyan/visible,
-/obj/item/pipe_dispenser,
-/turf/open/floor/plating{
-	icon_state = "panelscorched"
-	},
-/area/whitesands/surface/outdoors/unexplored)
-"ZJ" = (
-/obj/effect/decal/cleanable/ash/large,
-/turf/open/floor/plating{
-	icon_state = "panelscorched"
-	},
-/area/whitesands/surface/outdoors/unexplored)
-"ZP" = (
+"Za" = (
 /obj/item/stack/sheet/metal,
 /obj/item/stack/sheet/metal,
 /obj/item/stack/sheet/metal,
@@ -747,7 +881,8 @@
 	dir = 8
 	},
 /turf/open/floor/plating{
-	icon_state = "platingdmg1"
+	icon_state = "platingdmg1";
+	initial_gas_mix = "ws_atmos"
 	},
 /area/whitesands/surface/outdoors/unexplored)
 
@@ -813,7 +948,7 @@ Va
 Va
 Va
 Kw
-Vc
+yL
 Wc
 Va
 Va
@@ -839,7 +974,7 @@ Va
 Va
 Va
 Kw
-OI
+iQ
 Kw
 Wc
 Wc
@@ -850,9 +985,9 @@ Wc
 vW
 Wc
 Wc
-Vc
+yL
 Kw
-XV
+Ki
 Kw
 Kw
 Va
@@ -865,23 +1000,23 @@ Va
 Va
 Va
 Va
-XV
-XV
-Vc
+Ki
+Ki
+yL
 tw
 Mm
 AF
-vW
-XV
+PF
+Ki
 Kw
-XV
+Ki
 Kw
-XV
-sS
-sS
-GV
+Ki
+rG
+rG
+ey
 EJ
-Uc
+sr
 Va
 Va
 Va
@@ -893,22 +1028,22 @@ Va
 Va
 Va
 Va
-Uc
+sr
 Kw
-XV
+Ki
 Mm
 AF
-vW
-zk
-Mc
-Ab
-Vc
-EX
-XV
-Vc
-Gu
-iU
-Wd
+PF
+ur
+MD
+Ku
+yL
+aM
+Ki
+yL
+wY
+Fu
+mM
 Va
 Va
 Va
@@ -926,16 +1061,16 @@ Wc
 Wc
 Wc
 Wc
-dw
-Ba
-Tx
-vS
-Tx
-Tx
-Tx
-cO
-Cf
-vN
+BY
+Kg
+Vp
+KE
+Vp
+Vp
+Vp
+gG
+dv
+hW
 Va
 Va
 Va
@@ -945,24 +1080,24 @@ Va
 Va
 Va
 fx
-gW
+Rh
 Wc
 Kw
-OI
+iQ
 Wc
-XV
-ZJ
+Ki
+PZ
 Wc
 Wc
 pn
-Vc
+yL
 Dl
-XV
-qN
-Vc
-EX
-dz
-LR
+Ki
+bV
+yL
+aM
+Dc
+Vi
 Wc
 Va
 Va
@@ -971,25 +1106,25 @@ Va
 Va
 Wc
 Wc
-Uc
+sr
 Kw
 Wc
 Dn
 EG
 Wc
-iz
-Tg
+yl
+jB
 Wc
 Wc
-oZ
-Fz
-XV
-Vc
+ht
+Fk
+Ki
+yL
 ue
 Pm
-Vc
+yL
 Yx
-oE
+Gi
 Va
 Va
 Va
@@ -999,24 +1134,24 @@ Va
 Va
 Va
 Kw
-Uc
-cs
+sr
+gT
 Fw
 fy
 vJ
-qv
-Kc
+kq
+uy
 Wc
 Wc
-Nf
-OI
-OI
+Xj
+iQ
+iQ
 Kw
-hp
-xZ
-EX
-iR
-LJ
+HR
+OO
+aM
+KT
+JC
 VA
 Va
 Va
@@ -1025,25 +1160,25 @@ Va
 Va
 Va
 Va
-EM
-OI
+ff
+iQ
 Wc
-Uc
+sr
 Tm
 Wc
-XV
-XV
+Ki
+Ki
 Wc
 Wc
-Mx
-Tx
+Wn
+Vp
 Jl
-NC
-DE
-kE
-hs
-RE
-Ed
+SR
+mb
+iD
+eR
+Jw
+HV
 mC
 Va
 Va
@@ -1053,24 +1188,24 @@ RJ
 Va
 Va
 Va
-VQ
+rt
 Wc
 tw
 tw
 Wc
-cL
-yV
+qF
+gr
 Wc
 Wc
-XV
-EX
-EX
-la
-EX
-OI
-EX
-EX
-Uc
+Ki
+aM
+aM
+lm
+aM
+iQ
+aM
+aM
+aM
 vl
 Va
 Va
@@ -1089,15 +1224,15 @@ Wc
 Wc
 Wc
 Wc
-aO
-We
-Oe
-CF
-Ne
-sC
-YL
-XX
-ac
+IF
+Ym
+EF
+EI
+tv
+sZ
+wr
+oT
+mQ
 vl
 Va
 Va
@@ -1109,22 +1244,22 @@ Va
 Va
 Va
 Va
-XV
-Vc
-nI
-xK
-Tl
+Ki
+yL
+fm
+oO
+rO
 Wc
 Wc
-hK
-OI
-nJ
-EX
-aO
-Nk
-EX
-XV
-fB
+Pl
+iQ
+Fd
+aM
+IF
+BC
+aM
+Ki
+II
 Wc
 Va
 Va
@@ -1138,47 +1273,47 @@ Va
 Va
 Kw
 Kw
-Vc
-Bk
+yL
+SG
 JT
 Wc
 Wc
-ZP
+Za
 uW
 Kw
-wg
+kP
 fz
-cl
-EX
-Vc
-fG
+qe
+aM
+yL
+Vf
 Va
 Va
 Va
 "}
 (16,1,1) = {"
 RJ
-RJ
+Av
 Va
 Va
 Va
 Va
 Kw
 Kw
-xc
-Uc
+DK
+sr
 OI
 Wc
 Wc
-hK
+Pl
 uW
-Vc
-EX
-Vc
+yL
+aM
+yL
 sI
-XV
-Vc
-fB
+Ki
+yL
+II
 Wc
 Va
 Va
@@ -1197,15 +1332,15 @@ Kw
 Kw
 Wc
 Va
-LE
-XX
-XX
-pj
-Vv
-Vv
-Vv
-sC
-GE
+uz
+oT
+oT
+Hh
+uB
+uB
+uB
+sZ
+dJ
 Kw
 Va
 Va
@@ -1228,11 +1363,11 @@ Va
 Va
 Va
 Va
-og
-IC
-Ep
-og
-zk
+Ee
+JX
+JX
+Ee
+ur
 Kw
 Va
 Va
@@ -1255,10 +1390,10 @@ Va
 Va
 Va
 Va
-bs
-bs
-bs
-bs
+Pk
+Pk
+Pk
+Pk
 Tt
 Va
 Va

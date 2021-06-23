@@ -146,7 +146,7 @@
 	"apc_control", "cell_charger", "power control", "airlock_board", "firelock_board", "aac_electronics", "airalarm_electronics", "firealarm_electronics", "cell_charger", "stack_console", "stack_machine",
 	"oxygen_tank", "plasma_tank", "emergency_oxygen", "emergency_oxygen_engi", "plasmaman_tank_belt",	//WS edit, solar assemblies from lathe
 	"techfab_departmental_engineering", "techfab_departmental_science", "techfab_departmental_medical", "techfab_departmental_cargo", "techfab_departmental_security", "techfab_departmental_service", //Singulostation edit - Printable techfabs and protolathes
-	"protolathe_departmental_engineering", "protolathe_departmental_science", "protolathe_departmental_medical", "protolathe_departmental_cargo", "protolathe_departmental_security", "protolathe_departmental_service") //Singulostation edit - Printable techfabs and protolathes
+	"protolathe_departmental_engineering", "protolathe_departmental_science", "protolathe_departmental_medical", "protolathe_departmental_cargo", "protolathe_departmental_security", "protolathe_departmental_service") //Singulostation edit - Printable techfabs and protolathes  //WS edit, solar assemblies from lathe
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 7500)
 	export_price = 5000
 

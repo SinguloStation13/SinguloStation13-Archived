@@ -1,25 +1,1953 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aD" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/structure/chair/stool,
+/obj/effect/mob_spawn/human/corpse/assistant,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 10
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"aG" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/obj/machinery/power/apc/auto_name/north{
+	pixel_y = 24
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"aI" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/structure/table/reinforced,
+/obj/effect/turf_decal/tile/purple{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/red,
+/obj/machinery/camera{
+	c_tag = "Administration - Security Office";
+	dir = 8;
+	network = list("mine")
+	},
+/obj/item/gps/mining,
+/obj/item/gps/mining,
+/obj/item/gps/mining,
+/obj/item/gps/mining,
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"aN" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/lattice/catwalk,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"be" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 4
+	},
+/obj/machinery/power/apc/auto_name/north{
+	pixel_y = 24
+	},
+/obj/structure/table/reinforced,
+/obj/item/paper_bin/carbon,
+/obj/item/pen,
+/obj/effect/turf_decal/tile/red{
+	dir = 1
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"bq" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/machinery/space_heater,
+/obj/effect/turf_decal/delivery,
+/obj/machinery/airalarm/directional/east,
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored)
+"bI" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/machinery/power/apc/auto_name/west{
+	pixel_x = -24
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"bJ" = (
+/obj/machinery/atmospherics/pipe/layer_manifold/visible{
+	dir = 4
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"bS" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/machinery/door/airlock/medical/glass{
+	name = "Infirmary"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"cH" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3{
+	dir = 8
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"dw" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 10
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"dG" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/lattice/catwalk,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"dO" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/effect/gibspawner/human/bodypartless,
+/mob/living/simple_animal/hostile/whitesands/survivor,
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"es" = (
+/obj/structure/lattice/catwalk,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored)
+"eY" = (
+/obj/structure/lattice/catwalk,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plating/asteroid/whitesands/dried,
+/area/whitesands/surface/outdoors/explored)
+"fx" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 9
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"fy" = (
+/obj/effect/turf_decal/lumos/loading_area{
+	dir = 4
+	},
+/obj/effect/turf_decal/lumos/loading_area{
+	dir = 1
+	},
+/obj/structure/marker_beacon,
+/turf/open/floor/plating,
+/area/whitesands/surface/outdoors/explored)
+"gb" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/structure/frame/computer,
+/obj/item/circuitboard/computer/shuttle/docker,
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"gt" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1,
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3,
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"gu" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/machinery/airalarm/directional/north{
+	locked = 0;
+	pixel_y = 24
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"gQ" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/machinery/door/airlock{
+	name = "Dormitory"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"gX" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"gZ" = (
+/obj/structure/lattice/catwalk,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plating/asteroid/whitesands/dried,
+/area/whitesands/surface/outdoors/explored)
+"hC" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/effect/turf_decal/stripes/line,
+/obj/effect/turf_decal/stripes/corner{
+	dir = 4
+	},
+/obj/effect/turf_decal/stripes/corner{
+	dir = 1
+	},
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/structure/lattice/catwalk,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1,
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3,
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"hV" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"ic" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 10
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"iC" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/machinery/airalarm/directional/south{
+	locked = 0;
+	pixel_y = -24
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"iD" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/machinery/door/airlock/medical/glass{
+	name = "Greenhouse"
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/obj/structure/fans/tiny,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"iG" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/effect/turf_decal/tile/green{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/green{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"jy" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"jD" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 6
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"jK" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 10
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"ka" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/red,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"kc" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/effect/spawner/lootdrop/maintenance,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
+	dir = 1
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"ke" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/machinery/door/airlock/external/glass,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/obj/structure/fans/tiny,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"kw" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 6
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/structure/lattice/catwalk,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 9
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 9
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"kK" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/machinery/light/broken{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/effect/gibspawner/human/bodypartless,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"lq" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 1
+	},
+/obj/machinery/light/broken{
+	dir = 8
+	},
+/obj/effect/spawner/lootdrop/maintenance,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"lW" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"mk" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/machinery/power/shuttle/engine/fueled/expulsion{
+	dir = 1
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"na" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/obj/machinery/advanced_airlock_controller{
+	dir = 4;
+	pixel_x = -24
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"nh" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/effect/gibspawner/human/bodypartless,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 5
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"nK" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 4
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
 "om" = (
 /turf/open/floor/plating/asteroid/whitesands,
 /area/whitesands/surface/outdoors/explored)
+"ov" = (
+/turf/closed/mineral/random/whitesands/high_chance,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"oE" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/red,
+/obj/structure/tank_dispenser/oxygen,
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"pt" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/structure/chair/stool,
+/obj/effect/mob_spawn/human/corpse/assistant,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 9
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"pN" = (
+/obj/structure/lattice/catwalk,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored)
+"pZ" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/structure/closet/secure_closet/hydroponics,
+/obj/machinery/airalarm/directional/south{
+	locked = 0;
+	pixel_y = -24
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"qh" = (
+/obj/structure/lattice/catwalk,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plating/asteroid/whitesands,
+/area/whitesands/surface/outdoors)
+"qB" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/machinery/light{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/visible{
+	dir = 4
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"ra" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 6
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"ry" = (
+/mob/living/simple_animal/hostile/whitesands/ranged/hunter,
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"rJ" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/item/kirbyplants{
+	icon_state = "plant-25"
+	},
+/obj/machinery/light/small/broken{
+	dir = 8
+	},
+/obj/machinery/camera{
+	c_tag = "North Barrack - Entrance";
+	dir = 10;
+	network = list("mine")
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
+	dir = 4
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"rR" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/lattice/catwalk,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"ss" = (
+/obj/structure/lattice/catwalk,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"sP" = (
+/obj/structure/lattice/catwalk,
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 5
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"tw" = (
+/obj/structure/marker_beacon,
+/obj/effect/turf_decal/lumos/loading_area,
+/obj/effect/turf_decal/lumos/loading_area{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/whitesands/surface/outdoors/explored)
+"uo" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/structure/table,
+/obj/item/trash/plate,
+/obj/item/reagent_containers/food/drinks/beer{
+	pixel_x = 7;
+	pixel_y = 5
+	},
+/obj/item/reagent_containers/food/drinks/bottle/sarsaparilla,
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"ux" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/machinery/atmospherics/components/unary/shuttle/heater{
+	dir = 1
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"uA" = (
+/obj/structure/lattice/catwalk,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plating/asteroid/whitesands,
+/area/whitesands/surface/outdoors/explored)
+"vA" = (
+/obj/structure/lattice/catwalk,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"vD" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/machinery/door/airlock{
+	name = "Dormitory"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"vQ" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer1,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"vS" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/effect/turf_decal/tile/green{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/green{
+	dir = 1
+	},
+/obj/item/storage/bottles/sandblast,
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"wm" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/lattice/catwalk,
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3{
+	dir = 8
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
 "wO" = (
 /turf/open/floor/plating/asteroid/whitesands/dried,
 /area/whitesands/surface/outdoors)
+"wT" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/obj/machinery/advanced_airlock_controller{
+	dir = 4;
+	pixel_x = -24
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"xa" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/machinery/door/airlock/public/glass{
+	name = "Podbay"
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"xg" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/effect/turf_decal/stripes/corner{
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/structure/lattice/catwalk,
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3{
+	dir = 4
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"xF" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer1,
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"xI" = (
+/obj/machinery/atmospherics/components/unary/relief_valve/atmos/atmos_waste{
+	dir = 4
+	},
+/obj/structure/lattice/catwalk,
+/obj/effect/turf_decal/stripes/box,
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"yc" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/machinery/door/airlock/external/glass,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+	},
+/obj/structure/fans/tiny,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"yn" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/red,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
+	dir = 8
+	},
+/obj/item/kirbyplants{
+	icon_state = "plant-25"
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
 "yr" = (
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"yF" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/lattice/catwalk,
+/obj/effect/turf_decal/stripes/corner,
+/obj/effect/turf_decal/stripes/corner{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"zV" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/effect/turf_decal/stripes/corner{
+	dir = 8
+	},
+/obj/effect/turf_decal/stripes/corner{
+	dir = 1
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/structure/lattice/catwalk,
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3{
+	dir = 4
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"zX" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
+	},
 /turf/closed/mineral/random/whitesands,
 /area/whitesands/surface/outdoors/unexplored/danger)
 "Am" = (
 /turf/open/floor/plating/asteroid/whitesands,
 /area/whitesands/surface/outdoors)
+"Bd" = (
+/obj/effect/turf_decal/lumos/loading_area,
+/obj/machinery/computer/shuttle/mining{
+	dir = 1;
+	req_access = null
+	},
+/turf/open/floor/plating,
+/area/whitesands/surface/outdoors/explored)
+"Bf" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 9
+	},
+/obj/effect/turf_decal/stripes/corner,
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/obj/structure/lattice/catwalk,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 6
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"Bp" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/red,
+/obj/machinery/suit_storage_unit/mining,
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"Bx" = (
+/obj/structure/lattice/catwalk,
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored)
+"BN" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/machinery/power/terminal{
+	dir = 4
+	},
+/obj/machinery/power/apc/auto_name/east,
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored)
+"BU" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/effect/turf_decal/stripes/line,
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/structure/lattice/catwalk,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"Cl" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/machinery/space_heater,
+/obj/effect/turf_decal/delivery,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
+	dir = 8
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"Co" = (
+/obj/structure/marker_beacon,
+/obj/effect/turf_decal/lumos/loading_area,
+/obj/effect/turf_decal/lumos/loading_area{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/whitesands/surface/outdoors/explored)
+"Cu" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/effect/turf_decal/caution/stand_clear{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"Cv" = (
+/obj/structure/lattice/catwalk,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"CM" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 10
+	},
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/structure/lattice/catwalk,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 5
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"CV" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/effect/turf_decal/stripes/corner{
+	dir = 8
+	},
+/mob/living/simple_animal/hostile/whitesands/survivor,
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"Dy" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 1
+	},
+/obj/machinery/airalarm/directional/west{
+	locked = 0;
+	pixel_x = -24
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
+	dir = 4
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"DJ" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/visible{
+	dir = 5
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"DP" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/structure/table,
+/obj/effect/turf_decal/tile/green,
+/obj/effect/turf_decal/tile/green{
+	dir = 4
+	},
+/obj/item/reagent_containers/food/drinks/beer{
+	pixel_x = 7;
+	pixel_y = 5
+	},
+/obj/item/reagent_containers/food/drinks/bottle/sarsaparilla{
+	pixel_x = -4
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"Et" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3,
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"EU" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/machinery/door/airlock/public/glass{
+	name = "Living Area"
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"EV" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 9
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 9
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"Fh" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1{
+	dir = 1
+	},
+/obj/machinery/camera{
+	c_tag = "Administration - Lobby";
+	dir = 6;
+	network = list("mine")
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"Fm" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/structure/closet/toolcloset,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/visible,
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"Fy" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3,
+/mob/living/simple_animal/hostile/whitesands/survivor,
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"FR" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"FS" = (
+/obj/structure/marker_beacon,
+/obj/effect/turf_decal/lumos/loading_area{
+	dir = 1
+	},
+/obj/effect/turf_decal/lumos/loading_area{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/whitesands/surface/outdoors/explored)
+"FT" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
+	dir = 8
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"Hs" = (
+/obj/effect/turf_decal/lumos/loading_area{
+	dir = 8
+	},
+/obj/structure/table/reinforced,
+/obj/item/clothing/mask/breath,
+/obj/item/clothing/mask/breath,
+/obj/item/clothing/mask/breath,
+/obj/item/clothing/mask/breath,
+/obj/item/clothing/mask/breath,
+/turf/open/floor/plating,
+/area/whitesands/surface/outdoors/explored)
+"HH" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/power/apc/auto_name/east{
+	pixel_x = 24
+	},
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3{
+	dir = 4
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"HQ" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3{
+	dir = 4
+	},
+/mob/living/simple_animal/hostile/whitesands/survivor,
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"HT" = (
+/obj/effect/turf_decal/lumos/loading_area{
+	dir = 1
+	},
+/obj/effect/turf_decal/lumos/loading_area/corner{
+	dir = 8
+	},
+/obj/machinery/power/apc/auto_name/north,
+/obj/machinery/power/terminal{
+	dir = 1
+	},
+/obj/machinery/computer/shuttle/mining/common,
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/turf/open/floor/plating,
+/area/whitesands/surface/outdoors/explored)
+"Ix" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/structure/closet/crate,
+/obj/effect/spawner/lootdrop/maintenance/two,
+/mob/living/simple_animal/hostile/whitesands/survivor,
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"IJ" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/machinery/door/airlock/external/glass,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"IP" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"Js" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
+	dir = 1
+	},
+/mob/living/simple_animal/hostile/whitesands/survivor,
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"JT" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer1,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored)
+"JX" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
+	dir = 1
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"Kf" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/item/kirbyplants{
+	icon_state = "plant-25"
+	},
+/obj/machinery/airalarm/directional/west{
+	locked = 0;
+	pixel_x = -24
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
+	dir = 4
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"KF" = (
+/obj/structure/lattice/catwalk,
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 10
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"KJ" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/machinery/airalarm/directional/north{
+	locked = 0;
+	pixel_y = 24
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"Lp" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"Lv" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/machinery/door/airlock/external/glass,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 1
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"Ly" = (
+/obj/effect/turf_decal/lumos/loading_area{
+	dir = 4
+	},
+/obj/structure/tank_dispenser/oxygen,
+/turf/open/floor/plating,
+/area/whitesands/surface/outdoors/explored)
+"Nx" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
+	dir = 1
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"NB" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/effect/turf_decal/loading_area,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1{
+	dir = 4
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
 "NM" = (
 /turf/closed/mineral/random/whitesands,
 /area/whitesands/surface/outdoors/unexplored)
-"VH" = (
-/turf/closed/mineral/random/whitesands/high_chance,
+"NV" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/red,
+/obj/machinery/suit_storage_unit/mining,
+/turf/closed/mineral/random/whitesands,
 /area/whitesands/surface/outdoors/unexplored/danger)
+"OG" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
+	dir = 4
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"OV" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/effect/turf_decal/tile/green{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/green{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"Pk" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/structure/chair/office{
+	dir = 1
+	},
+/obj/effect/mob_spawn/human/corpse/assistant,
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3,
+/turf/open/floor/plating/asteroid/whitesands,
+/area/whitesands/surface/outdoors)
+"PY" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/effect/turf_decal/stripes/corner{
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/structure/lattice/catwalk,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 10
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 10
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"Rf" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/structure/table/wood,
+/obj/item/paper/pamphlet/ruin,
+/obj/item/reagent_containers/food/drinks/bottle/sarsaparilla{
+	pixel_x = 8;
+	pixel_y = 4
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"RG" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/effect/turf_decal/loading_area{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3{
+	dir = 8
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"RM" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/effect/mob_spawn/human/corpse{
+	outfit = /datum/outfit/botanist
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3,
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"Se" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/effect/turf_decal/stripes/line,
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/lattice/catwalk,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 4
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"Sg" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3{
+	dir = 1
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"Sv" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 9
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 10
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"SC" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 5
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"SH" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/structure/table/reinforced,
+/obj/item/folder/red,
+/obj/item/folder/red,
+/obj/item/reagent_containers/food/drinks/bottle/sarsaparilla{
+	pixel_x = -7;
+	pixel_y = 6
+	},
+/turf/open/floor/plating/asteroid/whitesands,
+/area/whitesands/surface/outdoors)
+"SQ" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/blue{
+	dir = 1
+	},
+/obj/structure/bed/roller,
+/obj/item/bedsheet/medical,
+/obj/machinery/iv_drip,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
+	dir = 1
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"Tg" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/machinery/power/apc/auto_name/east{
+	pixel_x = 24
+	},
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/obj/machinery/atmospherics/components/binary/pump/on{
+	dir = 4
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"Ti" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/structure/table/wood,
+/obj/machinery/computer/security/wooden_tv{
+	network = list("mine","auxbase");
+	pixel_x = 1;
+	pixel_y = 6
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"Tz" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/structure/table/reinforced,
+/obj/machinery/computer/security/wooden_tv{
+	network = list("mine","auxbase");
+	pixel_x = 1;
+	pixel_y = 6
+	},
+/turf/open/floor/plating/asteroid/whitesands,
+/area/whitesands/surface/outdoors)
+"Uc" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/item/kirbyplants{
+	icon_state = "plant-25"
+	},
+/obj/machinery/light/small/broken{
+	dir = 4
+	},
+/obj/effect/turf_decal/bot,
+/obj/machinery/camera{
+	c_tag = "South Barrack - Entrance";
+	network = list("mine")
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
+	dir = 8
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"UW" = (
+/obj/structure/lattice/catwalk,
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/turf/open/floor/plating/asteroid/whitesands/dried,
+/area/whitesands/surface/outdoors/explored)
+"UY" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
+	dir = 4
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"VW" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 10
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"Wl" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
+	dir = 1
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"WC" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/machinery/door/airlock/security/glass{
+	name = "Secure Area"
+	},
+/obj/structure/fans/tiny,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored)
+"WE" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/machinery/door/firedoor/border_only,
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/obj/machinery/door/airlock/security/glass{
+	name = "Secure Area"
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"WR" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/line,
+/obj/structure/lattice/catwalk,
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
+	dir = 5
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"Xw" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/structure/frame/computer,
+/obj/item/stack/sheet/glass,
+/obj/item/circuitboard/computer/shuttle/helm,
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"XA" = (
+/turf/closed/wall/r_wall,
+/area/whitesands/surface/outdoors/explored)
+"XW" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/purple,
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/machinery/power/apc/auto_name/east{
+	pixel_x = 24
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"Yd" = (
+/mob/living/simple_animal/hostile/whitesands/survivor,
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
+"YZ" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/structure/fence,
+/obj/structure/lattice/catwalk,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored)
 "ZI" = (
 /turf/open/floor/plating/asteroid/whitesands/dried,
 /area/whitesands/surface/outdoors/explored)
+"ZR" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/machinery/space_heater,
+/obj/effect/turf_decal/delivery,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
+	dir = 4
+	},
+/turf/closed/mineral/random/whitesands,
+/area/whitesands/surface/outdoors/unexplored/danger)
 
 (1,1,1) = {"
 yr
@@ -1399,7 +3327,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -1892,7 +3820,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -2115,7 +4043,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -2390,7 +4318,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -3117,7 +5045,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -3127,7 +5055,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -3374,7 +5302,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -3907,7 +5835,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -5203,7 +7131,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -5944,13 +7872,13 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -6208,13 +8136,13 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -7971,7 +9899,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -8265,8 +10193,8 @@ yr
 yr
 yr
 yr
-VH
-VH
+ov
+ov
 yr
 yr
 yr
@@ -9027,8 +10955,8 @@ yr
 yr
 yr
 yr
-VH
-VH
+ov
+ov
 yr
 yr
 yr
@@ -11803,7 +13731,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -12245,9 +14173,9 @@ ZI
 ZI
 ZI
 ZI
-ZI
-ZI
-ZI
+tw
+Ly
+fy
 ZI
 ZI
 ZI
@@ -12342,7 +14270,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -12502,13 +14430,13 @@ ZI
 ZI
 ZI
 ZI
-ZI
-ZI
-ZI
-ZI
-ZI
-ZI
-ZI
+Bd
+XA
+HT
+gZ
+gZ
+gZ
+UW
 ZI
 om
 om
@@ -12759,13 +14687,13 @@ ZI
 ZI
 ZI
 ZI
+Co
+Hs
+FS
 ZI
 ZI
 ZI
-ZI
-ZI
-ZI
-ZI
+eY
 om
 om
 om
@@ -13022,7 +14950,7 @@ ZI
 ZI
 ZI
 ZI
-om
+uA
 om
 om
 om
@@ -13136,7 +15064,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -13279,7 +15207,7 @@ ZI
 ZI
 ZI
 om
-om
+uA
 om
 om
 om
@@ -13320,7 +15248,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -13536,7 +15464,7 @@ ZI
 ZI
 om
 om
-om
+uA
 om
 om
 om
@@ -13793,7 +15721,7 @@ om
 om
 om
 om
-om
+uA
 om
 om
 om
@@ -14050,7 +15978,7 @@ om
 om
 om
 om
-om
+uA
 om
 om
 om
@@ -14307,7 +16235,7 @@ om
 om
 om
 om
-om
+uA
 om
 om
 om
@@ -14564,7 +16492,7 @@ om
 om
 om
 om
-om
+uA
 om
 om
 om
@@ -14821,7 +16749,7 @@ om
 om
 om
 om
-om
+uA
 om
 om
 om
@@ -15078,7 +17006,7 @@ om
 om
 om
 om
-om
+uA
 om
 om
 Am
@@ -15335,7 +17263,7 @@ om
 om
 om
 om
-om
+uA
 om
 Am
 Am
@@ -15592,7 +17520,7 @@ om
 om
 om
 om
-Am
+qh
 Am
 Am
 Am
@@ -15849,7 +17777,7 @@ om
 om
 om
 Am
-Am
+qh
 Am
 Am
 Am
@@ -16106,7 +18034,7 @@ om
 om
 Am
 Am
-Am
+qh
 Am
 Am
 Am
@@ -16363,7 +18291,7 @@ Am
 Am
 Am
 Am
-Am
+qh
 Am
 Am
 Am
@@ -16620,11 +18548,11 @@ Am
 Am
 Am
 Am
+qh
 Am
 Am
 Am
 Am
-Am
 NM
 NM
 NM
@@ -16667,7 +18595,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -16877,7 +18805,7 @@ Am
 Am
 Am
 Am
-Am
+qh
 Am
 Am
 NM
@@ -17134,7 +19062,7 @@ Am
 Am
 Am
 Am
-Am
+qh
 Am
 NM
 NM
@@ -17391,7 +19319,7 @@ Am
 Am
 Am
 Am
-Am
+qh
 NM
 NM
 NM
@@ -17648,12 +19576,12 @@ Am
 Am
 Am
 Am
+es
 NM
 NM
 NM
 NM
 NM
-NM
 yr
 yr
 yr
@@ -17672,7 +19600,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -17761,7 +19689,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -17905,7 +19833,7 @@ Am
 Am
 Am
 NM
-NM
+YZ
 NM
 NM
 NM
@@ -18158,11 +20086,11 @@ Am
 Am
 Am
 Am
-Am
+SH
 Am
 Am
 NM
-NM
+es
 NM
 NM
 NM
@@ -18416,12 +20344,12 @@ Am
 Am
 Am
 Am
-Am
-NM
-NM
-NM
-NM
-yr
+Pk
+JT
+WC
+Bx
+pN
+sP
 yr
 yr
 yr
@@ -18672,13 +20600,13 @@ Am
 Am
 Am
 Am
-Am
+Tz
+BN
+bq
 NM
 NM
 NM
-NM
-NM
-yr
+vA
 yr
 yr
 yr
@@ -18935,6 +20863,7 @@ NM
 NM
 NM
 yr
+vA
 yr
 yr
 yr
@@ -19024,8 +20953,7 @@ yr
 yr
 yr
 yr
-yr
-VH
+ov
 yr
 yr
 yr
@@ -19192,6 +21120,7 @@ NM
 NM
 yr
 yr
+vA
 yr
 yr
 yr
@@ -19201,6 +21130,8 @@ yr
 yr
 yr
 yr
+ux
+mk
 yr
 yr
 yr
@@ -19257,10 +21188,7 @@ yr
 yr
 yr
 yr
-yr
-yr
-yr
-VH
+ov
 yr
 yr
 yr
@@ -19449,18 +21377,18 @@ NM
 yr
 yr
 yr
+vA
 yr
 yr
 yr
 yr
+Xw
 yr
 yr
 yr
 yr
-yr
-yr
-yr
-yr
+ux
+mk
 yr
 yr
 yr
@@ -19706,18 +21634,18 @@ NM
 yr
 yr
 yr
+vA
 yr
 yr
 yr
 yr
+gb
 yr
 yr
 yr
 yr
-yr
-yr
-yr
-yr
+ux
+mk
 yr
 yr
 yr
@@ -19963,7 +21891,7 @@ yr
 yr
 yr
 yr
-yr
+vA
 yr
 yr
 yr
@@ -20220,7 +22148,7 @@ yr
 yr
 yr
 yr
-yr
+vA
 yr
 yr
 yr
@@ -20477,6 +22405,7 @@ yr
 yr
 yr
 yr
+vA
 yr
 yr
 yr
@@ -20491,12 +22420,11 @@ yr
 yr
 yr
 yr
+xI
 yr
 yr
 yr
-yr
-yr
-yr
+ry
 yr
 yr
 yr
@@ -20734,6 +22662,14 @@ yr
 yr
 yr
 yr
+KF
+ss
+ss
+Cv
+ss
+ss
+ss
+WR
 yr
 yr
 yr
@@ -20741,22 +22677,14 @@ yr
 yr
 yr
 yr
+nK
 yr
 yr
 yr
 yr
 yr
 yr
-yr
-yr
-yr
-yr
-yr
-yr
-yr
-yr
-yr
-yr
+OG
 yr
 yr
 yr
@@ -20998,6 +22926,7 @@ yr
 yr
 yr
 yr
+BU
 yr
 yr
 yr
@@ -21005,15 +22934,14 @@ yr
 yr
 yr
 yr
+jK
+Fm
+DJ
 yr
 yr
 yr
 yr
-yr
-yr
-yr
-yr
-yr
+UY
 yr
 yr
 yr
@@ -21255,6 +23183,7 @@ yr
 yr
 yr
 yr
+BU
 yr
 yr
 yr
@@ -21264,13 +23193,12 @@ yr
 yr
 yr
 yr
+qB
+Tg
 yr
 yr
 yr
-yr
-yr
-yr
-yr
+IP
 yr
 yr
 yr
@@ -21512,6 +23440,7 @@ yr
 yr
 yr
 yr
+BU
 yr
 yr
 yr
@@ -21521,13 +23450,12 @@ yr
 yr
 yr
 yr
+bJ
 yr
 yr
 yr
 yr
-yr
-yr
-yr
+xa
 yr
 yr
 yr
@@ -21617,7 +23545,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -21769,6 +23697,7 @@ yr
 yr
 yr
 yr
+BU
 yr
 yr
 yr
@@ -21777,24 +23706,23 @@ yr
 yr
 yr
 yr
+Dy
+lq
+yr
+yr
+oE
+yr
+gX
+yr
+yr
+na
 yr
 yr
 yr
 yr
 yr
 yr
-yr
-yr
-yr
-yr
-yr
-yr
-yr
-yr
-yr
-yr
-yr
-VH
+ov
 yr
 yr
 yr
@@ -22026,23 +23954,23 @@ yr
 yr
 yr
 yr
+BU
 yr
 yr
 yr
 yr
 yr
 yr
+be
 yr
-yr
-yr
-yr
-yr
-yr
-yr
-yr
-yr
-yr
-yr
+jD
+HQ
+jy
+hV
+ka
+WE
+gt
+CV
 yr
 yr
 yr
@@ -22279,6 +24207,11 @@ yr
 yr
 yr
 yr
+pZ
+yr
+yr
+yr
+BU
 yr
 yr
 yr
@@ -22287,18 +24220,13 @@ yr
 yr
 yr
 yr
+yn
+aI
+Bp
+Bp
+NV
 yr
-yr
-yr
-yr
-yr
-yr
-yr
-yr
-yr
-yr
-yr
-yr
+zX
 yr
 yr
 yr
@@ -22532,6 +24460,15 @@ yr
 yr
 yr
 yr
+aG
+yr
+RM
+vQ
+Lp
+iD
+rR
+rR
+hC
 yr
 yr
 yr
@@ -22546,16 +24483,7 @@ yr
 yr
 yr
 yr
-yr
-yr
-yr
-yr
-yr
-yr
-yr
-yr
-yr
-yr
+Fh
 yr
 yr
 yr
@@ -22797,25 +24725,25 @@ yr
 yr
 yr
 yr
+PY
+wm
+aN
+aN
+IJ
+lW
+wT
+Lv
+Lp
+SC
+yr
+Kf
 yr
 yr
 yr
-yr
-yr
-yr
-yr
-yr
-yr
-yr
-yr
-yr
-yr
-yr
-yr
-yr
-yr
-yr
-yr
+Sg
+FR
+kc
+Yd
 yr
 yr
 yr
@@ -23050,27 +24978,27 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
 yr
+yF
 yr
 yr
 yr
 yr
+FT
 yr
 yr
-yr
-yr
-yr
-yr
-yr
-yr
-yr
-yr
-yr
-yr
+ic
+kK
+HH
+cH
+Lp
+EU
+EV
+Rf
 yr
 yr
 yr
@@ -23312,29 +25240,22 @@ yr
 yr
 yr
 yr
+Se
 yr
 yr
 yr
 yr
 yr
-yr
-VH
-yr
+ov
 yr
 yr
 yr
 yr
+bS
 yr
 yr
 yr
-yr
-yr
-yr
-yr
-yr
-yr
-yr
-yr
+Ti
 yr
 yr
 yr
@@ -23365,7 +25286,14 @@ yr
 yr
 yr
 yr
-VH
+yr
+yr
+yr
+yr
+yr
+yr
+yr
+ov
 yr
 yr
 yr
@@ -23569,6 +25497,7 @@ yr
 yr
 yr
 yr
+Se
 yr
 yr
 yr
@@ -23578,10 +25507,9 @@ yr
 yr
 yr
 yr
-yr
-yr
-yr
-yr
+Et
+Sv
+SQ
 yr
 yr
 yr
@@ -23826,7 +25754,7 @@ yr
 yr
 yr
 yr
-yr
+Se
 yr
 yr
 yr
@@ -24083,7 +26011,7 @@ yr
 yr
 yr
 yr
-yr
+Se
 yr
 yr
 yr
@@ -24340,7 +26268,7 @@ yr
 yr
 yr
 yr
-yr
+Se
 yr
 yr
 yr
@@ -24589,15 +26517,15 @@ yr
 yr
 yr
 yr
+bI
+rJ
 yr
 yr
 yr
 yr
 yr
 yr
-yr
-yr
-yr
+Se
 yr
 yr
 yr
@@ -24846,16 +26774,16 @@ yr
 yr
 yr
 yr
-yr
-yr
-yr
-yr
-yr
-yr
-yr
-yr
-yr
-yr
+ra
+RG
+ke
+rR
+rR
+rR
+rR
+rR
+zV
+CM
 yr
 yr
 yr
@@ -25103,6 +27031,8 @@ yr
 yr
 yr
 yr
+KJ
+Cl
 yr
 yr
 yr
@@ -25110,9 +27040,7 @@ yr
 yr
 yr
 yr
-yr
-yr
-yr
+Se
 yr
 yr
 yr
@@ -25360,6 +27288,7 @@ yr
 yr
 yr
 yr
+vD
 yr
 yr
 yr
@@ -25368,6 +27297,7 @@ yr
 yr
 yr
 yr
+Se
 yr
 yr
 yr
@@ -25448,9 +27378,7 @@ yr
 yr
 yr
 yr
-yr
-yr
-VH
+ov
 yr
 yr
 yr
@@ -25617,6 +27545,7 @@ yr
 yr
 yr
 yr
+iG
 yr
 yr
 yr
@@ -25625,14 +27554,13 @@ yr
 yr
 yr
 yr
+Se
 yr
 yr
 yr
 yr
-yr
-yr
-yr
-yr
+ZR
+bI
 yr
 yr
 yr
@@ -25873,23 +27801,23 @@ yr
 yr
 yr
 yr
+Fy
+fx
+uo
 yr
 yr
 yr
 yr
 yr
 yr
-yr
-yr
-yr
-yr
-yr
-yr
-yr
-yr
-yr
-yr
-yr
+Bf
+xg
+dG
+dG
+dG
+ke
+NB
+nh
 yr
 yr
 yr
@@ -25985,7 +27913,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -26130,6 +28058,8 @@ yr
 yr
 yr
 yr
+xF
+pt
 yr
 yr
 yr
@@ -26137,16 +28067,14 @@ yr
 yr
 yr
 yr
+Se
 yr
 yr
 yr
 yr
 yr
-yr
-yr
-yr
-yr
-yr
+Uc
+iC
 yr
 yr
 yr
@@ -26396,14 +28324,14 @@ yr
 yr
 yr
 yr
+Se
 yr
 yr
 yr
 yr
 yr
 yr
-yr
-yr
+gQ
 yr
 yr
 yr
@@ -26653,17 +28581,17 @@ yr
 yr
 yr
 yr
+Se
 yr
 yr
 yr
 yr
 yr
+vS
+OV
 yr
 yr
-yr
-yr
-yr
-VH
+ov
 yr
 yr
 yr
@@ -26910,15 +28838,15 @@ yr
 yr
 yr
 yr
+Se
 yr
 yr
 yr
 yr
 yr
 yr
-yr
-yr
-yr
+dw
+JX
 yr
 yr
 yr
@@ -27167,15 +29095,15 @@ yr
 yr
 yr
 yr
+Se
 yr
 yr
 yr
 yr
 yr
 yr
-yr
-yr
-yr
+aD
+Js
 yr
 yr
 yr
@@ -27396,7 +29324,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -27424,13 +29352,13 @@ yr
 yr
 yr
 yr
+Se
 yr
 yr
 yr
 yr
 yr
-yr
-yr
+DP
 yr
 yr
 yr
@@ -27534,7 +29462,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -27681,7 +29609,7 @@ yr
 yr
 yr
 yr
-yr
+Se
 yr
 yr
 yr
@@ -27938,7 +29866,7 @@ yr
 yr
 yr
 yr
-yr
+Se
 yr
 yr
 yr
@@ -28189,6 +30117,13 @@ yr
 yr
 yr
 yr
+Bf
+rR
+rR
+rR
+rR
+rR
+kw
 yr
 yr
 yr
@@ -28225,14 +30160,7 @@ yr
 yr
 yr
 yr
-yr
-yr
-yr
-yr
-yr
-yr
-yr
-VH
+ov
 yr
 yr
 yr
@@ -28446,6 +30374,7 @@ yr
 yr
 yr
 yr
+Se
 yr
 yr
 yr
@@ -28488,8 +30417,7 @@ yr
 yr
 yr
 yr
-yr
-VH
+ov
 yr
 yr
 yr
@@ -28703,7 +30631,7 @@ yr
 yr
 yr
 yr
-yr
+Se
 yr
 yr
 yr
@@ -28960,7 +30888,7 @@ yr
 yr
 yr
 yr
-yr
+Se
 yr
 yr
 yr
@@ -29205,7 +31133,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -29217,6 +31145,7 @@ yr
 yr
 yr
 yr
+Se
 yr
 yr
 yr
@@ -29289,8 +31218,7 @@ yr
 yr
 yr
 yr
-yr
-VH
+ov
 yr
 yr
 yr
@@ -29474,7 +31402,7 @@ yr
 yr
 yr
 yr
-yr
+Se
 yr
 yr
 yr
@@ -29731,7 +31659,7 @@ yr
 yr
 yr
 yr
-yr
+yc
 yr
 yr
 yr
@@ -29988,13 +31916,13 @@ yr
 yr
 yr
 yr
+Cu
 yr
 yr
 yr
 yr
 yr
-yr
-yr
+dO
 yr
 yr
 yr
@@ -30244,12 +32172,12 @@ yr
 yr
 yr
 yr
+gu
+VW
+Nx
+Wl
 yr
-yr
-yr
-yr
-yr
-yr
+Ix
 yr
 yr
 yr
@@ -30503,7 +32431,7 @@ yr
 yr
 yr
 yr
-yr
+XW
 yr
 yr
 yr
@@ -31638,7 +33566,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -31895,7 +33823,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -32132,7 +34060,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -32783,7 +34711,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -33855,7 +35783,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -33882,7 +35810,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -34139,7 +36067,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -35113,7 +37041,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -36008,7 +37936,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -36202,7 +38130,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -37271,7 +39199,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -37511,7 +39439,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -38484,7 +40412,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -39448,7 +41376,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -40750,7 +42678,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -41405,7 +43333,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -41807,7 +43735,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -42064,7 +43992,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -44400,7 +46328,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -44587,7 +46515,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -45486,7 +47414,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -45754,7 +47682,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -46160,7 +48088,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -46548,7 +48476,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -46990,7 +48918,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -50359,7 +52287,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -50520,7 +52448,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -50552,7 +52480,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -52946,7 +54874,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -53244,7 +55172,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -53459,7 +55387,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -53857,7 +55785,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -54180,7 +56108,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -54454,7 +56382,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -54976,7 +56904,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -55250,7 +57178,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -55546,7 +57474,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -56202,7 +58130,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -56345,7 +58273,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -56541,7 +58469,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -56805,7 +58733,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -57299,7 +59227,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -58026,7 +59954,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -59086,7 +61014,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -59096,7 +61024,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -59343,7 +61271,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -59364,7 +61292,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -59880,7 +61808,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -60380,7 +62308,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -60553,7 +62481,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -60701,7 +62629,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -61110,7 +63038,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -61667,7 +63595,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -61684,8 +63612,8 @@ yr
 yr
 yr
 yr
-VH
-VH
+ov
+ov
 yr
 yr
 yr
@@ -61866,7 +63794,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -62184,8 +64112,8 @@ yr
 yr
 yr
 yr
-VH
-VH
+ov
+ov
 yr
 yr
 yr
@@ -62413,7 +64341,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -62741,7 +64669,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -63296,7 +65224,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr
@@ -63533,7 +65461,7 @@ yr
 yr
 yr
 yr
-VH
+ov
 yr
 yr
 yr

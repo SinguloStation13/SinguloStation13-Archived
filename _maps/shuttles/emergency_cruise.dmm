@@ -32,6 +32,53 @@
 	},
 /turf/open/floor/wood,
 /area/shuttle/escape)
+"bp" = (
+/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/obj/structure/table/reinforced,
+/obj/item/clothing/mask/cigarette/cigar/robusto{
+	pixel_x = -4;
+	pixel_y = 15
+	},
+/obj/item/clothing/mask/cigarette/cigar/robusto{
+	pixel_x = 3;
+	pixel_y = 7
+	},
+/obj/item/clothing/mask/cigarette/cigar/robusto{
+	pixel_x = 7;
+	pixel_y = 12
+	},
+/obj/item/storage/fancy/cigarettes/cigars/robusto{
+	pixel_x = -13;
+	pixel_y = 2
+	},
+/obj/item/lighter/greyscale{
+	pixel_x = 6;
+	pixel_y = -10
+	},
+/obj/item/cigbutt{
+	pixel_x = -8
+	},
+/turf/open/floor/plasteel/white,
+/area/shuttle/escape)
 "bJ" = (
 /obj/machinery/door/airlock/shuttle,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
@@ -56,38 +103,6 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
 	},
-/turf/open/floor/plasteel/white,
-/area/shuttle/escape)
-"cm" = (
-/obj/effect/turf_decal/tile/blue,
-/obj/effect/turf_decal/tile/blue{
-	dir = 8
-	},
-/obj/effect/turf_decal/tile/blue{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/blue{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/blue,
-/obj/effect/turf_decal/tile/blue{
-	dir = 8
-	},
-/obj/effect/turf_decal/tile/blue{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/blue{
-	dir = 4
-	},
-/obj/structure/table/reinforced,
-/obj/item/storage/fancy/donut_box{
-	pixel_y = -7
-	},
-/obj/item/reagent_containers/food/snacks/donut{
-	pixel_x = 5;
-	pixel_y = 10
-	},
-/obj/item/toy/plush/moth,
 /turf/open/floor/plasteel/white,
 /area/shuttle/escape)
 "cu" = (
@@ -220,6 +235,38 @@
 /obj/item/camera{
 	pixel_y = 3
 	},
+/turf/open/floor/plasteel/white,
+/area/shuttle/escape)
+"jg" = (
+/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/obj/structure/table/reinforced,
+/obj/item/storage/fancy/donut_box{
+	pixel_y = -7
+	},
+/obj/item/reagent_containers/food/snacks/donut{
+	pixel_x = 5;
+	pixel_y = 10
+	},
+/obj/item/toy/plush/moth,
 /turf/open/floor/plasteel/white,
 /area/shuttle/escape)
 "jt" = (
@@ -990,53 +1037,6 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 1;
 	name = "shuttle CMO seat"
-	},
-/turf/open/floor/plasteel/white,
-/area/shuttle/escape)
-"Hz" = (
-/obj/effect/turf_decal/tile/blue,
-/obj/effect/turf_decal/tile/blue{
-	dir = 8
-	},
-/obj/effect/turf_decal/tile/blue{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/blue{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/blue,
-/obj/effect/turf_decal/tile/blue{
-	dir = 8
-	},
-/obj/effect/turf_decal/tile/blue{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/blue{
-	dir = 4
-	},
-/obj/structure/table/reinforced,
-/obj/item/clothing/mask/cigarette/robust{
-	pixel_x = -4;
-	pixel_y = 15
-	},
-/obj/item/clothing/mask/cigarette/robust{
-	pixel_x = 3;
-	pixel_y = 7
-	},
-/obj/item/clothing/mask/cigarette/robust{
-	pixel_x = 7;
-	pixel_y = 12
-	},
-/obj/item/storage/fancy/cigarettes/cigpack_robust{
-	pixel_x = -13;
-	pixel_y = 2
-	},
-/obj/item/lighter/greyscale{
-	pixel_x = 6;
-	pixel_y = -10
-	},
-/obj/item/cigbutt{
-	pixel_x = -8
 	},
 /turf/open/floor/plasteel/white,
 /area/shuttle/escape)
@@ -2111,7 +2111,7 @@ Vm
 BB
 Vk
 kN
-cm
+jg
 ZL
 hB
 Wh
@@ -2249,7 +2249,7 @@ Vm
 BB
 ju
 kN
-Hz
+bp
 Xd
 Ov
 Wh

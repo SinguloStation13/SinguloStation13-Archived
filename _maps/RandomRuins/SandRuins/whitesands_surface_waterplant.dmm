@@ -41,9 +41,6 @@
 /obj/machinery/door/airlock/public/glass,
 /turf/open/floor/plasteel,
 /area/whitesands/surface/outdoors/unexplored)
-"bb" = (
-/turf/closed/mineral/random/whitesands,
-/area/whitesands/surface/outdoors/unexplored)
 "bn" = (
 /obj/machinery/door/airlock/vault,
 /obj/structure/fans/tiny,
@@ -84,20 +81,6 @@
 /area/whitesands/surface/outdoors/unexplored)
 "cl" = (
 /turf/closed/wall/r_wall/rust,
-/area/whitesands/surface/outdoors/unexplored)
-"ct" = (
-/obj/structure/rack,
-/obj/item/storage/toolbox/mechanical/old,
-/obj/item/storage/toolbox/electrical{
-	icon_state = "toolbox_blue_old";
-	name = "rusty old electrical toolbox";
-	pixel_x = 3;
-	pixel_y = -3
-	},
-/obj/item/multitool/old,
-/obj/item/screwdriver/old,
-/obj/item/healthanalyzer/rad_laser,
-/turf/open/floor/plating,
 /area/whitesands/surface/outdoors/unexplored)
 "cU" = (
 /obj/effect/decal/cleanable/dirt,
@@ -221,6 +204,10 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden,
 /turf/open/floor/plasteel,
+/area/whitesands/surface/outdoors/unexplored)
+"gE" = (
+/obj/item/reagent_containers/food/drinks/bottle/sarsaparilla,
+/turf/open/floor/plating/asteroid/whitesands,
 /area/whitesands/surface/outdoors/unexplored)
 "gW" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
@@ -354,11 +341,18 @@
 	},
 /turf/open/floor/plating,
 /area/whitesands/surface/outdoors/unexplored)
-"jR" = (
-/obj/structure/table,
-/obj/effect/decal/cleanable/dirt,
-/obj/item/storage/bottles/sandblast,
-/turf/open/floor/plasteel,
+"kf" = (
+/obj/structure/rack,
+/obj/item/storage/toolbox/mechanical/old,
+/obj/item/storage/toolbox/electrical{
+	icon_state = "toolbox_blue_old";
+	name = "rusty old electrical toolbox";
+	pixel_x = 3;
+	pixel_y = -3
+	},
+/obj/item/multitool/old,
+/obj/item/screwdriver/old,
+/turf/open/floor/plating,
 /area/whitesands/surface/outdoors/unexplored)
 "kr" = (
 /obj/machinery/atmospherics/components/unary/portables_connector/visible{
@@ -400,6 +394,12 @@
 /obj/structure/fluff/paper/stack{
 	dir = 8
 	},
+/turf/open/floor/plasteel,
+/area/whitesands/surface/outdoors/unexplored)
+"lt" = (
+/obj/structure/table,
+/obj/effect/decal/cleanable/dirt,
+/obj/item/storage/bottles/sandblast,
 /turf/open/floor/plasteel,
 /area/whitesands/surface/outdoors/unexplored)
 "lu" = (
@@ -505,10 +505,6 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel,
-/area/whitesands/surface/outdoors/unexplored)
-"ni" = (
-/obj/item/reagent_containers/food/drinks/bottle/sarsaparilla,
-/turf/open/floor/plating/asteroid/whitesands,
 /area/whitesands/surface/outdoors/unexplored)
 "np" = (
 /obj/structure/table,
@@ -1067,10 +1063,6 @@
 /obj/item/reagent_containers/food/snacks/cakeslice/cheese,
 /turf/open/floor/carpet,
 /area/whitesands/surface/outdoors/unexplored)
-"AC" = (
-/obj/structure/closet/secure_closet/warden,
-/turf/open/floor/plasteel,
-/area/whitesands/surface/outdoors/unexplored)
 "AE" = (
 /obj/item/reagent_containers/glass/bucket{
 	pixel_x = -2;
@@ -1182,6 +1174,10 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{
 	dir = 8
 	},
+/turf/open/floor/plasteel,
+/area/whitesands/surface/outdoors/unexplored)
+"Dm" = (
+/obj/structure/closet/secure_closet/brig,
 /turf/open/floor/plasteel,
 /area/whitesands/surface/outdoors/unexplored)
 "Do" = (
@@ -1560,6 +1556,12 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /turf/open/floor/plasteel,
 /area/whitesands/surface/outdoors/unexplored)
+"Nz" = (
+/obj/item/storage/bottles/sandblast,
+/turf/open/floor/wood{
+	icon_state = "wood-broken2"
+	},
+/area/whitesands/surface/outdoors/unexplored)
 "NM" = (
 /obj/effect/turf_decal/box,
 /obj/effect/decal/cleanable/dirt,
@@ -1604,12 +1606,6 @@
 	dir = 4
 	},
 /turf/open/floor/plating,
-/area/whitesands/surface/outdoors/unexplored)
-"Ow" = (
-/obj/structure/showcase/machinery/tv,
-/turf/open/floor/wood{
-	icon_state = "wood-broken2"
-	},
 /area/whitesands/surface/outdoors/unexplored)
 "Oz" = (
 /obj/machinery/hydroponics/constructable,
@@ -2715,7 +2711,7 @@ NP
 QU
 wR
 ha
-ct
+kf
 ZE
 gW
 qD
@@ -2797,7 +2793,7 @@ Tc
 ZE
 ZE
 ha
-Ow
+Nz
 IR
 Bb
 Aj
@@ -2814,7 +2810,7 @@ cl
 NZ
 SE
 Xy
-AC
+Dm
 ha
 ff
 VF
@@ -2874,7 +2870,7 @@ Py
 cl
 yH
 eh
-ni
+gE
 eh
 yH
 cl
@@ -2887,7 +2883,7 @@ Nn
 Nn
 It
 RX
-jR
+lt
 Up
 Yt
 rX
@@ -3061,7 +3057,7 @@ Va
 Va
 "}
 (29,1,1) = {"
-bb
+Va
 cl
 eC
 Py

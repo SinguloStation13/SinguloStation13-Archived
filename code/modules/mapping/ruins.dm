@@ -104,7 +104,7 @@
 		else //Otherwise just pick random one
 			current_pick = pickweight_float(ruins_availible)
 			if(current_pick == null) // WS edit - Support spawn weights of 0 in loot tables and ruins
-				ruins_availible = list() // Couldn't pick a ruin from the list, which means they're all weight 0
+				current_pick = list() // Couldn't pick a ruin from the list, which means they're all weight 0
 				continue
 
 		var/placement_tries = forced_turf ? 1 : PLACEMENT_TRIES //Only try once if we target specific turf
@@ -117,7 +117,7 @@
 				target_z = pick(z_levels)
 				if(forced_z)
 					target_z = forced_z
-				if(current_pick.always_spawn_with) //If the ruin has part below, make sure that z exists.
+				if(current_pick?.always_spawn_with) //If the ruin has part below, make sure that z exists.
 					for(var/v in current_pick.always_spawn_with)
 						if(current_pick.always_spawn_with[v] == PLACE_BELOW)
 							var/turf/T = locate(1,1,target_z)
