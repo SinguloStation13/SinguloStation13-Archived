@@ -1,5 +1,0 @@
-author: KubeRoot
-delete-after: true
-changes:
-  - rscadd: All constructors have a universal right-click "Toggle ore silo" verb,
-      notably the plumbing and light constructors
