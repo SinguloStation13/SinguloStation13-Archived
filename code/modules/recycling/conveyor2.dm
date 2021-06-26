@@ -331,6 +331,7 @@ GLOBAL_LIST_EMPTY(conveyors_by_id)
 	if(I.tool_behaviour == TOOL_CROWBAR)
 		var/obj/item/conveyor_switch_construct/C = new/obj/item/conveyor_switch_construct(src.loc)
 		C.id = id
+		C.oneway = oneway //Singulostation edit - Buildable one-way conveyors
 		transfer_fingerprints_to(C)
 		to_chat(user, "<span class='notice'>You detach the conveyor switch.</span>")
 		qdel(src)
@@ -356,6 +357,7 @@ GLOBAL_LIST_EMPTY(conveyors_by_id)
 	w_class = WEIGHT_CLASS_BULKY
 	custom_materials = list(/datum/material/iron = 450, /datum/material/glass = 190) // WS Edit - Item Materials
 	var/id = "" //inherited by the switch
+	var/oneway = FALSE //Singulostation edit - Buildable one-way conveyors
 
 /obj/item/conveyor_switch_construct/Initialize()
 	. = ..()
@@ -379,8 +381,25 @@ GLOBAL_LIST_EMPTY(conveyors_by_id)
 		to_chat(user, "[icon2html(src, user)]<span class=notice>The conveyor switch did not detect any linked conveyor belts in range.</span>")
 		return
 	var/obj/machinery/conveyor_switch/NC = new/obj/machinery/conveyor_switch(A, id)
+	NC.oneway = oneway //Singulostation edit - Buildable one-way conveyors
 	transfer_fingerprints_to(NC)
 	qdel(src)
+
+//Singulostation begin - Buildable one-way conveyors
+/obj/item/conveyor_switch_construct/attackby(obj/item/I, mob/user, params)
+	if(I.tool_behaviour == TOOL_SCREWDRIVER)
+		oneway = !oneway
+		to_chat(user, "<span class=notice>You switch [src] to its [oneway ? "one-way" : "two-way"] configuration.</span>")
+		return TRUE
+
+	return ..()
+
+/obj/item/conveyor_switch_construct/examine(mob/user)
+	. = ..()
+
+	if(oneway)
+		. += "[src] is locked to one direction only."
+//Singulostation end
 
 /obj/item/stack/conveyor
 	name = "conveyor belt assembly"
