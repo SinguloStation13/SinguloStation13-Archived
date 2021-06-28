@@ -3218,6 +3218,7 @@
 #include "singulostation\code\modules\research\xenobiology\crossbreeding\_misc.dm"
 #include "singulostation\code\modules\research\xenobiology\crossbreeding\_structures.dm"
 #include "singulostation\code\modules\research\xenobiology\crossbreeding\crystalized.dm"
+#include "singulostation\code\modules\research\xenobiology\crossbreeding\gentle.dm"
 #include "singulostation\modules\research\designs\comp_board_designs.dm"
 #include "singulostation\modules\research\designs\machine_designs.dm"
 #include "whitesands\code\__DEFINES\DCM.dm"

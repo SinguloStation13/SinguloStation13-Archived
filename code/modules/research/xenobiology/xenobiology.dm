@@ -54,7 +54,7 @@
 * * arg2 - The valid species for the absorbtion. Should always be a Luminescent unless something very major has changed.
 * * arg3 - Whether or not the activation is major or minor. Major activations have large, complex effects, minor are simple.
 */
-/obj/item/slime_extract/proc/activate(mob/living/carbon/human/user, datum/species/jelly/luminescent/species, activation_type)
+/obj/item/slime_extract/proc/activate(mob/living/carbon/human/user, datum/species/species, activation_type)
 	to_chat(user, "<span class='warning'>Nothing happened... This slime extract cannot be activated this way.</span>")
 	return 0
 
@@ -94,7 +94,7 @@
 	activate_reagents = list(/datum/reagent/blood,/datum/reagent/toxin/plasma,/datum/reagent/water)
 	research = SLIME_RESEARCH_TIER_0
 
-/obj/item/slime_extract/grey/activate(mob/living/carbon/human/user, datum/species/jelly/luminescent/species, activation_type)
+/obj/item/slime_extract/grey/activate(mob/living/carbon/human/user, datum/species/species, activation_type) //Singulostation edit - Port gentle extracts from beestation
 	switch(activation_type)
 		if(SLIME_ACTIVATE_MINOR)
 			var/obj/item/reagent_containers/food/snacks/monkeycube/M = new
@@ -120,7 +120,7 @@
 	activate_reagents = list(/datum/reagent/blood,/datum/reagent/toxin/plasma,/datum/reagent/water)
 	research = SLIME_RESEARCH_TIER_4
 
-/obj/item/slime_extract/gold/activate(mob/living/carbon/human/user, datum/species/jelly/luminescent/species, activation_type)
+/obj/item/slime_extract/gold/activate(mob/living/carbon/human/user, datum/species/species, activation_type) //Singulostation edit - Port gentle extracts from beestation
 	switch(activation_type)
 		if(SLIME_ACTIVATE_MINOR)
 			user.visible_message("<span class='warning'>[user] starts shaking!</span>","<span class='notice'>Your [name] starts pulsing gently...</span>")
@@ -150,7 +150,7 @@
 	activate_reagents = list(/datum/reagent/toxin/plasma,/datum/reagent/water)
 	research = SLIME_RESEARCH_TIER_2
 
-/obj/item/slime_extract/silver/activate(mob/living/carbon/human/user, datum/species/jelly/luminescent/species, activation_type)
+/obj/item/slime_extract/silver/activate(mob/living/carbon/human/user, datum/species/species, activation_type) //Singulostation edit - Port gentle extracts from beestation
 	switch(activation_type)
 		if(SLIME_ACTIVATE_MINOR)
 			var/food_type = get_random_food()
@@ -176,7 +176,7 @@
 	activate_reagents = list(/datum/reagent/toxin/plasma,/datum/reagent/water)
 	research = SLIME_RESEARCH_TIER_1
 
-/obj/item/slime_extract/metal/activate(mob/living/carbon/human/user, datum/species/jelly/luminescent/species, activation_type)
+/obj/item/slime_extract/metal/activate(mob/living/carbon/human/user, datum/species/species, activation_type) //Singulostation edit - Port gentle extracts from beestation
 	switch(activation_type)
 		if(SLIME_ACTIVATE_MINOR)
 			var/obj/item/stack/sheet/glass/O = new(null, 5)
@@ -201,7 +201,7 @@
 	activate_reagents = list(/datum/reagent/blood,/datum/reagent/toxin/plasma)
 	research = SLIME_RESEARCH_TIER_1
 
-/obj/item/slime_extract/purple/activate(mob/living/carbon/human/user, datum/species/jelly/luminescent/species, activation_type)
+/obj/item/slime_extract/purple/activate(mob/living/carbon/human/user, datum/species/species, activation_type) //Singulostation edit - Port gentle extracts from beestation
 	switch(activation_type)
 		if(SLIME_ACTIVATE_MINOR)
 			user.adjust_nutrition(50)
@@ -221,7 +221,7 @@
 	activate_reagents = list(/datum/reagent/toxin/plasma)
 	research = SLIME_RESEARCH_TIER_2
 
-/obj/item/slime_extract/darkpurple/activate(mob/living/carbon/human/user, datum/species/jelly/luminescent/species, activation_type)
+/obj/item/slime_extract/darkpurple/activate(mob/living/carbon/human/user, datum/species/species, activation_type) //Singulostation edit - Port gentle extracts from beestation
 	switch(activation_type)
 		if(SLIME_ACTIVATE_MINOR)
 			var/obj/item/stack/sheet/mineral/plasma/O = new(null, 1)
@@ -245,7 +245,7 @@
 	activate_reagents = list(/datum/reagent/blood,/datum/reagent/toxin/plasma,/datum/reagent/water)
 	research = SLIME_RESEARCH_TIER_1
 
-/obj/item/slime_extract/orange/activate(mob/living/carbon/human/user, datum/species/jelly/luminescent/species, activation_type)
+/obj/item/slime_extract/orange/activate(mob/living/carbon/human/user, datum/species/species, activation_type) //Singulostation edit - Port gentle extracts from beestation
 	switch(activation_type)
 		if(SLIME_ACTIVATE_MINOR)
 			to_chat(user, "<span class='notice'>You activate [src]. You start feeling hot!</span>")
@@ -266,15 +266,25 @@
 	activate_reagents = list(/datum/reagent/blood,/datum/reagent/toxin/plasma,/datum/reagent/water)
 	research = SLIME_RESEARCH_TIER_2
 
-/obj/item/slime_extract/yellow/activate(mob/living/carbon/human/user, datum/species/jelly/luminescent/species, activation_type)
+/obj/item/slime_extract/yellow/activate(mob/living/carbon/human/user, datum/species/species, activation_type) //Singulostation edit - Port gentle extracts from beestation
 	switch(activation_type)
 		if(SLIME_ACTIVATE_MINOR)
-			if(species.glow_intensity != LUMINESCENT_DEFAULT_GLOW)
-				to_chat(user, "<span class='warning'>Your glow is already enhanced!</span>")
-				return
-			species.update_glow(user, 5)
-			addtimer(CALLBACK(species, /datum/species/jelly/luminescent.proc/update_glow, user, LUMINESCENT_DEFAULT_GLOW), 600)
-			to_chat(user, "<span class='notice'>You start glowing brighter.</span>")
+			//Singulostation begin - Port gentle extracts from beestation
+			if(istype(species,/datum/species/jelly/luminescent))
+				var/datum/species/jelly/luminescent/lum_species = species
+				if(lum_species.glow_intensity != LUMINESCENT_DEFAULT_GLOW)
+					to_chat(user, "<span class='warning'>Your glow is already enhanced!</span>")
+					return
+				lum_species.update_glow(user, 5)
+				addtimer(CALLBACK(lum_species, /datum/species/jelly/luminescent.proc/update_glow, user, LUMINESCENT_DEFAULT_GLOW), 600)
+				to_chat(user, "<span class='notice'>You start glowing brighter.</span>")
+				return 600
+			else
+				var/obj/effect/dummy/luminescent_glow/glowth = new(user) //copied from glowy mutation, copied from luminescents
+				glowth.set_light(2.5, 2.5, user.dna.features["mcolor"]) //Weaker than regular luminescents
+				QDEL_IN(glowth, 600)
+				return 600
+			//Singulostation end
 
 		if(SLIME_ACTIVATE_MAJOR)
 			user.visible_message("<span class='warning'>[user]'s skin starts flashing intermittently...</span>", "<span class='warning'>Your skin starts flashing intermittently...</span>")
@@ -290,7 +300,7 @@
 	activate_reagents = list(/datum/reagent/blood,/datum/reagent/toxin/plasma,/datum/reagent/water)
 	research = SLIME_RESEARCH_TIER_4
 
-/obj/item/slime_extract/red/activate(mob/living/carbon/human/user, datum/species/jelly/luminescent/species, activation_type)
+/obj/item/slime_extract/red/activate(mob/living/carbon/human/user, datum/species/species, activation_type) //Singulostation edit - Port gentle extracts from beestation
 	switch(activation_type)
 		if(SLIME_ACTIVATE_MINOR)
 			to_chat(user, "<span class='notice'>You activate [src]. You start feeling fast!</span>")
@@ -311,7 +321,7 @@
 	activate_reagents = list(/datum/reagent/blood,/datum/reagent/toxin/plasma,/datum/reagent/water)
 	research = SLIME_RESEARCH_TIER_1
 
-/obj/item/slime_extract/blue/activate(mob/living/carbon/human/user, datum/species/jelly/luminescent/species, activation_type)
+/obj/item/slime_extract/blue/activate(mob/living/carbon/human/user, datum/species/species, activation_type) //Singulostation edit - Port gentle extracts from beestation
 	switch(activation_type)
 		if(SLIME_ACTIVATE_MINOR)
 			to_chat(user, "<span class='notice'>You activate [src]. Your genome feels more stable!</span>")
@@ -332,7 +342,7 @@
 	activate_reagents = list(/datum/reagent/toxin/plasma,/datum/reagent/water)
 	research = SLIME_RESEARCH_TIER_2
 
-/obj/item/slime_extract/darkblue/activate(mob/living/carbon/human/user, datum/species/jelly/luminescent/species, activation_type)
+/obj/item/slime_extract/darkblue/activate(mob/living/carbon/human/user, datum/species/species, activation_type) //Singulostation edit - Port gentle extracts from beestation
 	switch(activation_type)
 		if(SLIME_ACTIVATE_MINOR)
 			to_chat(user, "<span class='notice'>You activate [src]. You start feeling colder!</span>")
@@ -356,7 +366,7 @@
 	activate_reagents = list(/datum/reagent/blood,/datum/reagent/toxin/plasma)
 	research = SLIME_RESEARCH_TIER_4
 
-/obj/item/slime_extract/pink/activate(mob/living/carbon/human/user, datum/species/jelly/luminescent/species, activation_type)
+/obj/item/slime_extract/pink/activate(mob/living/carbon/human/user, datum/species/species, activation_type) //Singulostation edit - Port gentle extracts from beestation
 	switch(activation_type)
 		if(SLIME_ACTIVATE_MINOR)
 			if(user.gender != MALE && user.gender != FEMALE)
@@ -385,14 +395,14 @@
 	activate_reagents = list(/datum/reagent/blood,/datum/reagent/toxin/plasma,/datum/reagent/uranium/radium)
 	research = SLIME_RESEARCH_TIER_4
 
-/obj/item/slime_extract/green/activate(mob/living/carbon/human/user, datum/species/jelly/luminescent/species, activation_type)
+/obj/item/slime_extract/green/activate(mob/living/carbon/human/user, datum/species/species, activation_type) //Singulostation edit - Port gentle extracts from beestation
 	switch(activation_type)
 		if(SLIME_ACTIVATE_MINOR)
 			to_chat(user, "<span class='warning'>You feel yourself reverting to human form...</span>")
 			if(do_after(user, 120, target = user))
 				to_chat(user, "<span class='warning'>You feel human again!</span>")
 				user.set_species(/datum/species/human)
-				return
+				return 600 //This is only for gentle extracts  //Singulostation edit - Port gentle extracts from beestation
 			to_chat(user, "<span class='notice'>You stop the transformation.</span>")
 
 		if(SLIME_ACTIVATE_MAJOR)
@@ -400,7 +410,7 @@
 			if(do_after(user, 120, target = user))
 				to_chat(user, "<span class='warning'>You feel different!</span>")
 				user.set_species(pick(/datum/species/jelly/slime, /datum/species/jelly/stargazer))
-				return
+				return 600 //Singulostation edit - Port gentle extracts from beestation
 			to_chat(user, "<span class='notice'>You stop the transformation.</span>")
 
 /obj/item/slime_extract/lightpink
@@ -410,7 +420,7 @@
 	activate_reagents = list(/datum/reagent/toxin/plasma)
 	research = SLIME_RESEARCH_TIER_5
 
-/obj/item/slime_extract/lightpink/activate(mob/living/carbon/human/user, datum/species/jelly/luminescent/species, activation_type)
+/obj/item/slime_extract/lightpink/activate(mob/living/carbon/human/user, datum/species/species, activation_type) //Singulostation edit - Port gentle extracts from beestation
 	switch(activation_type)
 		if(SLIME_ACTIVATE_MINOR)
 			var/obj/item/slimepotion/slime/renaming/O = new(null, 1)
@@ -435,7 +445,7 @@
 	activate_reagents = list(/datum/reagent/toxin/plasma)
 	research = SLIME_RESEARCH_TIER_5
 
-/obj/item/slime_extract/black/activate(mob/living/carbon/human/user, datum/species/jelly/luminescent/species, activation_type)
+/obj/item/slime_extract/black/activate(mob/living/carbon/human/user, datum/species/species, activation_type) //Singulostation edit - Port gentle extracts from beestation
 	switch(activation_type)
 		if(SLIME_ACTIVATE_MINOR)
 			to_chat(user, "<span class='userdanger'>You feel something <i>wrong</i> inside you...</span>")
@@ -447,7 +457,7 @@
 			if(do_after(user, 120, target = user))
 				to_chat(user, "<span class='warning'>You feel a longing for darkness.</span>")
 				user.set_species(pick(/datum/species/shadow))
-				return
+				return 600 //Singulostation edit - Port gentle extracts from beestation
 			to_chat(user, "<span class='notice'>You stop feeding [src].</span>")
 
 /obj/item/slime_extract/oil
@@ -457,7 +467,7 @@
 	activate_reagents = list(/datum/reagent/blood,/datum/reagent/toxin/plasma)
 	research = SLIME_RESEARCH_TIER_5
 
-/obj/item/slime_extract/oil/activate(mob/living/carbon/human/user, datum/species/jelly/luminescent/species, activation_type)
+/obj/item/slime_extract/oil/activate(mob/living/carbon/human/user, datum/species/species, activation_type) //Singulostation edit - Port gentle extracts from beestation
 	switch(activation_type)
 		if(SLIME_ACTIVATE_MINOR)
 			to_chat(user, "<span class='warning'>You vomit slippery oil.</span>")
@@ -471,7 +481,7 @@
 				to_chat(user, "<span class='userdanger'>You explode!</span>")
 				explosion(get_turf(user), 1 ,3, 6)
 				user.gib()
-				return
+				return 600 //Singulostation edit - Port gentle extracts from beestation
 			to_chat(user, "<span class='notice'>You stop feeding [src], and the feeling passes.</span>")
 
 /obj/item/slime_extract/adamantine
@@ -481,7 +491,7 @@
 	activate_reagents = list(/datum/reagent/toxin/plasma)
 	research = SLIME_RESEARCH_TIER_5
 
-/obj/item/slime_extract/adamantine/activate(mob/living/carbon/human/user, datum/species/jelly/luminescent/species, activation_type)
+/obj/item/slime_extract/adamantine/activate(mob/living/carbon/human/user, datum/species/species, activation_type) //Singulostation edit - Port gentle extracts from beestation
 	switch(activation_type)
 		if(SLIME_ACTIVATE_MINOR)
 			if(species.armor > 0)
@@ -497,10 +507,10 @@
 			if(do_after(user, 120, target = user))
 				to_chat(user, "<span class='warning'>You feel solid.</span>")
 				user.set_species(pick(/datum/species/golem/adamantine))
-				return
+				return 600 //Singulostation edit - Port gentle extracts from beestation
 			to_chat(user, "<span class='notice'>You stop feeding [src], and your body returns to its slimelike state.</span>")
 
-/obj/item/slime_extract/adamantine/proc/reset_armor(datum/species/jelly/luminescent/species)
+/obj/item/slime_extract/adamantine/proc/reset_armor(datum/species/species)
 	if(istype(species))
 		species.armor -= 25
 
@@ -515,7 +525,7 @@
 	var/teleport_z = 0
 	research = SLIME_RESEARCH_TIER_3
 
-/obj/item/slime_extract/bluespace/activate(mob/living/carbon/human/user, datum/species/jelly/luminescent/species, activation_type)
+/obj/item/slime_extract/bluespace/activate(mob/living/carbon/human/user, datum/species/species, activation_type) //Singulostation edit - Port gentle extracts from beestation
 	switch(activation_type)
 		if(SLIME_ACTIVATE_MINOR)
 			to_chat(user, "<span class='warning'>You feel your body vibrating...</span>")
@@ -548,7 +558,7 @@
 	activate_reagents = list(/datum/reagent/blood,/datum/reagent/toxin/plasma)
 	research = SLIME_RESEARCH_TIER_3
 
-/obj/item/slime_extract/pyrite/activate(mob/living/carbon/human/user, datum/species/jelly/luminescent/species, activation_type)
+/obj/item/slime_extract/pyrite/activate(mob/living/carbon/human/user, datum/species/species, activation_type) //Singulostation edit - Port gentle extracts from beestation
 	switch(activation_type)
 		if(SLIME_ACTIVATE_MINOR)
 			var/chosen = pick(difflist(subtypesof(/obj/item/toy/crayon),typesof(/obj/item/toy/crayon/spraycan)))
@@ -576,7 +586,7 @@
 	activate_reagents = list(/datum/reagent/blood,/datum/reagent/toxin/plasma)
 	research = SLIME_RESEARCH_TIER_3
 
-/obj/item/slime_extract/cerulean/activate(mob/living/carbon/human/user, datum/species/jelly/luminescent/species, activation_type)
+/obj/item/slime_extract/cerulean/activate(mob/living/carbon/human/user, datum/species/species, activation_type) //Singulostation edit - Port gentle extracts from beestation
 	switch(activation_type)
 		if(SLIME_ACTIVATE_MINOR)
 			user.reagents.add_reagent(/datum/reagent/medicine/salbutamol,15)
@@ -597,7 +607,7 @@
 	activate_reagents = list(/datum/reagent/blood,/datum/reagent/toxin/plasma,/datum/reagent/water)
 	research = SLIME_RESEARCH_TIER_3
 
-/obj/item/slime_extract/sepia/activate(mob/living/carbon/human/user, datum/species/jelly/luminescent/species, activation_type)
+/obj/item/slime_extract/sepia/activate(mob/living/carbon/human/user, datum/species/species, activation_type) //Singulostation edit - Port gentle extracts from beestation
 	switch(activation_type)
 		if(SLIME_ACTIVATE_MINOR)
 			var/obj/item/camera/O = new(null, 1)
@@ -620,12 +630,16 @@
 	activate_reagents = list(/datum/reagent/blood,/datum/reagent/toxin/plasma,"lesser plasma",/datum/reagent/toxin/slimejelly,"holy water and uranium") //Curse this snowflake reagent list.
 	research = SLIME_RESEARCH_TIER_RAINBOW
 
-/obj/item/slime_extract/rainbow/activate(mob/living/carbon/human/user, datum/species/jelly/luminescent/species, activation_type)
+/obj/item/slime_extract/rainbow/activate(mob/living/carbon/human/user, datum/species/species, activation_type) //Singulostation edit - Port gentle extracts from beestation
 	switch(activation_type)
 		if(SLIME_ACTIVATE_MINOR)
 			user.dna.features["mcolor"] = pick("FFFFFF","7F7F7F", "7FFF7F", "7F7FFF", "FF7F7F", "7FFFFF", "FF7FFF", "FFFF7F")
 			user.updateappearance(mutcolor_update=1)
-			species.update_glow(user)
+			//Singulostation begin - Port gentle extracts from beestation
+			if(istype(species,/datum/species/jelly/luminescent))
+				var/datum/species/jelly/luminescent/lum_species = species
+				lum_species.update_glow(user)
+			//Singulostation end
 			to_chat(user, "<span class='notice'>You feel different...</span>")
 			return 100
 
