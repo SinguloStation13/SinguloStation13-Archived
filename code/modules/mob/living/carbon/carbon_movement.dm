@@ -30,7 +30,7 @@
 			adjust_nutrition(-(HUNGER_FACTOR/10))
 			if(m_intent == MOVE_INTENT_RUN)
 				adjust_nutrition(-(HUNGER_FACTOR/10))
-		if(body_position == STANDING_UP) //singulo start - Tripping
+		if(body_position == STANDING_UP && m_intent == MOVE_INTENT_RUN) //singulo start - Tripping
 			var/trip_chance
 			var/turf/T = get_turf(NewLoc)
 			for(var/obj/item/I in T.contents)
