@@ -121,7 +121,8 @@
 		return //How did we even get here
 	if(hand != host.hand_bodyparts[host.active_hand_index])
 		return //wrong hand
-	Retract()
+	if(Retract())
+		return COMSIG_KB_ACTIVATED //Suppress the dropping since the item is gone and it would act like dropping with empty hand
 
 /obj/item/organ/cyberimp/arm/proc/Retract()
 	if(!active_item || (active_item in src))
@@ -134,6 +135,8 @@
 	owner.transferItemToLoc(active_item, src, TRUE)
 	active_item = null
 	playsound(get_turf(owner), 'sound/mecha/mechmove03.ogg', 50, TRUE)
+
+	return TRUE //Signal a successful retraction
 
 /obj/item/organ/cyberimp/arm/proc/Extend(var/obj/item/item)
 	if(!(item in src))
