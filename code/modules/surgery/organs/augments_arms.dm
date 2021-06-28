@@ -36,7 +36,6 @@
 
 	update_icon()
 	SetSlotFromZone()
-	items_list = contents.Copy()
 
 /obj/item/organ/cyberimp/arm/Destroy()
 	hand = null
@@ -188,6 +187,7 @@
 				if(!augment_item)
 					items_list -= augment_ref
 					continue
+				choice_list[augment_item] = image(augment_item)
 			var/obj/item/choice = show_radial_menu(owner, owner, choice_list)
 			if(owner && owner == usr && owner.stat != DEAD && (src in owner.internal_organs) && !active_item && (choice in contents))
 				// This monster sanity check is a nice example of how bad input is.
@@ -215,7 +215,7 @@
 	name = "arm-mounted laser implant"
 	desc = "A variant of the arm cannon implant that fires lethal laser beams. The cannon emerges from the subject's arm and remains inside when not in use."
 	icon_state = "arm_laser"
-	items_to_create = newlist(/obj/item/gun/energy/laser/mounted)
+	items_to_create = list(/obj/item/gun/energy/laser/mounted)
 
 /obj/item/organ/cyberimp/arm/gun/laser/l
 	zone = BODY_ZONE_L_ARM
@@ -230,7 +230,7 @@
 	name = "arm-mounted taser implant"
 	desc = "A variant of the arm cannon implant that fires electrodes and disabler shots. The cannon emerges from the subject's arm and remains inside when not in use."
 	icon_state = "arm_taser"
-	items_to_create = newlist(/obj/item/gun/energy/e_gun/advtaser/mounted)
+	items_to_create = list(/obj/item/gun/energy/e_gun/advtaser/mounted)
 
 /obj/item/organ/cyberimp/arm/gun/taser/l
 	zone = BODY_ZONE_L_ARM
@@ -238,7 +238,7 @@
 /obj/item/organ/cyberimp/arm/toolset
 	name = "integrated toolset implant"
 	desc = "A stripped-down version of the engineering cyborg toolset, designed to be installed on subject's arm. Contain advanced versions of every tool."
-	items_to_create = newlist(/obj/item/screwdriver/cyborg, /obj/item/wrench/cyborg, /obj/item/weldingtool/largetank/cyborg,
+	items_to_create = list(/obj/item/screwdriver/cyborg, /obj/item/wrench/cyborg, /obj/item/weldingtool/largetank/cyborg,
 		/obj/item/crowbar/cyborg, /obj/item/wirecutters/cyborg, /obj/item/multitool/cyborg)
 
 /obj/item/organ/cyberimp/arm/toolset/l
@@ -257,18 +257,18 @@
 /obj/item/organ/cyberimp/arm/esword
 	name = "arm-mounted energy blade"
 	desc = "An illegal and highly dangerous cybernetic implant that can project a deadly blade of concentrated energy."
-	items_to_create = newlist(/obj/item/melee/transforming/energy/blade/hardlight)
+	items_to_create = list(/obj/item/melee/transforming/energy/blade/hardlight)
 
 /obj/item/organ/cyberimp/arm/medibeam
 	name = "integrated medical beamgun"
 	desc = "A cybernetic implant that allows the user to project a healing beam from their hand."
-	items_to_create = newlist(/obj/item/gun/medbeam)
+	items_to_create = list(/obj/item/gun/medbeam)
 
 
 /obj/item/organ/cyberimp/arm/flash
 	name = "integrated high-intensity photon projector" //Why not
 	desc = "An integrated projector mounted onto a user's arm that is able to be used as a powerful flash."
-	items_to_create = newlist(/obj/item/assembly/flash/armimplant)
+	items_to_create = list(/obj/item/assembly/flash/armimplant)
 
 /obj/item/organ/cyberimp/arm/flash/Initialize()
 	. = ..()
@@ -277,7 +277,7 @@
 		if(!istype(/obj/item/assembly/flash/armimplant, potential_flash))
 			continue
 		var/obj/item/assembly/flash/armimplant/flash = potential_flash
-		flash.I = WEAKREF(src)
+		flash.I = src
 
 /obj/item/organ/cyberimp/arm/flash/Extend()
 	. = ..()
@@ -285,18 +285,18 @@
 	active_item.set_light_on(TRUE)
 
 /obj/item/organ/cyberimp/arm/flash/Retract()
-	active_item.set_light_on(FALSE)
+	active_item?.set_light_on(FALSE)
 	return ..()
 
 /obj/item/organ/cyberimp/arm/baton
 	name = "arm electrification implant"
 	desc = "An illegal combat implant that allows the user to administer disabling shocks from their arm."
-	items_to_create = newlist(/obj/item/borg/stun)
+	items_to_create = list(/obj/item/borg/stun)
 
 /obj/item/organ/cyberimp/arm/combat
 	name = "combat cybernetics implant"
 	desc = "A powerful cybernetic implant that contains combat modules built into the user's arm."
-	items_to_create = newlist(/obj/item/melee/transforming/energy/blade/hardlight, /obj/item/gun/medbeam, /obj/item/borg/stun, /obj/item/assembly/flash/armimplant)
+	items_to_create = list(/obj/item/melee/transforming/energy/blade/hardlight, /obj/item/gun/medbeam, /obj/item/borg/stun, /obj/item/assembly/flash/armimplant)
 
 /obj/item/organ/cyberimp/arm/combat/Initialize()
 	. = ..()
@@ -305,15 +305,15 @@
 		if(!istype(/obj/item/assembly/flash/armimplant, potential_flash))
 			continue
 		var/obj/item/assembly/flash/armimplant/flash = potential_flash
-		flash.I = WEAKREF(src)
+		flash.I = src
 
 /obj/item/organ/cyberimp/arm/surgery
 	name = "surgical toolset implant"
 	desc = "A set of surgical tools hidden behind a concealed panel on the user's arm."
-	items_to_create = newlist(/obj/item/retractor/augment, /obj/item/hemostat/augment, /obj/item/cautery/augment, /obj/item/surgicaldrill/augment, /obj/item/scalpel/augment, /obj/item/circular_saw/augment)
+	items_to_create = list(/obj/item/retractor/augment, /obj/item/hemostat/augment, /obj/item/cautery/augment, /obj/item/surgicaldrill/augment, /obj/item/scalpel/augment, /obj/item/circular_saw/augment)
 
 /obj/item/organ/cyberimp/arm/power_cord
 	name = "power cord implant"
 	desc = "An internal power cord hooked up to a battery. Useful if you run on volts."
-	items_to_create = newlist(/obj/item/apc_powercord)
+	items_to_create = list(/obj/item/apc_powercord)
 	zone = "l_arm" 
