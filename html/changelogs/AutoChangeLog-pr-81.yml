@@ -1,6 +1,0 @@
-author: KubeRoot
-delete-after: true
-changes:
-  - rscadd: Conveyor switches can be toggled between two-way and one-way with a screwdriver
-      when in item form
-  - rscadd: Conveyor switches remember their one-way state when turned into item form

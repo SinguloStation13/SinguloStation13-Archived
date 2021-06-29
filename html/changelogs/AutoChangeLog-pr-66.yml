@@ -1,5 +1,0 @@
-author: Urumasi
-delete-after: true
-changes:
-  - bugfix: We have recalibrated recyclers to stop them from eating your hardsuit
-      helmet lights.
