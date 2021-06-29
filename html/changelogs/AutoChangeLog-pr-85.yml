@@ -1,5 +1,0 @@
-author: KubeRoot
-delete-after: true
-changes:
-  - bugfix: Turbines no longer produce ridiculous power and throw tons of runtimes
-      when the intake is a wall
