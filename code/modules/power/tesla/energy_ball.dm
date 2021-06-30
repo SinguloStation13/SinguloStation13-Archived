@@ -126,7 +126,7 @@
 	else //Singulostation edit - Tesla decay
 		dissipate() //sing code has a much better system.
 
-	if(!decay_timer && energy < energy_to_lower && !orbiting_balls.len) //Singulostation start - Tesla decay
+	if(!QDELETED(src) && !decay_timer && energy < energy_to_lower && !orbiting_balls.len) //Singulostation start - Tesla decay
 		decay_timer = addtimer(CALLBACK(src, .proc/decay, 6), rand(6, 9) SECONDS, TIMER_STOPPABLE)
 
 /obj/singularity/energy_ball/proc/decay(cycles)
