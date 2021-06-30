@@ -327,7 +327,7 @@
 
 /obj/item/rcl/ghetto
 	actions_types = list()
-	max_amount = 30
+	max_amount = 300 //Singulostation edit - increases RCL capacity with cable stack size
 	name = "makeshift rapid cable layer"
 	ghetto = TRUE
 
