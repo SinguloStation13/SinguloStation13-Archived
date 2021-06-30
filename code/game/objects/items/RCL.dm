@@ -12,7 +12,7 @@
 	throw_speed = 1
 	throw_range = 7
 	w_class = WEIGHT_CLASS_NORMAL
-	var/max_amount = 90
+	var/max_amount = 900 //Singulostation edit - increases RCL capacity with cable stack size
 	var/active = FALSE
 	actions_types = list(/datum/action/item_action/rcl_col,/datum/action/item_action/rcl_gui,)
 	var/list/colors = list("red", "yellow", "green", "blue", "pink", "orange", "cyan", "white")
