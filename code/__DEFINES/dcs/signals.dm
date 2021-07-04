@@ -392,6 +392,10 @@
 ///from base of mob/living/Sleeping() (amount, ignore_canstun)
 #define COMSIG_LIVING_STATUS_SLEEP "living_sleeping"
 	#define COMPONENT_NO_STUN (1<<0)									//For all of them
+///from base of mob/living/SSDSleeping() (amount)
+#define COMSIG_LIVING_STATUS_SSD_SLEEP "living_ssd_sleeping"
+///from base of mob/living/CryoSleeping() (amount)
+#define COMSIG_LIVING_STATUS_CRYOSLEEP "living_cryosleeping"
 ///from base of /mob/living/can_track(): (mob/user)
 #define COMSIG_LIVING_CAN_TRACK "mob_cantrack"
 	#define COMPONENT_CANT_TRACK (1<<0)
