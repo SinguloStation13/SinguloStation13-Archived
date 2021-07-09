@@ -22,6 +22,9 @@
 		return TRUE
 
 /mob/living/carbon/Move(NewLoc, direct)
+	var/static/trip_blacklist = typecacheof(list( //singulo start - Tripping
+		/obj/item/radio/intercom
+		)) //singulo end - Tripping
 	. = ..()
 	if(. && !(movement_type & FLOATING)) //floating is easy
 		if(HAS_TRAIT(src, TRAIT_NOHUNGER))
@@ -34,6 +37,8 @@
 			var/trip_chance
 			var/turf/T = get_turf(NewLoc)
 			for(var/obj/item/I in T.contents)
+				if(trip_blacklist[I.type])
+					continue
 				trip_chance += (I.w_class/4)-0.25
 			if(prob(20*log(trip_chance+0.5)))
 				Knockdown(3 SECONDS)
