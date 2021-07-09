@@ -37,7 +37,7 @@
 			var/trip_chance
 			var/turf/T = get_turf(NewLoc)
 			for(var/obj/item/I in T.contents)
-				if(trip_blacklist[I.type])
+				if(is_type_in_typecache(I, trip_blacklist))
 					continue
 				trip_chance += (I.w_class/4)-0.25
 			if(prob(20*log(trip_chance+0.5)))
