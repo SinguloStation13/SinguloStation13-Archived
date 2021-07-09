@@ -1,0 +1,2 @@
+GLOBAL_LIST_EMPTY(respawn_queue)
+GLOBAL_LIST_EMPTY(respawn_ready)

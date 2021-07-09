@@ -12,3 +12,7 @@
 /mob/proc/death(gibbed)
 	SEND_SIGNAL(src, COMSIG_MOB_DEATH, gibbed)
 	SEND_GLOBAL_SIGNAL(COMSIG_GLOB_MOB_DEATH, src , gibbed)
+	GLOB.respawn_ready[key] = FALSE
+	if(GLOB.respawn_queue[key])
+		deltimer(GLOB.respawn_queue[key])
+	GLOB.respawn_queue[key] = addtimer(CALLBACK(null, .proc/respawn_fire, key), CONFIG_GET(number/respawntime), TIMER_STOPPABLE)
