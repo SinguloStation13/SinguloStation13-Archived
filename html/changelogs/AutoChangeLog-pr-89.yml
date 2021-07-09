@@ -1,4 +1,0 @@
-author: KubeRoot
-delete-after: true
-changes:
-  - bugfix: map export now works and can be used to save an area of the map
