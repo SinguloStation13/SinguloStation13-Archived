@@ -919,7 +919,7 @@ DEFINE_BITFIELD(turret_flags, list(
 		to_chat(user, "<span class='warning'>Access denied.</span>")
 
 /obj/machinery/turretid/AltClick(mob/user)
-	if(stat & BROKEN)
+	if(machine_stat & BROKEN)
 		return
 	togglelock(user)
 
