@@ -12,8 +12,7 @@
 	. = ..()
 	if(!.)
 		return
-	var/datum/status_effect/incapacitating/sleeping/ssd/SSD = owner.IsSSDSleeping()
-	if(SSD)
+	if(owner.IsSSDSleeping())
 		owner.SetSSDSleeping(0) // Stops snoring while in cryosleep
 	ADD_TRAIT(owner, TRAIT_KNOCKEDOUT, TRAIT_STATUS_EFFECT(id))
 
