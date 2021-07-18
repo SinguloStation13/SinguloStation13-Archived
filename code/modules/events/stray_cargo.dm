@@ -2,7 +2,7 @@
 /datum/round_event_control/stray_cargo
 	name = "Stray Cargo Pod"
 	typepath = /datum/round_event/stray_cargo
-	weight = 20
+	weight = 6 //Singulostation edit - Changed spawn-chance from 20 to 6
 	max_occurrences = 99999 // Singulostation edit - Buffed max occurences because perma server
 	earliest_start = 300 MINUTES // Singulostation edit - Annoying round-start
 
@@ -82,7 +82,7 @@
 /datum/round_event_control/stray_cargo/syndicate
 	name = "Stray Syndicate Cargo Pod"
 	typepath = /datum/round_event/stray_cargo/syndicate
-	weight = 6
+	weight = 3 //Singulostation edit - Changed spawn-chance from 6 to 3
 	max_occurrences = 99999 // Singulostation edit - Buffed max occurences because perma server
 	earliest_start = 300 MINUTES // Singulostation edit - Annoying round-start
 
