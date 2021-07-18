@@ -3,8 +3,8 @@
 	name = "Stray Cargo Pod"
 	typepath = /datum/round_event/stray_cargo
 	weight = 20
-	max_occurrences = 4
-	earliest_start = 10 MINUTES
+	max_occurrences = 99999 // Singulostation edit - Buffed max occurences because perma server
+	earliest_start = 300 MINUTES // Singulostation edit - Annoying round-start
 
 ///Spawns a cargo pod containing a random cargo supply pack on a random area of the station
 /datum/round_event/stray_cargo
@@ -68,10 +68,7 @@
 	if(!allowed_areas)
 		///Places that shouldn't explode
 		var/list/safe_area_types = typecacheof(list(
-		/area/ai_monitored/turret_protected/ai,
-		/area/ai_monitored/turret_protected/ai_upload,
-		/area/engine,
-		/area/shuttle)
+		/area/ //Singulostation edit - We don't want exploding pods
 		)
 
 		///Subtypes from the above that actually should explode.
@@ -86,8 +83,8 @@
 	name = "Stray Syndicate Cargo Pod"
 	typepath = /datum/round_event/stray_cargo/syndicate
 	weight = 6
-	max_occurrences = 1
-	earliest_start = 30 MINUTES
+	max_occurrences = 99999 // Singulostation edit - Buffed max occurences because perma server
+	earliest_start = 300 MINUTES // Singulostation edit - Annoying round-start
 
 /datum/round_event/stray_cargo/syndicate
 	possible_pack_types = list(/datum/supply_pack/misc/syndicate)
