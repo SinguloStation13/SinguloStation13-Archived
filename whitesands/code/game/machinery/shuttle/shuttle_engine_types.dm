@@ -204,7 +204,7 @@
 
 /**
   * ### Void Engines
-  * These engines are literally magic. Adminspawn only.
+  * These engines are literally magic. Requires no fuel.
   */
 /obj/machinery/power/shuttle/engine/void
 	name = "void thruster"
