@@ -14,7 +14,7 @@
 
 	if(left_click) //rectangular
 
-		var/confirm = tgui_alert("Are you sure you want to do this? This may cause extreme lag!", "Map Exporter", list("Yes", "No"))
+		var/confirm = tgui_alert(c, "Are you sure you want to do this? This may cause extreme lag!", "Map Exporter", list("Yes", "No")) //Singulostation edit - fix map export
 
 		if(confirm != "Yes")
 			return
