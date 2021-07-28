@@ -240,9 +240,30 @@
 
 /obj/item/organ/cyberimp/arm/toolset
 	name = "integrated toolset implant"
-	desc = "A stripped-down version of the engineering cyborg toolset, designed to be installed on subject's arm. Contain advanced versions of every tool."
+	desc = "A stripped-down version of the engineering cyborg toolset, designed to be installed on subject's arm. Contains advanced versions of every tool." //Singulostation edit -- changed "Contain advanced versions of every tool." to "Contains advanced versions of every tool." Typo fix.
 	items_to_create = list(/obj/item/screwdriver/cyborg, /obj/item/wrench/cyborg, /obj/item/weldingtool/largetank/cyborg,
 		/obj/item/crowbar/cyborg, /obj/item/wirecutters/cyborg, /obj/item/multitool/cyborg)
+
+//Singulostation Edit start -- Ads an advanced toolset. Differences: Advanced multitool, experimental welder, advanced crowbar
+/obj/item/organ/cyberimp/arm/toolset/advanced
+	name = "advanced integrated toolset implant"
+	desc = "An advanced, experimental version of the integrated toolset."
+	items_to_create = list(/obj/item/screwdriver/cyborg, /obj/item/wrench/cyborg, /obj/item/weldingtool/experimental/cyborg,
+		/obj/item/crowbar/cyborg/advanced, /obj/item/wirecutters/cyborg, /obj/item/multitool/advanced/cyborg, )
+
+/obj/item/organ/cyberimp/arm/toolset/advanced/l
+	zone = BODY_ZONE_L_ARM
+
+/obj/item/organ/cyberimp/arm/toolset/advanced/emag_act(mob/user)
+	for(var/datum/weakref/created_item in items_list)
+		var/obj/potential_knife = created_item.resolve()
+		if(istype(/obj/item/kitchen/knife/combat/cyborg, potential_knife))
+			return FALSE
+
+	to_chat(user, "<span class='notice'>You unlock [src]'s integrated knife!</span>")
+	items_list += WEAKREF(new /obj/item/kitchen/knife/combat/cyborg(src))
+	return TRUE
+//Singulostation Edit end
 
 /obj/item/organ/cyberimp/arm/toolset/l
 	zone = BODY_ZONE_L_ARM
