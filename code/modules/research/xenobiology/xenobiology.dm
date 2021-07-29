@@ -934,7 +934,7 @@
 	resistance_flags = FIRE_PROOF
 	var/uses = 3
 
-/obj/item/slimepotion/fireproof/afterattack(obj/item/clothing/C, mob/user, proximity)
+/obj/item/slimepotion/fireproof/afterattack(obj/item/C, mob/user, proximity)
 	. = ..()
 	if(!proximity)
 		return
@@ -942,18 +942,21 @@
 		qdel(src)
 		return
 	if(!istype(C))
-		to_chat(user, "<span class='warning'>The potion can only be used on clothing!</span>")
+		to_chat(user, "<span class='warning'>You can't coat this with the fireproofing potion!</span>")
 		return
-	if(C.max_heat_protection_temperature >= FIRE_IMMUNITY_MAX_TEMP_PROTECT)
-		to_chat(user, "<span class='warning'>The [C] is already fireproof!</span>")
-		return
+	
+	if (istype(C, /obj/item/clothing))
+		if(C.max_heat_protection_temperature >= FIRE_IMMUNITY_MAX_TEMP_PROTECT)
+			to_chat(user, "<span class='warning'>The [C] is already fireproof!</span>")
+			return
+		var/obj/item/clothing/CL = C
+		C.max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
+		C.heat_protection = C.body_parts_covered
+		C.resistance_flags |= FIRE_PROOF
 	to_chat(user, "<span class='notice'>You slather the blue gunk over the [C], fireproofing it.</span>")
 	C.name = "fireproofed [C.name]"
 	C.remove_atom_colour(WASHABLE_COLOUR_PRIORITY)
 	C.add_atom_colour("#000080", FIXED_COLOUR_PRIORITY)
-	C.max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
-	C.heat_protection = C.body_parts_covered
-	C.resistance_flags |= FIRE_PROOF
 	uses --
 	if(!uses)
 		qdel(src)
