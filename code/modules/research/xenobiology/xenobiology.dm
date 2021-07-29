@@ -934,6 +934,7 @@
 	resistance_flags = FIRE_PROOF
 	var/uses = 3
 
+//Singulostation Edit start --Made fireproofing potions work like lavaproofing potions
 /obj/item/slimepotion/fireproof/afterattack(obj/item/C, mob/user, proximity)
 	. = ..()
 	if(!proximity)
@@ -962,6 +963,7 @@
 	uses --
 	if(!uses)
 		qdel(src)
+//Singulostation Edit end
 
 /obj/item/slimepotion/genderchange
 	name = "gender change potion"
