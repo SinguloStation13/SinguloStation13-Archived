@@ -944,7 +944,9 @@
 	if(!istype(C))
 		to_chat(user, "<span class='warning'>You can't coat this with the fireproofing potion!</span>")
 		return
-	
+	if(C.resistance_flags == FIRE_PROOF)
+			to_chat(user, "<span class='warning'>The [C] is already fireproof!</span>")
+			return
 	if (istype(C, /obj/item/clothing))
 		if(C.max_heat_protection_temperature >= FIRE_IMMUNITY_MAX_TEMP_PROTECT)
 			to_chat(user, "<span class='warning'>The [C] is already fireproof!</span>")
