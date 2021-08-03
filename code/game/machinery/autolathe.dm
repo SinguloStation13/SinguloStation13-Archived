@@ -464,6 +464,11 @@
 		use_power(power)
 		icon_state = "autolathe_n"
 		var/time = is_stack ? 32 : (32 * coeff * multiplier) ** 0.8
+		var/list/datum/weakref/users // Used exclusively for awards
+		if(from_build_queue)
+			users = build_queue[requested_design_id]["users"]
+		else
+			users = item_queue[requested_design_id]["users"]
 		//===Repeating mode===
 		//Remove from queue
 		if(from_build_queue)
@@ -486,11 +491,6 @@
 		//Create item and restart
 		process_completion_world_tick = world.time + time
 		total_build_time = time
-		var/list/datum/weakref/users
-		if(from_build_queue)
-			users = build_queue[requested_design_id]["users"]
-		else
-			users = item_queue[requested_design_id]["users"]
 		addtimer(CALLBACK(src, .proc/make_item, power, materials_used, custom_materials, multiplier, coeff, is_stack, users), time)
 		addtimer(CALLBACK(src, .proc/restart_process), time + 5)
 	else
