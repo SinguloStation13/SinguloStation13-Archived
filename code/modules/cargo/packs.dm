@@ -571,6 +571,13 @@
 	crate_name = "ion rifle crate"
 	crate_type = /obj/structure/closet/crate/secure/plasma
 	dangerous = TRUE
+	
+/datum/supply_pack/security/armory/grenade_launcher
+	name = "Grenade Launcher Crate"
+	desc = "A handy grenade launcher that will fire any sort of grenade you come across."
+	cost = 6500
+	small_item = FALSE
+	contains = list(/obj/item/gun/grenadelauncher)	
 
 /datum/supply_pack/security/armory/mindshield
 	name = "Mindshield Implants Crate"
