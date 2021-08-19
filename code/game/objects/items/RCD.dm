@@ -61,6 +61,18 @@ RLD
 	silo_mats = null
 	return ..()
 
+//Singulostation begin - Silo link for everybody
+/obj/item/construction/verb/toggle_silo_link_verb()
+	set name = "Toggle silo link"
+	set category = "Object"
+	set src in view(1)
+
+	if(!ishuman(usr))
+		return
+
+	toggle_silo_link(usr)
+//Singulostation end - Silo link for everybody
+
 /obj/item/construction/attackby(obj/item/W, mob/user, params)
 	if(iscyborg(user))
 		return
@@ -155,8 +167,14 @@ RLD
 		return TRUE
 
 /obj/item/construction/proc/checkResource(amount, mob/user)
-	if(!silo_link || !silo_mats || !silo_mats.mat_container)
-		. = matter >= amount
+	// SinguloStation edit begin - Infinite RCD fix
+	if(!silo_mats || !silo_mats.mat_container)
+		if(silo_link)
+			to_chat(user, "<span class='alert'>Connected silo link is invalid. Reconnect to silo via multitool.</span>")
+			return FALSE
+		else
+			. = matter >= amount
+	// SinguloStation edit end - Infinite RCD fix
 	else
 		if(silo_mats.on_hold())
 			if(user)
@@ -258,9 +276,9 @@ RLD
 
 	to_chat(user, "<span class='notice'>You change \the [src]'s window mode to [window_type_name].</span>")
 
-/obj/item/construction/rcd/proc/toggle_silo_link(mob/user)
+/obj/item/construction/proc/toggle_silo_link(mob/user) //Singulostation edit - Universal silo link
 	if(silo_mats)
-		if(!silo_mats.mat_container)
+		if(!silo_mats.mat_container && !silo_link) // SinguloStation edit - Infinite RCD fix
 			to_chat(user, "<span class='alert'>No silo link detected. Connect to silo via multitool.</span>")
 			return FALSE
 		silo_link = !silo_link
@@ -850,14 +868,30 @@ RLD
 				name_to_type[initial(M.name)] = M
 				machinery_data["cost"][A] = initial(M.rcd_cost)
 				machinery_data["delay"][A] = initial(M.rcd_delay)
+		//Singulostation begin - Universal silo link
+		if(upgrade & RCD_UPGRADE_SILO_LINK)
+			choices += list(
+				"Silo Link" = image(icon = 'icons/obj/mining.dmi', icon_state = "silo"),
+				)
 
 	var/choice = show_radial_menu(user, src, choices, custom_check = CALLBACK(src, .proc/check_menu, user), require_near = TRUE, tooltips = TRUE)
 	if(!check_menu(user))
 		return
 
-	blueprint = name_to_type[choice]
-	playsound(src, 'sound/effects/pop.ogg', 50, FALSE)
-	to_chat(user, "<span class='notice'>You change [name]s blueprint to '[choice]'.</span>")
+	if(choice == "Silo Link")
+		toggle_silo_link(user)
+	else
+		blueprint = name_to_type[choice]
+		playsound(src, 'sound/effects/pop.ogg', 50, FALSE)
+		to_chat(user, "<span class='notice'>You change [name]s blueprint to '[choice]'.</span>")
+	//Singulostation end
+
+//Singulostation begin - Universal silo link
+/obj/item/construction/plumbing/attackby(obj/item/W, mob/user, params)
+	. = ..()
+	if(istype(W, /obj/item/rcd_upgrade))
+		choices = list() //Clear out the selections in case an upgrade needs to make changes
+//Singulostation end
 
 ///pretty much rcd_create, but named differently to make myself feel less bad for copypasting from a sibling-type
 /obj/item/construction/plumbing/proc/create_machine(atom/A, mob/user)
