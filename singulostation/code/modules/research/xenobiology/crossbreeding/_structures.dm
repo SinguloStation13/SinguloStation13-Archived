@@ -203,7 +203,7 @@ GLOBAL_LIST_EMPTY(bluespace_slime_crystals)
 /obj/structure/slime_crystal/blue/attacked_by(obj/item/I, mob/living/user)
 	if(istype(I,/obj/item/tank/internals))
 		var/obj/item/tank/internals/tank = I
-		to_chat(user, "<span class = 'notice'>The [name] takes the [I.name] and replaces its air with Oxygen.")
+		to_chat(user, "<span class = 'notice'>[src] takes [I] and replaces its air with Oxygen.")
 		tank.air_contents.set_moles(/datum/gas/oxygen, (12*ONE_ATMOSPHERE)*tank.volume/(R_IDEAL_GAS_EQUATION*T20C))
 		return
 	return ..()
