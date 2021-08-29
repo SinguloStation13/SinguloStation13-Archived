@@ -199,7 +199,49 @@
 		do_teleport(AM, locate(AM.x, AM.y, AM.z), 8, channel = TELEPORT_CHANNEL_BLUESPACE)
 
 /obj/effect/anomaly/bluespace/detonate()
-	var/turf/T = pick(get_area_turfs(impact_area))
+//Singulostation edit START - Adds bluespace residue to revert tele
+	var/obj/effect/bluespace_residue/residue = new(loc)
+	residue.icon = icon
+	residue.icon_state = icon_state
+	residue.trigger(impact_area)
+
+//bluespace anom residue, this allows a player to return all the items to their previous location using science!
+/obj/effect/bluespace_residue
+	name = "bluespace anomaly residue"
+	density = 0
+	anchored = 1
+	invisibility = 60
+	var/telerange = 12
+	var/turf/impact_turf
+	var/area/impact_area
+	var/list/teleported = list()
+	var/detonated = 0
+
+/obj/effect/bluespace_residue/attackby(obj/item/I, mob/user, params)
+	if(I.tool_behaviour == TOOL_ANALYZER)
+		spawn(0)
+			flash_at_mob(user)
+		reverse()
+		to_chat(user, "<span class='info'>You reverse the effects of the [src].</span>")
+
+/obj/effect/bluespace_residue/ex_act(severity)
+	if(severity == 1)
+		reverse()
+
+//when a player uses an atmos analyzer in an adjacent turf.
+/obj/effect/bluespace_residue/proc/detect()
+	invisibility = 0
+
+/obj/effect/bluespace_residue/proc/trigger(area/area, list/specific_atoms = list())
+	if(!area && !impact_area)
+		return
+	if(!impact_area)
+		impact_area = area
+	if(!impact_turf)
+		impact_turf = safepick(get_area_turfs(impact_area))
+
+	var/turf/T = impact_turf
+//Singulostation edit END
 	if(T)
 			// Calculate new position (searches through beacons in world)
 		var/obj/item/beacon/chosen
@@ -226,20 +268,70 @@
 
 			var/y_distance = TO.y - FROM.y
 			var/x_distance = TO.x - FROM.x
-			for (var/atom/movable/A in urange(12, FROM )) // iterate thru list of mobs in the area
+	//Singulostation edit start - Bluespace thingy
+			//for (var/atom/movable/A in urange(12, FROM )) // iterate thru list of mobs in the area
+			var/list/rangelist
+			if(specific_atoms && specific_atoms.len)
+				rangelist = specific_atoms
+			else
+				rangelist = urange(telerange, FROM )
+
+			var/list/detonatedurangelist
+			if(detonated)
+				detonatedurangelist = urange(telerange, src )
+
+			for (var/atom/movable/A in rangelist) // iterate thru list of mobs in the area
+	//Singulostation edit end
 				if(istype(A, /obj/item/beacon))
 					continue // don't teleport beacons because that's just insanely stupid
-				if(A.anchored)
+				if(A.anchored && A != src) // Singulostation edit
 					continue
 
-				var/turf/newloc = locate(A.x + x_distance, A.y + y_distance, TO.z) // calculate the new place
+	//Singulostation edit start
+				var/turf/newloc
+				if(specific_atoms && specific_atoms.len && (A in specific_atoms))
+					var/list/paramslist = params2list(specific_atoms[A])
+					if(!paramslist || !paramslist.len)
+						continue
+					newloc = locate(text2num(paramslist["x"]),text2num(paramslist["y"]),text2num(paramslist["z"]))
+					if(!istype(newloc))
+						continue
+					if(!isturf(A.loc) || (detonatedurangelist.len && !(A in detonatedurangelist)) || A.z != z)
+						continue
+				else
+					newloc = locate(A.x + x_distance, A.y + y_distance, TO.z) // calculate the new place
+				if(!detonated)
+					teleported[A] = "x=[A.x];y=[A.y];z=[A.z]"
+	//Singulostation edit end
 				if(!A.Move(newloc) && newloc) // if the atom, for some reason, can't move, FORCE them to move! :) We try Move() first to invoke any movement-related checks the atom needs to perform after moving
 					A.forceMove(newloc)
 
 				if(ismob(A) && !(A in flashers)) // don't flash if we're already doing an effect
-					var/mob/M = A
-					if(M.client)
-						INVOKE_ASYNC(src, .proc/blue_effect, M)
+	//Singulostation edit start
+					flash_at_mob(A)
+			if(!detonated)
+				detonated = 1
+
+/obj/effect/bluespace_residue/proc/reverse()
+	if(detonated)
+		trigger(specific_atoms = teleported)
+	qdel(src)
+
+//made this its own proc because were doing it in two ways.
+/obj/effect/bluespace_residue/proc/flash_at_mob(mob/M)
+	if(M.client)
+		var/obj/blueeffect = new /obj(src)
+		blueeffect.screen_loc = "WEST,SOUTH to EAST,NORTH"
+		blueeffect.icon = 'icons/effects/effects.dmi'
+		blueeffect.icon_state = "shieldsparkles"
+		blueeffect.layer = FLASH_LAYER
+		blueeffect.plane = FULLSCREEN_PLANE
+		blueeffect.mouse_opacity = MOUSE_OPACITY_TRANSPARENT
+		M.client.screen += blueeffect
+		sleep(20)
+		M.client.screen -= blueeffect
+		qdel(blueeffect)
+	//Singulostation edit end
 
 /obj/effect/anomaly/bluespace/proc/blue_effect(mob/M)
 	var/obj/blueeffect = new /obj(src)
