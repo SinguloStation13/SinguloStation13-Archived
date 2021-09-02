@@ -2,7 +2,7 @@
 "aw" = (
 /obj/structure/stairs/east,
 /turf/open/space/basic,
-/area/space)
+/area/hallway/primary/central)
 "az" = (
 /turf/closed/mineral/random,
 /area/asteroid/mining)
@@ -1006,6 +1006,9 @@
 "qF" = (
 /turf/open/transparent/openspace,
 /area/hallway/secondary/entry)
+"rd" = (
+/turf/open/floor/plasteel,
+/area/hallway/primary/upper)
 "rI" = (
 /obj/machinery/power/apc/auto_name/west,
 /obj/structure/cable,
@@ -1989,6 +1992,9 @@
 "HG" = (
 /turf/closed/wall,
 /area/engine/gravity_generator)
+"HO" = (
+/turf/open/floor/plasteel,
+/area/hallway/primary/central)
 "HY" = (
 /obj/machinery/conveyor{
 	dir = 4;
@@ -2400,7 +2406,7 @@
 /area/engine/gravity_generator)
 "Pp" = (
 /turf/open/transparent/openspace,
-/area/space)
+/area/hallway/primary/upper)
 "Pw" = (
 /obj/structure/cable{
 	icon_state = "0-4"
@@ -49413,8 +49419,8 @@ Ay
 Ay
 Ay
 Ay
-Ay
-Ay
+HO
+HO
 Ay
 Ay
 Ay
@@ -49670,8 +49676,8 @@ Ay
 Ay
 Ay
 Ay
-Ay
-Ay
+HO
+HO
 Ay
 Ay
 Ay
@@ -49927,7 +49933,7 @@ Ay
 Ay
 Ay
 Ay
-Ay
+HO
 aw
 Ay
 Ay
@@ -50184,8 +50190,8 @@ Ay
 Ay
 Ay
 Ay
-Ay
-Ay
+HO
+HO
 Ay
 Ay
 Ay
@@ -179967,11 +179973,11 @@ Ay
 Ay
 Ay
 Ay
-Ay
-Ay
-Ay
-Ay
-Ay
+rd
+rd
+rd
+rd
+rd
 Ay
 Ay
 Ay
@@ -180224,11 +180230,11 @@ Ay
 Ay
 Ay
 Ay
-Ay
-Ay
-Ay
-Ay
-Ay
+rd
+rd
+rd
+rd
+rd
 Ay
 Ay
 Ay
@@ -180481,12 +180487,12 @@ Ay
 Ay
 Ay
 Ay
-Ay
-Ay
-Ay
-Ay
-Ay
-Ay
+rd
+rd
+rd
+rd
+rd
+rd
 Ay
 Ay
 Ay
@@ -180738,11 +180744,11 @@ Ay
 Ay
 Ay
 Ay
-Ay
-Ay
-Ay
-Ay
-Ay
+rd
+rd
+rd
+rd
+rd
 Pp
 Ay
 Ay
@@ -180995,12 +181001,12 @@ Ay
 Ay
 Ay
 Ay
-Ay
-Ay
-Ay
-Ay
-Ay
-Ay
+rd
+rd
+rd
+rd
+rd
+rd
 Ay
 Ay
 Ay
@@ -181252,12 +181258,12 @@ Ay
 Ay
 Ay
 Ay
-Ay
-Ay
-Ay
-Ay
-Ay
-Ay
+rd
+rd
+rd
+rd
+rd
+rd
 Ay
 Ay
 Ay
@@ -181509,11 +181515,11 @@ Ay
 Ay
 Ay
 Ay
-Ay
-Ay
-Ay
-Ay
-Ay
+rd
+rd
+rd
+rd
+rd
 Ay
 Ay
 Ay
@@ -181766,11 +181772,11 @@ Ay
 Ay
 Ay
 Ay
-Ay
-Ay
-Ay
-Ay
-Ay
+rd
+rd
+rd
+rd
+rd
 Ay
 Ay
 Ay
