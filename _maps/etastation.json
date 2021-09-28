@@ -1,0 +1,12 @@
+{
+    "map_name": "EtaStation",
+    "map_path": "map_files/EtaStation",
+    "map_file": "EtaStation.dmm",
+	"traits": [{"Up" : 1, "Linkage" : "Cross"}, {"Up" : 1, "Down" : -1, "Baseturf" : "/turf/open/transparent/openspace", "Linkage" : "Cross"}, {"Down" : -1, "Baseturf" : "/turf/open/transparent/openspace", "Linkage" : "Cross"}],
+    "shuttles": {
+	    "cargo": "cargo_con",
+	    "ferry": "ferry_fancy",
+	    "whiteship": "whiteship_meta",
+	    "emergency": "emergency_box"
+    }
+}
