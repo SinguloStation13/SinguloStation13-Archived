@@ -19,6 +19,7 @@
 		/obj/item/stack/spacecash,
 		/obj/item/holochip,
 		/obj/item/card,
+		/obj/item/quantum_keycard, //Singulostation edit
 		/obj/item/clothing/mask/cigarette,
 		/obj/item/flashlight/pen,
 		/obj/item/seeds,
