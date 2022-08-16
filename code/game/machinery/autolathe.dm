@@ -268,12 +268,12 @@
 		if("queue_item")
 			var/design_id = params["design_id"]
 			var/amount = text2num(params["amount"])
-			add_to_queue(item_queue, design_id, amount)
+			add_to_queue(item_queue, design_id, amount, user=usr)
 
 		if("build_item")
 			var/design_id = params["design_id"]
 			var/amount = text2num(params["amount"])
-			add_to_queue(build_queue, design_id, amount)
+			add_to_queue(build_queue, design_id, amount, user=usr)
 
 		if("begin_process")
 			begin_process()
@@ -287,9 +287,11 @@
 			continue
 		update_static_data(M)
 
-/obj/machinery/autolathe/proc/add_to_queue(queue_list, design_id, amount, repeat=null)
+/obj/machinery/autolathe/proc/add_to_queue(queue_list, design_id, amount, repeat=null, user=null)
 	if(queue_list["[design_id]"])
 		queue_list["[design_id]"]["amount"] += amount
+		if(user)
+			queue_list["[design_id]"]["users"] |= WEAKREF(user)
 		if(queue_list["[design_id]"]["amount"] <= 0)
 			queue_list -= "[design_id]"
 		return
@@ -311,10 +313,15 @@
 				if(!used_material)
 					return //Didn't pick any material, so you can't build shit either.
 
+	var/list/users = list()
+	if(user)
+		users |= WEAKREF(user)
+
 	queue_list["[design_id]"] = list(
 		"amount" = amount,
 		"repeating" = repeat,
 		"build_mat" = used_material,
+		"users" = users,
 	)
 
 /obj/machinery/autolathe/proc/get_release_turf()
@@ -457,6 +464,11 @@
 		use_power(power)
 		icon_state = "autolathe_n"
 		var/time = is_stack ? 32 : (32 * coeff * multiplier) ** 0.8
+		var/list/datum/weakref/users // Used exclusively for awards
+		if(from_build_queue)
+			users = build_queue[requested_design_id]["users"]
+		else
+			users = item_queue[requested_design_id]["users"]
 		//===Repeating mode===
 		//Remove from queue
 		if(from_build_queue)
@@ -479,7 +491,7 @@
 		//Create item and restart
 		process_completion_world_tick = world.time + time
 		total_build_time = time
-		addtimer(CALLBACK(src, .proc/make_item, power, materials_used, custom_materials, multiplier, coeff, is_stack), time)
+		addtimer(CALLBACK(src, .proc/make_item, power, materials_used, custom_materials, multiplier, coeff, is_stack, users), time)
 		addtimer(CALLBACK(src, .proc/restart_process), time + 5)
 	else
 		say("Insufficient materials, operation will proceed when sufficient materials are available.")
@@ -493,7 +505,7 @@
 		return
 	begin_process()
 
-/obj/machinery/autolathe/proc/make_item(power, list/materials_used, list/picked_materials, multiplier, coeff, is_stack, mob/user)
+/obj/machinery/autolathe/proc/make_item(power, list/materials_used, list/picked_materials, multiplier, coeff, is_stack, list/datum/weakref/users)
 	if(QDELETED(src))
 		return
 	//Stops the queue
@@ -518,7 +530,9 @@
 				for(var/x in picked_materials)
 					var/datum/material/M = x
 					if(!istype(M, /datum/material/glass) && !istype(M, /datum/material/iron))
-						user.client.give_award(/datum/award/achievement/misc/getting_an_upgrade, user)
+						for(var/datum/weakref/user_ref in users)
+							var/mob/user = user_ref.resolve()
+							user?.client?.give_award(/datum/award/achievement/misc/getting_an_upgrade, user)
 
 
 	being_built = null
