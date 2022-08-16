@@ -466,7 +466,19 @@ GENE SCANNER
 		to_chat(user, "<span class='info'>Pressure: [round(pressure,0.01)] kPa</span>")
 		to_chat(user, "<span class='info'>Temperature: [round(environment.return_temperature()-T0C, 0.01)] &deg;C ([round(environment.return_temperature(), 0.01)] K)</span>")
 		//WS End
-
+		//Singulostation edit start
+		var/obj/effect/bluespace_residue/bluespace_residue
+	for(var/obj/effect/bluespace_residue/B in range(14,get_turf(src)))
+		bluespace_residue = B
+		break
+	if(bluespace_residue)
+		var/thedist = get_dist(get_turf(src),bluespace_residue)
+		to_chat(user, "You detect bluespace residue near by, within [thedist*2] meters.")
+		if(thedist <= 1)
+			bluespace_residue.detect()
+			to_chat(user, "<B>You reveal the location of the bluespace residue!</B>")
+		//Singulostation edit end
+		
 		if(abs(n2_concentration - N2STANDARD) < 20)
 			to_chat(user, "<span class='info'>Nitrogen: [round(n2_concentration*100, 0.01)] % ([round(environment.get_moles(/datum/gas/nitrogen), 0.01)] mol)</span>")
 		else
