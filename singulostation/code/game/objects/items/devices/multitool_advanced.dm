@@ -57,3 +57,10 @@
 	if(selected_index)
 		buffer_index = selected_index
 		buffer = buffer_list[selected_index]
+
+/obj/item/multitool/advanced/cyborg
+	name = "advanced electronic multitool"
+	desc = "Advanced version of a regular multitool. Streamlines processes handled by its internal microchip."
+	icon = 'icons/obj/items_cyborg.dmi'
+	icon_state = "multitool_cyborg"
+	toolspeed = 0.5

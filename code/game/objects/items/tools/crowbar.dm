@@ -110,3 +110,14 @@
 	usesound = 'sound/items/jaws_pry.ogg'
 	force = 10
 	toolspeed = 0.5
+
+//Singulostation Edit start -- adds jaws of life as an integrated crowbar
+/obj/item/crowbar/cyborg/advanced
+	name = "hydraulic crowbar"
+	desc = "A hydraulic prying tool, simple but powerful."
+	icon = 'icons/obj/items_cyborg.dmi'
+	icon_state = "crowbar_cyborg"
+	usesound = 'sound/items/jaws_pry.ogg'
+	force = 15
+	toolspeed = 0.5
+//Singulostation Edit end

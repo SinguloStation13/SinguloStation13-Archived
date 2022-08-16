@@ -341,6 +341,19 @@
 	category = list("Misc", "Medical Designs")
 	departmental_flags = DEPARTMENTAL_FLAG_MEDICAL
 
+//Singulostation Edit start -- Adds Advanced toolset to medical lathe
+/datum/design/cyberimp_advtoolset
+	name = "Advanced Toolset Arm Implant"
+	desc = "An advanced, experimental version of the integrated toolset."
+	id = "ci-advancedtoolset"
+	build_type = PROTOLATHE | MECHFAB
+	materials = list (/datum/material/iron = 3500, /datum/material/glass = 2500, /datum/material/silver = 2500, /datum/material/uranium = 2000, /datum/material/diamond = 2000, /datum/material/bluespace = 1000)
+	construction_time = 200
+	build_path = /obj/item/organ/cyberimp/arm/toolset/advanced
+	category = list("Misc", "Medical Designs")
+	departmental_flags = DEPARTMENTAL_FLAG_MEDICAL
+//Singulostation Edit end
+
 /datum/design/cyberimp_medical_hud
 	name = "Medical HUD Implant"
 	desc = "These cybernetic eyes will display a medical HUD over everything you see. Wiggle eyes to control."
