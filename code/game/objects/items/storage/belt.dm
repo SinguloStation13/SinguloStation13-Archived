@@ -40,7 +40,7 @@
 	. = ..()
 	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
 	STR.max_w_class = WEIGHT_CLASS_NORMAL
-	STR.max_combined_w_class = 21
+	STR.max_combined_w_class = 33 // Singulostation edit, another half row of items. So instead of 7 spots, there's now 11.
 	STR.set_holdable(list(
 		/obj/item/crowbar,
 		/obj/item/screwdriver,
@@ -62,6 +62,13 @@
 		/obj/item/assembly/signaler,
 		/obj/item/lightreplacer,
 		/obj/item/construction/rcd,
+		//Singulostation edit start - Adds more tools
+		/obj/item/construction/rld/mini,
+		/obj/item/construction/plumbing,
+		/datum/component/storage/concrete/rped
+		/obj/item/airlock_painter
+		/obj/item/floor_painter
+		//Singulostation edit end
 		/obj/item/pipe_dispenser,
 		/obj/item/inducer,
 		/obj/item/plunger,
