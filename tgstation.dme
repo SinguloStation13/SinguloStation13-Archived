@@ -3218,6 +3218,7 @@
 #include "singulostation\code\modules\mob\living\carbon\login.dm"
 #include "singulostation\code\modules\mob\living\carbon\logout.dm"
 #include "singulostation\code\modules\mob\living\simple_animal\hostile\megafauna\colossus.dm"
+#include "singulostation\code\modules\power\solar.dm"
 #include "singulostation\code\modules\research\designs\machine_designs.dm"
 #include "singulostation\code\modules\research\designs\tool_designs.dm"
 #include "singulostation\code\modules\research\xenobiology\crossbreeding\_misc.dm"
